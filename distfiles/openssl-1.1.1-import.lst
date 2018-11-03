@@ -2979,7 +2979,6 @@ util/find-unused-errs
 util/indent.pro
 util/libcrypto.num
 util/libssl.num
-util/local_shlib.com.in
 util/mkbuildinf.pl
 util/mkdef.pl
 util/mkdir-p.pl
@@ -3010,4 +3009,3 @@ util/private.num
 util/process_docs.pl
 util/shlib_wrap.sh.in
 util/su-filter.pl
-util/unlocal_shlib.com.in

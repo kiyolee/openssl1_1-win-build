@@ -2979,7 +2979,6 @@ bc5dd318f5b5663d81f09b07bdb916a0  util/copy.pl
 35a0ecd4865aec6828183216a4c93d1f  util/indent.pro
 b86e8bb63601b3fd67784a383863c9c8  util/libcrypto.num
 ea6cbc2308e9445c24880926e723f288  util/libssl.num
-68c29c73eb8e8e5d479bfebcb70b3176  util/local_shlib.com.in
 28cbbb92ea3cf6d4a55a28508a1ade82  util/mkbuildinf.pl
 0ed2ccafac4184e4543ee07c50ee11c7  util/mkdef.pl
 33138a31c6c5febf122e1c6a78857680  util/mkdir-p.pl
@@ -3010,4 +3009,3 @@ e4e8ff9fab4d700305f66990118c747f  util/perl/checkhandshake.pm
 a95365dee26dd8e9e9b073ff1b4c5935  util/process_docs.pl
 e976971398c17a9951231bdf8fc9b610  util/shlib_wrap.sh.in
 8e1ab02b167d88cdaf0fb85085472b58  util/su-filter.pl
-73ebc0ffa81d280652eab0f73441d72a  util/unlocal_shlib.com.in
