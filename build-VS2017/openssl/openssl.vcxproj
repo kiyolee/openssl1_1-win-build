@@ -118,8 +118,6 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\apps\apps.c" />
-    <ClCompile Include="..\..\apps\app_rand.c" />
     <ClCompile Include="..\..\apps\asn1pars.c" />
     <ClCompile Include="..\..\apps\ca.c" />
     <ClCompile Include="..\..\apps\ciphers.c" />
@@ -150,6 +148,7 @@
     <ClCompile Include="..\..\apps\pkeyutl.c" />
     <ClCompile Include="..\..\apps\prime.c" />
     <ClCompile Include="..\..\apps\rand.c" />
+    <ClCompile Include="..\..\apps\rehash.c" />
     <ClCompile Include="..\..\apps\req.c" />
     <ClCompile Include="..\..\apps\rsa.c" />
     <ClCompile Include="..\..\apps\rsautl.c" />
@@ -158,10 +157,9 @@
     <ClCompile Include="..\..\apps\speed.c" />
     <ClCompile Include="..\..\apps\spkac.c" />
     <ClCompile Include="..\..\apps\srp.c" />
-    <ClCompile Include="..\..\apps\s_cb.c" />
+    <ClCompile Include="..\..\apps\storeutl.c" />
     <ClCompile Include="..\..\apps\s_client.c" />
     <ClCompile Include="..\..\apps\s_server.c" />
-    <ClCompile Include="..\..\apps\s_socket.c" />
     <ClCompile Include="..\..\apps\s_time.c" />
     <ClCompile Include="..\..\apps\ts.c" />
     <ClCompile Include="..\..\apps\verify.c" />
