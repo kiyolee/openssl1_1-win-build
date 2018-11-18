@@ -161,7 +161,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="..\..\ms\version32.rc">
+    <ResourceCompile Include="..\..\ms\openssl1_1.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>

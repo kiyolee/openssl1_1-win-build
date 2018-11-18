@@ -78,7 +78,7 @@
       <ModuleDefinitionFile>$(OutDir)_work\libssl-1_1.def</ModuleDefinitionFile>
     </Link>
     <ResourceCompile>
-      <PreprocessorDefinitions>SSL</PreprocessorDefinitions>
+      <PreprocessorDefinitions>LIBSSL</PreprocessorDefinitions>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -92,7 +92,7 @@
       <ModuleDefinitionFile>$(OutDir)_work\libssl-1_1.def</ModuleDefinitionFile>
     </Link>
     <ResourceCompile>
-      <PreprocessorDefinitions>SSL</PreprocessorDefinitions>
+      <PreprocessorDefinitions>LIBSSL</PreprocessorDefinitions>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -104,7 +104,7 @@
       <ModuleDefinitionFile>$(OutDir)_work\libssl-1_1.def</ModuleDefinitionFile>
     </Link>
     <ResourceCompile>
-      <PreprocessorDefinitions>SSL</PreprocessorDefinitions>
+      <PreprocessorDefinitions>LIBSSL</PreprocessorDefinitions>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -118,7 +118,7 @@
       <ModuleDefinitionFile>$(OutDir)_work\libssl-1_1.def</ModuleDefinitionFile>
     </Link>
     <ResourceCompile>
-      <PreprocessorDefinitions>SSL</PreprocessorDefinitions>
+      <PreprocessorDefinitions>LIBSSL</PreprocessorDefinitions>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -168,7 +168,7 @@
     <ClCompile Include="..\..\ssl\tls_srp.c" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="..\..\ms\version32.rc" />
+    <ResourceCompile Include="..\..\ms\openssl1_1.rc" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\util\mkdef.pl">

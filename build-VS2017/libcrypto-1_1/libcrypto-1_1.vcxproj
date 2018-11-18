@@ -78,7 +78,7 @@
       <ModuleDefinitionFile>$(OutDir)_work\libcrypto-1_1.def</ModuleDefinitionFile>
     </Link>
     <ResourceCompile>
-      <PreprocessorDefinitions>CRYPTO</PreprocessorDefinitions>
+      <PreprocessorDefinitions>LIBCRYPTO</PreprocessorDefinitions>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -92,7 +92,7 @@
       <ModuleDefinitionFile>$(OutDir)_work\libcrypto-1_1.def</ModuleDefinitionFile>
     </Link>
     <ResourceCompile>
-      <PreprocessorDefinitions>CRYPTO</PreprocessorDefinitions>
+      <PreprocessorDefinitions>LIBCRYPTO</PreprocessorDefinitions>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -104,7 +104,7 @@
       <ModuleDefinitionFile>$(OutDir)_work\libcrypto-1_1.def</ModuleDefinitionFile>
     </Link>
     <ResourceCompile>
-      <PreprocessorDefinitions>CRYPTO</PreprocessorDefinitions>
+      <PreprocessorDefinitions>LIBCRYPTO</PreprocessorDefinitions>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -118,7 +118,7 @@
       <ModuleDefinitionFile>$(OutDir)_work\libcrypto-1_1.def</ModuleDefinitionFile>
     </Link>
     <ResourceCompile>
-      <PreprocessorDefinitions>CRYPTO</PreprocessorDefinitions>
+      <PreprocessorDefinitions>LIBCRYPTO</PreprocessorDefinitions>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -331,12 +331,7 @@
     <ClCompile Include="..\..\crypto\ct\ct_sct_ctx.c" />
     <ClCompile Include="..\..\crypto\ct\ct_vfy.c" />
     <ClCompile Include="..\..\crypto\ct\ct_x509v3.c" />
-    <ClCompile Include="..\..\crypto\cversion.c">
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">KL_OSSL10_PLATFORM_VC_WIN32;KL_OSSL10_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">KL_OSSL10_PLATFORM_VC_WIN32;KL_OSSL10_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">KL_OSSL10_PLATFORM_VC_WIN64A;KL_OSSL10_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">KL_OSSL10_PLATFORM_VC_WIN64A;KL_OSSL10_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
+    <ClCompile Include="..\..\crypto\cversion.c" />
     <ClCompile Include="..\..\crypto\des\cbc_cksm.c" />
     <ClCompile Include="..\..\crypto\des\cbc_enc.c" />
     <ClCompile Include="..\..\crypto\des\cfb64ede.c" />
@@ -1308,7 +1303,7 @@ $(PERL) %(FullPath) nasm $(OutDir)_work\%(Filename).asm &amp;&amp; $(NASM) -f wi
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="..\..\ms\version32.rc" />
+    <ResourceCompile Include="..\..\ms\openssl1_1.rc" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\util\mkdef.pl">
