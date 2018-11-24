@@ -504,6 +504,7 @@
     <ClCompile Include="..\..\crypto\evp\p_sign.c" />
     <ClCompile Include="..\..\crypto\evp\p_verify.c" />
     <ClCompile Include="..\..\crypto\ex_data.c" />
+    <ClCompile Include="..\..\crypto\getenv.c" />
     <ClCompile Include="..\..\crypto\hmac\hmac.c" />
     <ClCompile Include="..\..\crypto\hmac\hm_ameth.c" />
     <ClCompile Include="..\..\crypto\hmac\hm_pmeth.c" />

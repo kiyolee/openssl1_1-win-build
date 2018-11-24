@@ -2,7 +2,7 @@
 
 openssl Windows build with Visual Studio.
 
-[Work in progress] This version is openssl-1.1.1.
+[Work in progress] This version is openssl-1.1.1a.
 
 See win-build-info for general information about the
 win-build effort.
