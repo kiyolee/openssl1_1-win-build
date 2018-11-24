@@ -2174,9 +2174,6 @@
     <CustomBuild Include="..\..\crypto\bn\asm\bn-586.pl">
       <Filter>Source Files\asm\x86</Filter>
     </CustomBuild>
-    <CustomBuild Include="..\..\crypto\cast\asm\cast-586.pl">
-      <Filter>Source Files\asm\x86</Filter>
-    </CustomBuild>
     <CustomBuild Include="..\..\crypto\camellia\asm\cmll-x86.pl">
       <Filter>Source Files\asm\x86</Filter>
     </CustomBuild>
@@ -2269,6 +2266,33 @@
     </CustomBuild>
     <CustomBuild Include="..\..\crypto\bn\asm\rsaz-avx2.pl">
       <Filter>Source Files\asm\x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\crypto\chacha\asm\chacha-x86_64.pl">
+      <Filter>Source Files\asm\x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\crypto\chacha\asm\chacha-x86.pl">
+      <Filter>Source Files\asm\x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\crypto\ec\asm\ecp_nistz256-x86.pl">
+      <Filter>Source Files\asm\x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\crypto\poly1305\asm\poly1305-x86_64.pl">
+      <Filter>Source Files\asm\x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\crypto\poly1305\asm\poly1305-x86.pl">
+      <Filter>Source Files\asm\x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\crypto\sha\asm\keccak1600-x86_64.pl">
+      <Filter>Source Files\asm\x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\crypto\ec\asm\x25519-x86_64.pl">
+      <Filter>Source Files\asm\x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\engines\asm\e_padlock-x86_64.pl">
+      <Filter>Source Files\asm\x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\engines\asm\e_padlock-x86.pl">
+      <Filter>Source Files\asm\x86</Filter>
     </CustomBuild>
   </ItemGroup>
 </Project>
