@@ -175,19 +175,19 @@
       <FileType>Document</FileType>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)_work 2&gt;nul
 pushd ..\..
-$(PERL) %(FullPath) 32 ssleay &gt; $(OutDir)_work\libssl-1_1.def
+$(PERL) -Ims\x86 %(FullPath) ssl 32 &gt; $(OutDir)_work\libssl-1_1.def
 popd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)_work 2&gt;nul
 pushd ..\..
-$(PERL) %(FullPath) 32 ssleay &gt; $(OutDir)_work\libssl-1_1.def
+$(PERL) -Ims\x86 %(FullPath) ssl 32 &gt; $(OutDir)_work\libssl-1_1.def
 popd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)_work 2&gt;nul
 pushd ..\..
-$(PERL) %(FullPath) 32 ssleay &gt; $(OutDir)_work\libssl-1_1.def
+$(PERL) -Ims\x64 %(FullPath) ssl 32 &gt; $(OutDir)_work\libssl-1_1.def
 popd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)_work 2&gt;nul
 pushd ..\..
-$(PERL) %(FullPath) 32 ssleay &gt; $(OutDir)_work\libssl-1_1.def
+$(PERL) -Ims\x64 %(FullPath) ssl 32 &gt; $(OutDir)_work\libssl-1_1.def
 popd</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)_work\libssl-1_1.def</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)_work\libssl-1_1.def</Outputs>
