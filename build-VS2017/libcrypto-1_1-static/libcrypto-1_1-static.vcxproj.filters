@@ -175,14 +175,8 @@
     <Filter Include="Source Files\crypto\camellia\x64">
       <UniqueIdentifier>{874885c7-9c6d-4d7a-af42-9845a4e878b4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\crypto\cast\x64">
-      <UniqueIdentifier>{d8be563a-138d-4bc7-b2d4-52d325fa00ab}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\crypto\des\x64">
       <UniqueIdentifier>{0e9187fa-6d3c-417c-a114-af3345339dec}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\crypto\ec\x64">
-      <UniqueIdentifier>{d5bdae15-0353-4f2b-8cc1-6bb22e644e98}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\crypto\whrlpool\x86">
       <UniqueIdentifier>{5006dd2d-cee2-4129-abea-b9e7bb052000}</UniqueIdentifier>
@@ -1768,7 +1762,7 @@
       <Filter>Source Files\crypto\camellia\x64</Filter>
     </ClCompile>
     <ClCompile Include="..\..\crypto\cast\c_enc.c">
-      <Filter>Source Files\crypto\cast\x64</Filter>
+      <Filter>Source Files\crypto\cast</Filter>
     </ClCompile>
     <ClCompile Include="..\..\crypto\des\des_enc.c">
       <Filter>Source Files\crypto\des\x64</Filter>
@@ -1777,7 +1771,7 @@
       <Filter>Source Files\crypto\des\x64</Filter>
     </ClCompile>
     <ClCompile Include="..\..\crypto\ec\ecp_nistz256.c">
-      <Filter>Source Files\crypto\ec\x64</Filter>
+      <Filter>Source Files\crypto\ec</Filter>
     </ClCompile>
     <ClCompile Include="..\..\crypto\whrlpool\wp_block.c">
       <Filter>Source Files\crypto\whrlpool\x86</Filter>

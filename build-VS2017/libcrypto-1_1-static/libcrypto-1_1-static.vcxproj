@@ -268,10 +268,7 @@
     <ClCompile Include="..\..\crypto\camellia\cmll_ofb.c" />
     <ClCompile Include="..\..\crypto\cast\c_cfb64.c" />
     <ClCompile Include="..\..\crypto\cast\c_ecb.c" />
-    <ClCompile Include="..\..\crypto\cast\c_enc.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="..\..\crypto\cast\c_enc.c" />
     <ClCompile Include="..\..\crypto\cast\c_ofb64.c" />
     <ClCompile Include="..\..\crypto\cast\c_skey.c" />
     <ClCompile Include="..\..\crypto\cmac\cmac.c" />
@@ -397,10 +394,7 @@
     <ClCompile Include="..\..\crypto\ec\ecp_nistp256.c" />
     <ClCompile Include="..\..\crypto\ec\ecp_nistp521.c" />
     <ClCompile Include="..\..\crypto\ec\ecp_nistputil.c" />
-    <ClCompile Include="..\..\crypto\ec\ecp_nistz256.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="..\..\crypto\ec\ecp_nistz256.c" />
     <ClCompile Include="..\..\crypto\ec\ecp_oct.c" />
     <ClCompile Include="..\..\crypto\ec\ecp_smpl.c" />
     <ClCompile Include="..\..\crypto\ec\ecx_meth.c" />
