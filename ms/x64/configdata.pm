@@ -115,8 +115,8 @@ our %config = (
   sourcedir => ".",
   target => "VC-WIN64A-masm",
   tdirs => [ "ossl_shim" ],
-  version => "1.1.1",
-  version_num => "0x1010100fL",
+  version => "1.1.1a",
+  version_num => "0x1010101fL",
 );
 
 our %target = (
@@ -132,7 +132,7 @@ our %target = (
   LDFLAGS => "/nologo /debug",
   MT => "mt",
   MTFLAGS => "-nologo",
-  RANLIB => "CODE(0x2bd0470)",
+  RANLIB => "CODE(0x2dbdf68)",
   RC => "rc",
   _conf_fname_int => [ ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\10-main.conf", ".\\Configurations\\10-main.conf", ".\\Configurations\\10-main.conf", ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\50-masm.conf", ".\\Configurations\\shared-info.pl" ],
   aes_asm_src => "aes-x86_64.s vpaes-x86_64.s bsaes-x86_64.s aesni-x86_64.s aesni-sha1-x86_64.s aesni-sha256-x86_64.s aesni-mb-x86_64.s",
@@ -168,7 +168,7 @@ our %target = (
   des_obj => "des_enc.o fcrypt_b.o",
   disable => [  ],
   dso_cflags => "/Zi /Fddso.pdb",
-  dso_extension => "",
+  dso_extension => ".dll",
   dso_scheme => "win32",
   ec_asm_src => "ecp_nistz256.c ecp_nistz256-x86_64.s x25519-x86_64.s",
   ec_obj => "ecp_nistz256.o ecp_nistz256-x86_64.o x25519-x86_64.o",
@@ -208,8 +208,8 @@ our %target = (
   sha1_obj => "sha1-x86_64.o sha256-x86_64.o sha512-x86_64.o sha1-mb-x86_64.o sha256-mb-x86_64.o",
   shared_cflag => "",
   shared_defines => [  ],
-  shared_extension => "",
-  shared_extension_simple => "",
+  shared_extension => ".dll",
+  shared_extension_simple => ".dll",
   shared_ldflag => "/dll",
   shared_rcflag => "",
   shared_target => "win-shared",
@@ -759,6 +759,11 @@ our %unified_info = (
                     "libcrypto",
                     "test\\libtestutil.a",
                 ],
+            "test\\asn1_internal_test" =>
+                [
+                    "libcrypto.a",
+                    "test\\libtestutil.a",
+                ],
             "test\\asn1_string_table_test" =>
                 [
                     "libcrypto",
@@ -1160,6 +1165,11 @@ our %unified_info = (
                     "libcrypto",
                     "test\\libtestutil.a",
                 ],
+            "test\\chacha_internal_test" =>
+                [
+                    "libcrypto.a",
+                    "test\\libtestutil.a",
+                ],
             "test\\cipherbytes_test" =>
                 [
                     "libcrypto",
@@ -1209,6 +1219,16 @@ our %unified_info = (
                     "libcrypto",
                     "test\\libtestutil.a",
                 ],
+            "test\\ctype_internal_test" =>
+                [
+                    "libcrypto.a",
+                    "test\\libtestutil.a",
+                ],
+            "test\\curve448_internal_test" =>
+                [
+                    "libcrypto.a",
+                    "test\\libtestutil.a",
+                ],
             "test\\d2i_test" =>
                 [
                     "libcrypto",
@@ -1237,7 +1257,7 @@ our %unified_info = (
                 ],
             "test\\drbgtest" =>
                 [
-                    "libcrypto",
+                    "libcrypto.a",
                     "test\\libtestutil.a",
                 ],
             "test\\dsa_no_digest_size_test" =>
@@ -1373,6 +1393,11 @@ our %unified_info = (
                     "libcrypto",
                     "test\\libtestutil.a",
                 ],
+            "test\\modes_internal_test" =>
+                [
+                    "libcrypto.a",
+                    "test\\libtestutil.a",
+                ],
             "test\\ocspapitest" =>
                 [
                     "libcrypto",
@@ -1403,6 +1428,11 @@ our %unified_info = (
                     "libcrypto",
                     "test\\libtestutil.a",
                 ],
+            "test\\poly1305_internal_test" =>
+                [
+                    "libcrypto.a",
+                    "test\\libtestutil.a",
+                ],
             "test\\rc2test" =>
                 [
                     "libcrypto",
@@ -1416,6 +1446,11 @@ our %unified_info = (
             "test\\rc5test" =>
                 [
                     "libcrypto",
+                    "test\\libtestutil.a",
+                ],
+            "test\\rdrand_sanitytest" =>
+                [
+                    "libcrypto.a",
                     "test\\libtestutil.a",
                 ],
             "test\\recordlentest" =>
@@ -1452,6 +1487,21 @@ our %unified_info = (
                 ],
             "test\\shlibloadtest" =>
                 [
+                    "test\\libtestutil.a",
+                ],
+            "test\\siphash_internal_test" =>
+                [
+                    "libcrypto.a",
+                    "test\\libtestutil.a",
+                ],
+            "test\\sm2_internal_test" =>
+                [
+                    "libcrypto.a",
+                    "test\\libtestutil.a",
+                ],
+            "test\\sm4_internal_test" =>
+                [
+                    "libcrypto.a",
                     "test\\libtestutil.a",
                 ],
             "test\\srptest" =>
@@ -1531,6 +1581,12 @@ our %unified_info = (
                     "libssl",
                     "test\\libtestutil.a",
                 ],
+            "test\\tls13encryptiontest" =>
+                [
+                    "libcrypto",
+                    "libssl.a",
+                    "test\\libtestutil.a",
+                ],
             "test\\tls13secretstest" =>
                 [
                     "libcrypto",
@@ -1563,6 +1619,12 @@ our %unified_info = (
                 [
                     "libcrypto",
                 ],
+            "test\\wpackettest" =>
+                [
+                    "libcrypto",
+                    "libssl.a",
+                    "test\\libtestutil.a",
+                ],
             "test\\x509_check_cert_pkey_test" =>
                 [
                     "libcrypto",
@@ -1571,6 +1633,11 @@ our %unified_info = (
             "test\\x509_dup_cert_test" =>
                 [
                     "libcrypto",
+                    "test\\libtestutil.a",
+                ],
+            "test\\x509_internal_test" =>
+                [
+                    "libcrypto.a",
                     "test\\libtestutil.a",
                 ],
             "test\\x509_time_test" =>
@@ -1583,6 +1650,1673 @@ our %unified_info = (
                     "libcrypto",
                     "test\\libtestutil.a",
                 ],
+        },
+    "dirinfo" =>
+        {
+            "apps" =>
+                {
+                    "products" =>
+                        {
+                            "bin" =>
+                                [
+                                    "apps\\openssl",
+                                ],
+                            "lib" =>
+                                [
+                                    "apps\\libapps.a",
+                                ],
+                        },
+                },
+            "crypto" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\cpt_err.o",
+                            "crypto\\cryptlib.o",
+                            "crypto\\ctype.o",
+                            "crypto\\cversion.o",
+                            "crypto\\ebcdic.o",
+                            "crypto\\ex_data.o",
+                            "crypto\\getenv.o",
+                            "crypto\\init.o",
+                            "crypto\\mem.o",
+                            "crypto\\mem_dbg.o",
+                            "crypto\\mem_sec.o",
+                            "crypto\\o_dir.o",
+                            "crypto\\o_fips.o",
+                            "crypto\\o_fopen.o",
+                            "crypto\\o_init.o",
+                            "crypto\\o_str.o",
+                            "crypto\\o_time.o",
+                            "crypto\\threads_none.o",
+                            "crypto\\threads_pthread.o",
+                            "crypto\\threads_win.o",
+                            "crypto\\uid.o",
+                            "crypto\\uplink-x86_64.o",
+                            "crypto\\x86_64cpuid.o",
+                            "crypto\\dllmain.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\aes" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\aes\\aes-x86_64.o",
+                            "crypto\\aes\\aes_cfb.o",
+                            "crypto\\aes\\aes_ecb.o",
+                            "crypto\\aes\\aes_ige.o",
+                            "crypto\\aes\\aes_misc.o",
+                            "crypto\\aes\\aes_ofb.o",
+                            "crypto\\aes\\aes_wrap.o",
+                            "crypto\\aes\\aesni-mb-x86_64.o",
+                            "crypto\\aes\\aesni-sha1-x86_64.o",
+                            "crypto\\aes\\aesni-sha256-x86_64.o",
+                            "crypto\\aes\\aesni-x86_64.o",
+                            "crypto\\aes\\bsaes-x86_64.o",
+                            "crypto\\aes\\vpaes-x86_64.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\aria" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\aria\\aria.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\asn1" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\asn1\\a_bitstr.o",
+                            "crypto\\asn1\\a_d2i_fp.o",
+                            "crypto\\asn1\\a_digest.o",
+                            "crypto\\asn1\\a_dup.o",
+                            "crypto\\asn1\\a_gentm.o",
+                            "crypto\\asn1\\a_i2d_fp.o",
+                            "crypto\\asn1\\a_int.o",
+                            "crypto\\asn1\\a_mbstr.o",
+                            "crypto\\asn1\\a_object.o",
+                            "crypto\\asn1\\a_octet.o",
+                            "crypto\\asn1\\a_print.o",
+                            "crypto\\asn1\\a_sign.o",
+                            "crypto\\asn1\\a_strex.o",
+                            "crypto\\asn1\\a_strnid.o",
+                            "crypto\\asn1\\a_time.o",
+                            "crypto\\asn1\\a_type.o",
+                            "crypto\\asn1\\a_utctm.o",
+                            "crypto\\asn1\\a_utf8.o",
+                            "crypto\\asn1\\a_verify.o",
+                            "crypto\\asn1\\ameth_lib.o",
+                            "crypto\\asn1\\asn1_err.o",
+                            "crypto\\asn1\\asn1_gen.o",
+                            "crypto\\asn1\\asn1_item_list.o",
+                            "crypto\\asn1\\asn1_lib.o",
+                            "crypto\\asn1\\asn1_par.o",
+                            "crypto\\asn1\\asn_mime.o",
+                            "crypto\\asn1\\asn_moid.o",
+                            "crypto\\asn1\\asn_mstbl.o",
+                            "crypto\\asn1\\asn_pack.o",
+                            "crypto\\asn1\\bio_asn1.o",
+                            "crypto\\asn1\\bio_ndef.o",
+                            "crypto\\asn1\\d2i_pr.o",
+                            "crypto\\asn1\\d2i_pu.o",
+                            "crypto\\asn1\\evp_asn1.o",
+                            "crypto\\asn1\\f_int.o",
+                            "crypto\\asn1\\f_string.o",
+                            "crypto\\asn1\\i2d_pr.o",
+                            "crypto\\asn1\\i2d_pu.o",
+                            "crypto\\asn1\\n_pkey.o",
+                            "crypto\\asn1\\nsseq.o",
+                            "crypto\\asn1\\p5_pbe.o",
+                            "crypto\\asn1\\p5_pbev2.o",
+                            "crypto\\asn1\\p5_scrypt.o",
+                            "crypto\\asn1\\p8_pkey.o",
+                            "crypto\\asn1\\t_bitst.o",
+                            "crypto\\asn1\\t_pkey.o",
+                            "crypto\\asn1\\t_spki.o",
+                            "crypto\\asn1\\tasn_dec.o",
+                            "crypto\\asn1\\tasn_enc.o",
+                            "crypto\\asn1\\tasn_fre.o",
+                            "crypto\\asn1\\tasn_new.o",
+                            "crypto\\asn1\\tasn_prn.o",
+                            "crypto\\asn1\\tasn_scn.o",
+                            "crypto\\asn1\\tasn_typ.o",
+                            "crypto\\asn1\\tasn_utl.o",
+                            "crypto\\asn1\\x_algor.o",
+                            "crypto\\asn1\\x_bignum.o",
+                            "crypto\\asn1\\x_info.o",
+                            "crypto\\asn1\\x_int64.o",
+                            "crypto\\asn1\\x_long.o",
+                            "crypto\\asn1\\x_pkey.o",
+                            "crypto\\asn1\\x_sig.o",
+                            "crypto\\asn1\\x_spki.o",
+                            "crypto\\asn1\\x_val.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\async" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\async\\async.o",
+                            "crypto\\async\\async_err.o",
+                            "crypto\\async\\async_wait.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\async\\arch" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\async\\arch\\async_null.o",
+                            "crypto\\async\\arch\\async_posix.o",
+                            "crypto\\async\\arch\\async_win.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\bf" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\bf\\bf_cfb64.o",
+                            "crypto\\bf\\bf_ecb.o",
+                            "crypto\\bf\\bf_enc.o",
+                            "crypto\\bf\\bf_ofb64.o",
+                            "crypto\\bf\\bf_skey.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\bio" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\bio\\b_addr.o",
+                            "crypto\\bio\\b_dump.o",
+                            "crypto\\bio\\b_print.o",
+                            "crypto\\bio\\b_sock.o",
+                            "crypto\\bio\\b_sock2.o",
+                            "crypto\\bio\\bf_buff.o",
+                            "crypto\\bio\\bf_lbuf.o",
+                            "crypto\\bio\\bf_nbio.o",
+                            "crypto\\bio\\bf_null.o",
+                            "crypto\\bio\\bio_cb.o",
+                            "crypto\\bio\\bio_err.o",
+                            "crypto\\bio\\bio_lib.o",
+                            "crypto\\bio\\bio_meth.o",
+                            "crypto\\bio\\bss_acpt.o",
+                            "crypto\\bio\\bss_bio.o",
+                            "crypto\\bio\\bss_conn.o",
+                            "crypto\\bio\\bss_dgram.o",
+                            "crypto\\bio\\bss_fd.o",
+                            "crypto\\bio\\bss_file.o",
+                            "crypto\\bio\\bss_log.o",
+                            "crypto\\bio\\bss_mem.o",
+                            "crypto\\bio\\bss_null.o",
+                            "crypto\\bio\\bss_sock.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\blake2" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\blake2\\blake2b.o",
+                            "crypto\\blake2\\blake2s.o",
+                            "crypto\\blake2\\m_blake2b.o",
+                            "crypto\\blake2\\m_blake2s.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\bn" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\bn\\bn_add.o",
+                            "crypto\\bn\\bn_asm.o",
+                            "crypto\\bn\\bn_blind.o",
+                            "crypto\\bn\\bn_const.o",
+                            "crypto\\bn\\bn_ctx.o",
+                            "crypto\\bn\\bn_depr.o",
+                            "crypto\\bn\\bn_dh.o",
+                            "crypto\\bn\\bn_div.o",
+                            "crypto\\bn\\bn_err.o",
+                            "crypto\\bn\\bn_exp.o",
+                            "crypto\\bn\\bn_exp2.o",
+                            "crypto\\bn\\bn_gcd.o",
+                            "crypto\\bn\\bn_gf2m.o",
+                            "crypto\\bn\\bn_intern.o",
+                            "crypto\\bn\\bn_kron.o",
+                            "crypto\\bn\\bn_lib.o",
+                            "crypto\\bn\\bn_mod.o",
+                            "crypto\\bn\\bn_mont.o",
+                            "crypto\\bn\\bn_mpi.o",
+                            "crypto\\bn\\bn_mul.o",
+                            "crypto\\bn\\bn_nist.o",
+                            "crypto\\bn\\bn_prime.o",
+                            "crypto\\bn\\bn_print.o",
+                            "crypto\\bn\\bn_rand.o",
+                            "crypto\\bn\\bn_recp.o",
+                            "crypto\\bn\\bn_shift.o",
+                            "crypto\\bn\\bn_sqr.o",
+                            "crypto\\bn\\bn_sqrt.o",
+                            "crypto\\bn\\bn_srp.o",
+                            "crypto\\bn\\bn_word.o",
+                            "crypto\\bn\\bn_x931p.o",
+                            "crypto\\bn\\rsaz-avx2.o",
+                            "crypto\\bn\\rsaz-x86_64.o",
+                            "crypto\\bn\\rsaz_exp.o",
+                            "crypto\\bn\\x86_64-gf2m.o",
+                            "crypto\\bn\\x86_64-mont.o",
+                            "crypto\\bn\\x86_64-mont5.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\buffer" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\buffer\\buf_err.o",
+                            "crypto\\buffer\\buffer.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\camellia" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\camellia\\cmll-x86_64.o",
+                            "crypto\\camellia\\cmll_cfb.o",
+                            "crypto\\camellia\\cmll_ctr.o",
+                            "crypto\\camellia\\cmll_ecb.o",
+                            "crypto\\camellia\\cmll_misc.o",
+                            "crypto\\camellia\\cmll_ofb.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\cast" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\cast\\c_cfb64.o",
+                            "crypto\\cast\\c_ecb.o",
+                            "crypto\\cast\\c_enc.o",
+                            "crypto\\cast\\c_ofb64.o",
+                            "crypto\\cast\\c_skey.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\chacha" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\chacha\\chacha-x86_64.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\cmac" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\cmac\\cm_ameth.o",
+                            "crypto\\cmac\\cm_pmeth.o",
+                            "crypto\\cmac\\cmac.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\cms" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\cms\\cms_asn1.o",
+                            "crypto\\cms\\cms_att.o",
+                            "crypto\\cms\\cms_cd.o",
+                            "crypto\\cms\\cms_dd.o",
+                            "crypto\\cms\\cms_enc.o",
+                            "crypto\\cms\\cms_env.o",
+                            "crypto\\cms\\cms_err.o",
+                            "crypto\\cms\\cms_ess.o",
+                            "crypto\\cms\\cms_io.o",
+                            "crypto\\cms\\cms_kari.o",
+                            "crypto\\cms\\cms_lib.o",
+                            "crypto\\cms\\cms_pwri.o",
+                            "crypto\\cms\\cms_sd.o",
+                            "crypto\\cms\\cms_smime.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\comp" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\comp\\c_zlib.o",
+                            "crypto\\comp\\comp_err.o",
+                            "crypto\\comp\\comp_lib.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\conf" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\conf\\conf_api.o",
+                            "crypto\\conf\\conf_def.o",
+                            "crypto\\conf\\conf_err.o",
+                            "crypto\\conf\\conf_lib.o",
+                            "crypto\\conf\\conf_mall.o",
+                            "crypto\\conf\\conf_mod.o",
+                            "crypto\\conf\\conf_sap.o",
+                            "crypto\\conf\\conf_ssl.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\ct" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\ct\\ct_b64.o",
+                            "crypto\\ct\\ct_err.o",
+                            "crypto\\ct\\ct_log.o",
+                            "crypto\\ct\\ct_oct.o",
+                            "crypto\\ct\\ct_policy.o",
+                            "crypto\\ct\\ct_prn.o",
+                            "crypto\\ct\\ct_sct.o",
+                            "crypto\\ct\\ct_sct_ctx.o",
+                            "crypto\\ct\\ct_vfy.o",
+                            "crypto\\ct\\ct_x509v3.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\des" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\des\\cbc_cksm.o",
+                            "crypto\\des\\cbc_enc.o",
+                            "crypto\\des\\cfb64ede.o",
+                            "crypto\\des\\cfb64enc.o",
+                            "crypto\\des\\cfb_enc.o",
+                            "crypto\\des\\des_enc.o",
+                            "crypto\\des\\ecb3_enc.o",
+                            "crypto\\des\\ecb_enc.o",
+                            "crypto\\des\\fcrypt.o",
+                            "crypto\\des\\fcrypt_b.o",
+                            "crypto\\des\\ofb64ede.o",
+                            "crypto\\des\\ofb64enc.o",
+                            "crypto\\des\\ofb_enc.o",
+                            "crypto\\des\\pcbc_enc.o",
+                            "crypto\\des\\qud_cksm.o",
+                            "crypto\\des\\rand_key.o",
+                            "crypto\\des\\set_key.o",
+                            "crypto\\des\\str2key.o",
+                            "crypto\\des\\xcbc_enc.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\dh" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\dh\\dh_ameth.o",
+                            "crypto\\dh\\dh_asn1.o",
+                            "crypto\\dh\\dh_check.o",
+                            "crypto\\dh\\dh_depr.o",
+                            "crypto\\dh\\dh_err.o",
+                            "crypto\\dh\\dh_gen.o",
+                            "crypto\\dh\\dh_kdf.o",
+                            "crypto\\dh\\dh_key.o",
+                            "crypto\\dh\\dh_lib.o",
+                            "crypto\\dh\\dh_meth.o",
+                            "crypto\\dh\\dh_pmeth.o",
+                            "crypto\\dh\\dh_prn.o",
+                            "crypto\\dh\\dh_rfc5114.o",
+                            "crypto\\dh\\dh_rfc7919.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\dsa" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\dsa\\dsa_ameth.o",
+                            "crypto\\dsa\\dsa_asn1.o",
+                            "crypto\\dsa\\dsa_depr.o",
+                            "crypto\\dsa\\dsa_err.o",
+                            "crypto\\dsa\\dsa_gen.o",
+                            "crypto\\dsa\\dsa_key.o",
+                            "crypto\\dsa\\dsa_lib.o",
+                            "crypto\\dsa\\dsa_meth.o",
+                            "crypto\\dsa\\dsa_ossl.o",
+                            "crypto\\dsa\\dsa_pmeth.o",
+                            "crypto\\dsa\\dsa_prn.o",
+                            "crypto\\dsa\\dsa_sign.o",
+                            "crypto\\dsa\\dsa_vrf.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\dso" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\dso\\dso_dl.o",
+                            "crypto\\dso\\dso_dlfcn.o",
+                            "crypto\\dso\\dso_err.o",
+                            "crypto\\dso\\dso_lib.o",
+                            "crypto\\dso\\dso_openssl.o",
+                            "crypto\\dso\\dso_vms.o",
+                            "crypto\\dso\\dso_win32.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\ec" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\ec\\curve25519.o",
+                            "crypto\\ec\\ec2_oct.o",
+                            "crypto\\ec\\ec2_smpl.o",
+                            "crypto\\ec\\ec_ameth.o",
+                            "crypto\\ec\\ec_asn1.o",
+                            "crypto\\ec\\ec_check.o",
+                            "crypto\\ec\\ec_curve.o",
+                            "crypto\\ec\\ec_cvt.o",
+                            "crypto\\ec\\ec_err.o",
+                            "crypto\\ec\\ec_key.o",
+                            "crypto\\ec\\ec_kmeth.o",
+                            "crypto\\ec\\ec_lib.o",
+                            "crypto\\ec\\ec_mult.o",
+                            "crypto\\ec\\ec_oct.o",
+                            "crypto\\ec\\ec_pmeth.o",
+                            "crypto\\ec\\ec_print.o",
+                            "crypto\\ec\\ecdh_kdf.o",
+                            "crypto\\ec\\ecdh_ossl.o",
+                            "crypto\\ec\\ecdsa_ossl.o",
+                            "crypto\\ec\\ecdsa_sign.o",
+                            "crypto\\ec\\ecdsa_vrf.o",
+                            "crypto\\ec\\eck_prn.o",
+                            "crypto\\ec\\ecp_mont.o",
+                            "crypto\\ec\\ecp_nist.o",
+                            "crypto\\ec\\ecp_nistp224.o",
+                            "crypto\\ec\\ecp_nistp256.o",
+                            "crypto\\ec\\ecp_nistp521.o",
+                            "crypto\\ec\\ecp_nistputil.o",
+                            "crypto\\ec\\ecp_nistz256-x86_64.o",
+                            "crypto\\ec\\ecp_nistz256.o",
+                            "crypto\\ec\\ecp_oct.o",
+                            "crypto\\ec\\ecp_smpl.o",
+                            "crypto\\ec\\ecx_meth.o",
+                            "crypto\\ec\\x25519-x86_64.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\ec\\curve448" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\ec\\curve448\\curve448.o",
+                            "crypto\\ec\\curve448\\curve448_tables.o",
+                            "crypto\\ec\\curve448\\eddsa.o",
+                            "crypto\\ec\\curve448\\f_generic.o",
+                            "crypto\\ec\\curve448\\scalar.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\ec\\curve448\\arch_32" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\ec\\curve448\\arch_32\\f_impl.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\engine" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\engine\\eng_all.o",
+                            "crypto\\engine\\eng_cnf.o",
+                            "crypto\\engine\\eng_ctrl.o",
+                            "crypto\\engine\\eng_dyn.o",
+                            "crypto\\engine\\eng_err.o",
+                            "crypto\\engine\\eng_fat.o",
+                            "crypto\\engine\\eng_init.o",
+                            "crypto\\engine\\eng_lib.o",
+                            "crypto\\engine\\eng_list.o",
+                            "crypto\\engine\\eng_openssl.o",
+                            "crypto\\engine\\eng_pkey.o",
+                            "crypto\\engine\\eng_rdrand.o",
+                            "crypto\\engine\\eng_table.o",
+                            "crypto\\engine\\tb_asnmth.o",
+                            "crypto\\engine\\tb_cipher.o",
+                            "crypto\\engine\\tb_dh.o",
+                            "crypto\\engine\\tb_digest.o",
+                            "crypto\\engine\\tb_dsa.o",
+                            "crypto\\engine\\tb_eckey.o",
+                            "crypto\\engine\\tb_pkmeth.o",
+                            "crypto\\engine\\tb_rand.o",
+                            "crypto\\engine\\tb_rsa.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\err" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\err\\err.o",
+                            "crypto\\err\\err_all.o",
+                            "crypto\\err\\err_prn.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\evp" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\evp\\bio_b64.o",
+                            "crypto\\evp\\bio_enc.o",
+                            "crypto\\evp\\bio_md.o",
+                            "crypto\\evp\\bio_ok.o",
+                            "crypto\\evp\\c_allc.o",
+                            "crypto\\evp\\c_alld.o",
+                            "crypto\\evp\\cmeth_lib.o",
+                            "crypto\\evp\\digest.o",
+                            "crypto\\evp\\e_aes.o",
+                            "crypto\\evp\\e_aes_cbc_hmac_sha1.o",
+                            "crypto\\evp\\e_aes_cbc_hmac_sha256.o",
+                            "crypto\\evp\\e_aria.o",
+                            "crypto\\evp\\e_bf.o",
+                            "crypto\\evp\\e_camellia.o",
+                            "crypto\\evp\\e_cast.o",
+                            "crypto\\evp\\e_chacha20_poly1305.o",
+                            "crypto\\evp\\e_des.o",
+                            "crypto\\evp\\e_des3.o",
+                            "crypto\\evp\\e_idea.o",
+                            "crypto\\evp\\e_null.o",
+                            "crypto\\evp\\e_old.o",
+                            "crypto\\evp\\e_rc2.o",
+                            "crypto\\evp\\e_rc4.o",
+                            "crypto\\evp\\e_rc4_hmac_md5.o",
+                            "crypto\\evp\\e_rc5.o",
+                            "crypto\\evp\\e_seed.o",
+                            "crypto\\evp\\e_sm4.o",
+                            "crypto\\evp\\e_xcbc_d.o",
+                            "crypto\\evp\\encode.o",
+                            "crypto\\evp\\evp_cnf.o",
+                            "crypto\\evp\\evp_enc.o",
+                            "crypto\\evp\\evp_err.o",
+                            "crypto\\evp\\evp_key.o",
+                            "crypto\\evp\\evp_lib.o",
+                            "crypto\\evp\\evp_pbe.o",
+                            "crypto\\evp\\evp_pkey.o",
+                            "crypto\\evp\\m_md2.o",
+                            "crypto\\evp\\m_md4.o",
+                            "crypto\\evp\\m_md5.o",
+                            "crypto\\evp\\m_md5_sha1.o",
+                            "crypto\\evp\\m_mdc2.o",
+                            "crypto\\evp\\m_null.o",
+                            "crypto\\evp\\m_ripemd.o",
+                            "crypto\\evp\\m_sha1.o",
+                            "crypto\\evp\\m_sha3.o",
+                            "crypto\\evp\\m_sigver.o",
+                            "crypto\\evp\\m_wp.o",
+                            "crypto\\evp\\names.o",
+                            "crypto\\evp\\p5_crpt.o",
+                            "crypto\\evp\\p5_crpt2.o",
+                            "crypto\\evp\\p_dec.o",
+                            "crypto\\evp\\p_enc.o",
+                            "crypto\\evp\\p_lib.o",
+                            "crypto\\evp\\p_open.o",
+                            "crypto\\evp\\p_seal.o",
+                            "crypto\\evp\\p_sign.o",
+                            "crypto\\evp\\p_verify.o",
+                            "crypto\\evp\\pbe_scrypt.o",
+                            "crypto\\evp\\pmeth_fn.o",
+                            "crypto\\evp\\pmeth_gn.o",
+                            "crypto\\evp\\pmeth_lib.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\hmac" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\hmac\\hm_ameth.o",
+                            "crypto\\hmac\\hm_pmeth.o",
+                            "crypto\\hmac\\hmac.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\idea" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\idea\\i_cbc.o",
+                            "crypto\\idea\\i_cfb64.o",
+                            "crypto\\idea\\i_ecb.o",
+                            "crypto\\idea\\i_ofb64.o",
+                            "crypto\\idea\\i_skey.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\kdf" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\kdf\\hkdf.o",
+                            "crypto\\kdf\\kdf_err.o",
+                            "crypto\\kdf\\scrypt.o",
+                            "crypto\\kdf\\tls1_prf.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\lhash" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\lhash\\lh_stats.o",
+                            "crypto\\lhash\\lhash.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\md4" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\md4\\md4_dgst.o",
+                            "crypto\\md4\\md4_one.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\md5" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\md5\\md5-x86_64.o",
+                            "crypto\\md5\\md5_dgst.o",
+                            "crypto\\md5\\md5_one.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\mdc2" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\mdc2\\mdc2_one.o",
+                            "crypto\\mdc2\\mdc2dgst.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\modes" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\modes\\aesni-gcm-x86_64.o",
+                            "crypto\\modes\\cbc128.o",
+                            "crypto\\modes\\ccm128.o",
+                            "crypto\\modes\\cfb128.o",
+                            "crypto\\modes\\ctr128.o",
+                            "crypto\\modes\\cts128.o",
+                            "crypto\\modes\\gcm128.o",
+                            "crypto\\modes\\ghash-x86_64.o",
+                            "crypto\\modes\\ocb128.o",
+                            "crypto\\modes\\ofb128.o",
+                            "crypto\\modes\\wrap128.o",
+                            "crypto\\modes\\xts128.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\objects" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\objects\\o_names.o",
+                            "crypto\\objects\\obj_dat.o",
+                            "crypto\\objects\\obj_err.o",
+                            "crypto\\objects\\obj_lib.o",
+                            "crypto\\objects\\obj_xref.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\ocsp" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\ocsp\\ocsp_asn.o",
+                            "crypto\\ocsp\\ocsp_cl.o",
+                            "crypto\\ocsp\\ocsp_err.o",
+                            "crypto\\ocsp\\ocsp_ext.o",
+                            "crypto\\ocsp\\ocsp_ht.o",
+                            "crypto\\ocsp\\ocsp_lib.o",
+                            "crypto\\ocsp\\ocsp_prn.o",
+                            "crypto\\ocsp\\ocsp_srv.o",
+                            "crypto\\ocsp\\ocsp_vfy.o",
+                            "crypto\\ocsp\\v3_ocsp.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\pem" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\pem\\pem_all.o",
+                            "crypto\\pem\\pem_err.o",
+                            "crypto\\pem\\pem_info.o",
+                            "crypto\\pem\\pem_lib.o",
+                            "crypto\\pem\\pem_oth.o",
+                            "crypto\\pem\\pem_pk8.o",
+                            "crypto\\pem\\pem_pkey.o",
+                            "crypto\\pem\\pem_sign.o",
+                            "crypto\\pem\\pem_x509.o",
+                            "crypto\\pem\\pem_xaux.o",
+                            "crypto\\pem\\pvkfmt.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\pkcs12" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\pkcs12\\p12_add.o",
+                            "crypto\\pkcs12\\p12_asn.o",
+                            "crypto\\pkcs12\\p12_attr.o",
+                            "crypto\\pkcs12\\p12_crpt.o",
+                            "crypto\\pkcs12\\p12_crt.o",
+                            "crypto\\pkcs12\\p12_decr.o",
+                            "crypto\\pkcs12\\p12_init.o",
+                            "crypto\\pkcs12\\p12_key.o",
+                            "crypto\\pkcs12\\p12_kiss.o",
+                            "crypto\\pkcs12\\p12_mutl.o",
+                            "crypto\\pkcs12\\p12_npas.o",
+                            "crypto\\pkcs12\\p12_p8d.o",
+                            "crypto\\pkcs12\\p12_p8e.o",
+                            "crypto\\pkcs12\\p12_sbag.o",
+                            "crypto\\pkcs12\\p12_utl.o",
+                            "crypto\\pkcs12\\pk12err.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\pkcs7" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\pkcs7\\bio_pk7.o",
+                            "crypto\\pkcs7\\pk7_asn1.o",
+                            "crypto\\pkcs7\\pk7_attr.o",
+                            "crypto\\pkcs7\\pk7_doit.o",
+                            "crypto\\pkcs7\\pk7_lib.o",
+                            "crypto\\pkcs7\\pk7_mime.o",
+                            "crypto\\pkcs7\\pk7_smime.o",
+                            "crypto\\pkcs7\\pkcs7err.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\poly1305" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\poly1305\\poly1305-x86_64.o",
+                            "crypto\\poly1305\\poly1305.o",
+                            "crypto\\poly1305\\poly1305_ameth.o",
+                            "crypto\\poly1305\\poly1305_pmeth.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\rand" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\rand\\drbg_ctr.o",
+                            "crypto\\rand\\drbg_lib.o",
+                            "crypto\\rand\\rand_egd.o",
+                            "crypto\\rand\\rand_err.o",
+                            "crypto\\rand\\rand_lib.o",
+                            "crypto\\rand\\rand_unix.o",
+                            "crypto\\rand\\rand_vms.o",
+                            "crypto\\rand\\rand_win.o",
+                            "crypto\\rand\\randfile.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\rc2" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\rc2\\rc2_cbc.o",
+                            "crypto\\rc2\\rc2_ecb.o",
+                            "crypto\\rc2\\rc2_skey.o",
+                            "crypto\\rc2\\rc2cfb64.o",
+                            "crypto\\rc2\\rc2ofb64.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\rc4" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\rc4\\rc4-md5-x86_64.o",
+                            "crypto\\rc4\\rc4-x86_64.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\ripemd" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\ripemd\\rmd_dgst.o",
+                            "crypto\\ripemd\\rmd_one.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\rsa" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\rsa\\rsa_ameth.o",
+                            "crypto\\rsa\\rsa_asn1.o",
+                            "crypto\\rsa\\rsa_chk.o",
+                            "crypto\\rsa\\rsa_crpt.o",
+                            "crypto\\rsa\\rsa_depr.o",
+                            "crypto\\rsa\\rsa_err.o",
+                            "crypto\\rsa\\rsa_gen.o",
+                            "crypto\\rsa\\rsa_lib.o",
+                            "crypto\\rsa\\rsa_meth.o",
+                            "crypto\\rsa\\rsa_mp.o",
+                            "crypto\\rsa\\rsa_none.o",
+                            "crypto\\rsa\\rsa_oaep.o",
+                            "crypto\\rsa\\rsa_ossl.o",
+                            "crypto\\rsa\\rsa_pk1.o",
+                            "crypto\\rsa\\rsa_pmeth.o",
+                            "crypto\\rsa\\rsa_prn.o",
+                            "crypto\\rsa\\rsa_pss.o",
+                            "crypto\\rsa\\rsa_saos.o",
+                            "crypto\\rsa\\rsa_sign.o",
+                            "crypto\\rsa\\rsa_ssl.o",
+                            "crypto\\rsa\\rsa_x931.o",
+                            "crypto\\rsa\\rsa_x931g.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\seed" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\seed\\seed.o",
+                            "crypto\\seed\\seed_cbc.o",
+                            "crypto\\seed\\seed_cfb.o",
+                            "crypto\\seed\\seed_ecb.o",
+                            "crypto\\seed\\seed_ofb.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\sha" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\sha\\keccak1600-x86_64.o",
+                            "crypto\\sha\\sha1-mb-x86_64.o",
+                            "crypto\\sha\\sha1-x86_64.o",
+                            "crypto\\sha\\sha1_one.o",
+                            "crypto\\sha\\sha1dgst.o",
+                            "crypto\\sha\\sha256-mb-x86_64.o",
+                            "crypto\\sha\\sha256-x86_64.o",
+                            "crypto\\sha\\sha256.o",
+                            "crypto\\sha\\sha512-x86_64.o",
+                            "crypto\\sha\\sha512.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\siphash" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\siphash\\siphash.o",
+                            "crypto\\siphash\\siphash_ameth.o",
+                            "crypto\\siphash\\siphash_pmeth.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\sm2" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\sm2\\sm2_crypt.o",
+                            "crypto\\sm2\\sm2_err.o",
+                            "crypto\\sm2\\sm2_pmeth.o",
+                            "crypto\\sm2\\sm2_sign.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\sm3" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\sm3\\m_sm3.o",
+                            "crypto\\sm3\\sm3.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\sm4" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\sm4\\sm4.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\srp" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\srp\\srp_lib.o",
+                            "crypto\\srp\\srp_vfy.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\stack" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\stack\\stack.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\store" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\store\\loader_file.o",
+                            "crypto\\store\\store_err.o",
+                            "crypto\\store\\store_init.o",
+                            "crypto\\store\\store_lib.o",
+                            "crypto\\store\\store_register.o",
+                            "crypto\\store\\store_strings.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\ts" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\ts\\ts_asn1.o",
+                            "crypto\\ts\\ts_conf.o",
+                            "crypto\\ts\\ts_err.o",
+                            "crypto\\ts\\ts_lib.o",
+                            "crypto\\ts\\ts_req_print.o",
+                            "crypto\\ts\\ts_req_utils.o",
+                            "crypto\\ts\\ts_rsp_print.o",
+                            "crypto\\ts\\ts_rsp_sign.o",
+                            "crypto\\ts\\ts_rsp_utils.o",
+                            "crypto\\ts\\ts_rsp_verify.o",
+                            "crypto\\ts\\ts_verify_ctx.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\txt_db" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\txt_db\\txt_db.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\ui" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\ui\\ui_err.o",
+                            "crypto\\ui\\ui_lib.o",
+                            "crypto\\ui\\ui_null.o",
+                            "crypto\\ui\\ui_openssl.o",
+                            "crypto\\ui\\ui_util.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\whrlpool" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\whrlpool\\wp-x86_64.o",
+                            "crypto\\whrlpool\\wp_dgst.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\x509" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\x509\\by_dir.o",
+                            "crypto\\x509\\by_file.o",
+                            "crypto\\x509\\t_crl.o",
+                            "crypto\\x509\\t_req.o",
+                            "crypto\\x509\\t_x509.o",
+                            "crypto\\x509\\x509_att.o",
+                            "crypto\\x509\\x509_cmp.o",
+                            "crypto\\x509\\x509_d2.o",
+                            "crypto\\x509\\x509_def.o",
+                            "crypto\\x509\\x509_err.o",
+                            "crypto\\x509\\x509_ext.o",
+                            "crypto\\x509\\x509_lu.o",
+                            "crypto\\x509\\x509_meth.o",
+                            "crypto\\x509\\x509_obj.o",
+                            "crypto\\x509\\x509_r2x.o",
+                            "crypto\\x509\\x509_req.o",
+                            "crypto\\x509\\x509_set.o",
+                            "crypto\\x509\\x509_trs.o",
+                            "crypto\\x509\\x509_txt.o",
+                            "crypto\\x509\\x509_v3.o",
+                            "crypto\\x509\\x509_vfy.o",
+                            "crypto\\x509\\x509_vpm.o",
+                            "crypto\\x509\\x509cset.o",
+                            "crypto\\x509\\x509name.o",
+                            "crypto\\x509\\x509rset.o",
+                            "crypto\\x509\\x509spki.o",
+                            "crypto\\x509\\x509type.o",
+                            "crypto\\x509\\x_all.o",
+                            "crypto\\x509\\x_attrib.o",
+                            "crypto\\x509\\x_crl.o",
+                            "crypto\\x509\\x_exten.o",
+                            "crypto\\x509\\x_name.o",
+                            "crypto\\x509\\x_pubkey.o",
+                            "crypto\\x509\\x_req.o",
+                            "crypto\\x509\\x_x509.o",
+                            "crypto\\x509\\x_x509a.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "crypto\\x509v3" =>
+                {
+                    "deps" =>
+                        [
+                            "crypto\\x509v3\\pcy_cache.o",
+                            "crypto\\x509v3\\pcy_data.o",
+                            "crypto\\x509v3\\pcy_lib.o",
+                            "crypto\\x509v3\\pcy_map.o",
+                            "crypto\\x509v3\\pcy_node.o",
+                            "crypto\\x509v3\\pcy_tree.o",
+                            "crypto\\x509v3\\v3_addr.o",
+                            "crypto\\x509v3\\v3_admis.o",
+                            "crypto\\x509v3\\v3_akey.o",
+                            "crypto\\x509v3\\v3_akeya.o",
+                            "crypto\\x509v3\\v3_alt.o",
+                            "crypto\\x509v3\\v3_asid.o",
+                            "crypto\\x509v3\\v3_bcons.o",
+                            "crypto\\x509v3\\v3_bitst.o",
+                            "crypto\\x509v3\\v3_conf.o",
+                            "crypto\\x509v3\\v3_cpols.o",
+                            "crypto\\x509v3\\v3_crld.o",
+                            "crypto\\x509v3\\v3_enum.o",
+                            "crypto\\x509v3\\v3_extku.o",
+                            "crypto\\x509v3\\v3_genn.o",
+                            "crypto\\x509v3\\v3_ia5.o",
+                            "crypto\\x509v3\\v3_info.o",
+                            "crypto\\x509v3\\v3_int.o",
+                            "crypto\\x509v3\\v3_lib.o",
+                            "crypto\\x509v3\\v3_ncons.o",
+                            "crypto\\x509v3\\v3_pci.o",
+                            "crypto\\x509v3\\v3_pcia.o",
+                            "crypto\\x509v3\\v3_pcons.o",
+                            "crypto\\x509v3\\v3_pku.o",
+                            "crypto\\x509v3\\v3_pmaps.o",
+                            "crypto\\x509v3\\v3_prn.o",
+                            "crypto\\x509v3\\v3_purp.o",
+                            "crypto\\x509v3\\v3_skey.o",
+                            "crypto\\x509v3\\v3_sxnet.o",
+                            "crypto\\x509v3\\v3_tlsf.o",
+                            "crypto\\x509v3\\v3_utl.o",
+                            "crypto\\x509v3\\v3err.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "engines" =>
+                {
+                    "deps" =>
+                        [
+                            "engines\\e_capi.o",
+                            "engines\\e_padlock-x86_64.o",
+                            "engines\\e_padlock.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "fuzz" =>
+                {
+                    "products" =>
+                        {
+                            "bin" =>
+                                [
+                                    "fuzz\\asn1-test",
+                                    "fuzz\\asn1parse-test",
+                                    "fuzz\\bignum-test",
+                                    "fuzz\\bndiv-test",
+                                    "fuzz\\client-test",
+                                    "fuzz\\cms-test",
+                                    "fuzz\\conf-test",
+                                    "fuzz\\crl-test",
+                                    "fuzz\\ct-test",
+                                    "fuzz\\server-test",
+                                    "fuzz\\x509-test",
+                                ],
+                        },
+                },
+            "ms" =>
+                {
+                    "deps" =>
+                        [
+                            "ms\\applink.o",
+                            "ms\\applink.o",
+                            "ms\\uplink.o",
+                        ],
+                    "products" =>
+                        {
+                            "bin" =>
+                                [
+                                    "apps\\openssl",
+                                    "test\\uitest",
+                                ],
+                            "lib" =>
+                                [
+                                    "libcrypto",
+                                ],
+                        },
+                },
+            "ssl" =>
+                {
+                    "deps" =>
+                        [
+                            "ssl\\packet.o",
+                            "ssl\\tls13_enc.o",
+                            "ssl\\bio_ssl.o",
+                            "ssl\\d1_lib.o",
+                            "ssl\\d1_msg.o",
+                            "ssl\\d1_srtp.o",
+                            "ssl\\methods.o",
+                            "ssl\\packet.o",
+                            "ssl\\pqueue.o",
+                            "ssl\\s3_cbc.o",
+                            "ssl\\s3_enc.o",
+                            "ssl\\s3_lib.o",
+                            "ssl\\s3_msg.o",
+                            "ssl\\ssl_asn1.o",
+                            "ssl\\ssl_cert.o",
+                            "ssl\\ssl_ciph.o",
+                            "ssl\\ssl_conf.o",
+                            "ssl\\ssl_err.o",
+                            "ssl\\ssl_init.o",
+                            "ssl\\ssl_lib.o",
+                            "ssl\\ssl_mcnf.o",
+                            "ssl\\ssl_rsa.o",
+                            "ssl\\ssl_sess.o",
+                            "ssl\\ssl_stat.o",
+                            "ssl\\ssl_txt.o",
+                            "ssl\\ssl_utst.o",
+                            "ssl\\t1_enc.o",
+                            "ssl\\t1_lib.o",
+                            "ssl\\t1_trce.o",
+                            "ssl\\tls13_enc.o",
+                            "ssl\\tls_srp.o",
+                        ],
+                    "products" =>
+                        {
+                            "bin" =>
+                                [
+                                    "test\\tls13secretstest",
+                                ],
+                            "lib" =>
+                                [
+                                    "libssl",
+                                ],
+                        },
+                },
+            "ssl\\record" =>
+                {
+                    "deps" =>
+                        [
+                            "ssl\\record\\dtls1_bitmap.o",
+                            "ssl\\record\\rec_layer_d1.o",
+                            "ssl\\record\\rec_layer_s3.o",
+                            "ssl\\record\\ssl3_buffer.o",
+                            "ssl\\record\\ssl3_record.o",
+                            "ssl\\record\\ssl3_record_tls13.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libssl",
+                                ],
+                        },
+                },
+            "ssl\\statem" =>
+                {
+                    "deps" =>
+                        [
+                            "ssl\\statem\\extensions.o",
+                            "ssl\\statem\\extensions_clnt.o",
+                            "ssl\\statem\\extensions_cust.o",
+                            "ssl\\statem\\extensions_srvr.o",
+                            "ssl\\statem\\statem.o",
+                            "ssl\\statem\\statem_clnt.o",
+                            "ssl\\statem\\statem_dtls.o",
+                            "ssl\\statem\\statem_lib.o",
+                            "ssl\\statem\\statem_srvr.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "libssl",
+                                ],
+                        },
+                },
+            "test\\testutil" =>
+                {
+                    "deps" =>
+                        [
+                            "test\\testutil\\basic_output.o",
+                            "test\\testutil\\cb.o",
+                            "test\\testutil\\driver.o",
+                            "test\\testutil\\format_output.o",
+                            "test\\testutil\\init.o",
+                            "test\\testutil\\main.o",
+                            "test\\testutil\\output_helpers.o",
+                            "test\\testutil\\stanza.o",
+                            "test\\testutil\\tap_bio.o",
+                            "test\\testutil\\test_cleanup.o",
+                            "test\\testutil\\tests.o",
+                        ],
+                    "products" =>
+                        {
+                            "lib" =>
+                                [
+                                    "test\\libtestutil.a",
+                                ],
+                        },
+                },
         },
     "engines" =>
         [
@@ -6999,6 +8733,15 @@ our %unified_info = (
                     ".\\crypto\\include",
                     ".\\include",
                 ],
+            "crypto\\getenv.o" =>
+                [
+                    ".",
+                    "crypto\\include",
+                    "include",
+                    ".",
+                    ".\\crypto\\include",
+                    ".\\include",
+                ],
             "crypto\\hmac\\hm_ameth.o" =>
                 [
                     ".",
@@ -9653,12 +11396,12 @@ our %unified_info = (
                 ],
             "ms\\applink.o" =>
                 [
-                    "apps",
                     ".",
                     "include",
-                    ".\\apps",
+                    "apps",
                     ".",
                     ".\\include",
+                    ".\\apps",
                 ],
             "ms\\uplink.o" =>
                 [
@@ -9996,6 +11739,15 @@ our %unified_info = (
                 [
                     "include",
                     ".\\include",
+                ],
+            "test\\asn1_internal_test.o" =>
+                [
+                    ".",
+                    "include",
+                    "crypto\\include",
+                    ".",
+                    ".\\include",
+                    ".\\crypto\\include",
                 ],
             "test\\asn1_string_table_test.o" =>
                 [
@@ -10397,6 +12149,15 @@ our %unified_info = (
                     "include",
                     ".\\include",
                 ],
+            "test\\chacha_internal_test.o" =>
+                [
+                    ".",
+                    "include",
+                    "crypto\\include",
+                    ".",
+                    ".\\include",
+                    ".\\crypto\\include",
+                ],
             "test\\cipherbytes_test.o" =>
                 [
                     "include",
@@ -10441,6 +12202,24 @@ our %unified_info = (
                 [
                     "include",
                     ".\\include",
+                ],
+            "test\\ctype_internal_test.o" =>
+                [
+                    ".",
+                    "crypto\\include",
+                    "include",
+                    ".",
+                    ".\\crypto\\include",
+                    ".\\include",
+                ],
+            "test\\curve448_internal_test.o" =>
+                [
+                    ".",
+                    "include",
+                    "crypto\\ec\\curve448",
+                    ".",
+                    ".\\include",
+                    ".\\crypto\\ec\\curve448",
                 ],
             "test\\d2i_test.o" =>
                 [
@@ -10625,6 +12404,13 @@ our %unified_info = (
                     "include",
                     ".\\include",
                 ],
+            "test\\modes_internal_test.o" =>
+                [
+                    ".",
+                    "include",
+                    ".",
+                    ".\\include",
+                ],
             "test\\ocspapitest.o" =>
                 [
                     "include",
@@ -10655,6 +12441,15 @@ our %unified_info = (
                     "include",
                     ".\\include",
                 ],
+            "test\\poly1305_internal_test.o" =>
+                [
+                    ".",
+                    "include",
+                    "crypto\\include",
+                    ".",
+                    ".\\include",
+                    ".\\crypto\\include",
+                ],
             "test\\rc2test.o" =>
                 [
                     "include",
@@ -10670,7 +12465,17 @@ our %unified_info = (
                     "include",
                     ".\\include",
                 ],
+            "test\\rdrand_sanitytest.o" =>
+                [
+                    "include",
+                    ".\\include",
+                ],
             "test\\recordlentest.o" =>
+                [
+                    "include",
+                    ".\\include",
+                ],
+            "test\\rsa_complex.o" =>
                 [
                     "include",
                     ".\\include",
@@ -10704,6 +12509,31 @@ our %unified_info = (
                 [
                     "include",
                     "crypto\\include",
+                    ".\\include",
+                    ".\\crypto\\include",
+                ],
+            "test\\siphash_internal_test.o" =>
+                [
+                    ".",
+                    "include",
+                    "crypto\\include",
+                    ".",
+                    ".\\include",
+                    ".\\crypto\\include",
+                ],
+            "test\\sm2_internal_test.o" =>
+                [
+                    "include",
+                    "crypto\\include",
+                    ".\\include",
+                    ".\\crypto\\include",
+                ],
+            "test\\sm4_internal_test.o" =>
+                [
+                    ".",
+                    "include",
+                    "crypto\\include",
+                    ".",
                     ".\\include",
                     ".\\crypto\\include",
                 ],
@@ -10850,6 +12680,13 @@ our %unified_info = (
                     "include",
                     ".\\include",
                 ],
+            "test\\tls13encryptiontest.o" =>
+                [
+                    ".",
+                    "include",
+                    ".",
+                    ".\\include",
+                ],
             "test\\tls13secretstest.o" =>
                 [
                     ".",
@@ -10886,6 +12723,11 @@ our %unified_info = (
                     "include",
                     ".\\include",
                 ],
+            "test\\wpackettest.o" =>
+                [
+                    "include",
+                    ".\\include",
+                ],
             "test\\x509_check_cert_pkey_test.o" =>
                 [
                     "include",
@@ -10894,6 +12736,13 @@ our %unified_info = (
             "test\\x509_dup_cert_test.o" =>
                 [
                     "include",
+                    ".\\include",
+                ],
+            "test\\x509_internal_test.o" =>
+                [
+                    ".",
+                    "include",
+                    ".",
                     ".\\include",
                 ],
             "test\\x509_time_test.o" =>
@@ -10956,6 +12805,7 @@ our %unified_info = (
             "test\\afalgtest",
             "test\\asn1_decode_test",
             "test\\asn1_encode_test",
+            "test\\asn1_internal_test",
             "test\\asn1_string_table_test",
             "test\\asn1_time_test",
             "test\\asynciotest",
@@ -11036,6 +12886,7 @@ our %unified_info = (
             "test\\buildtest_x509_vfy",
             "test\\buildtest_x509v3",
             "test\\casttest",
+            "test\\chacha_internal_test",
             "test\\cipherbytes_test",
             "test\\cipherlist_test",
             "test\\ciphername_test",
@@ -11045,6 +12896,8 @@ our %unified_info = (
             "test\\constant_time_test",
             "test\\crltest",
             "test\\ct_test",
+            "test\\ctype_internal_test",
+            "test\\curve448_internal_test",
             "test\\d2i_test",
             "test\\danetest",
             "test\\destest",
@@ -11076,22 +12929,29 @@ our %unified_info = (
             "test\\mdc2_internal_test",
             "test\\mdc2test",
             "test\\memleaktest",
+            "test\\modes_internal_test",
             "test\\ocspapitest",
             "test\\packettest",
             "test\\pbelutest",
             "test\\pemtest",
             "test\\pkey_meth_kdf_test",
             "test\\pkey_meth_test",
+            "test\\poly1305_internal_test",
             "test\\rc2test",
             "test\\rc4test",
             "test\\rc5test",
+            "test\\rdrand_sanitytest",
             "test\\recordlentest",
+            "test\\rsa_complex",
             "test\\rsa_mp_test",
             "test\\rsa_test",
             "test\\sanitytest",
             "test\\secmemtest",
             "test\\servername_test",
             "test\\shlibloadtest",
+            "test\\siphash_internal_test",
+            "test\\sm2_internal_test",
+            "test\\sm4_internal_test",
             "test\\srptest",
             "test\\ssl_cert_table_internal_test",
             "test\\ssl_test",
@@ -11106,14 +12966,17 @@ our %unified_info = (
             "test\\threadstest",
             "test\\time_offset_test",
             "test\\tls13ccstest",
+            "test\\tls13encryptiontest",
             "test\\tls13secretstest",
             "test\\uitest",
             "test\\v3ext",
             "test\\v3nametest",
             "test\\verify_extra_test",
             "test\\versions",
+            "test\\wpackettest",
             "test\\x509_check_cert_pkey_test",
             "test\\x509_dup_cert_test",
+            "test\\x509_internal_test",
             "test\\x509_time_test",
             "test\\x509aux",
         ],
@@ -11131,45 +12994,6 @@ our %unified_info = (
         ],
     "shared_sources" =>
         {
-            "apps\\libapps.a" =>
-                [
-                ],
-            "apps\\openssl" =>
-                [
-                ],
-            "fuzz\\asn1-test" =>
-                [
-                ],
-            "fuzz\\asn1parse-test" =>
-                [
-                ],
-            "fuzz\\bignum-test" =>
-                [
-                ],
-            "fuzz\\bndiv-test" =>
-                [
-                ],
-            "fuzz\\client-test" =>
-                [
-                ],
-            "fuzz\\cms-test" =>
-                [
-                ],
-            "fuzz\\conf-test" =>
-                [
-                ],
-            "fuzz\\crl-test" =>
-                [
-                ],
-            "fuzz\\ct-test" =>
-                [
-                ],
-            "fuzz\\server-test" =>
-                [
-                ],
-            "fuzz\\x509-test" =>
-                [
-                ],
             "libcrypto" =>
                 [
                     "crypto\\dllmain.o",
@@ -11180,501 +13004,6 @@ our %unified_info = (
                 [
                     "libssl.def",
                     "libssl.res",
-                ],
-            "test\\aborttest" =>
-                [
-                ],
-            "test\\afalgtest" =>
-                [
-                ],
-            "test\\asn1_decode_test" =>
-                [
-                ],
-            "test\\asn1_encode_test" =>
-                [
-                ],
-            "test\\asn1_string_table_test" =>
-                [
-                ],
-            "test\\asn1_time_test" =>
-                [
-                ],
-            "test\\asynciotest" =>
-                [
-                ],
-            "test\\asynctest" =>
-                [
-                ],
-            "test\\bad_dtls_test" =>
-                [
-                ],
-            "test\\bftest" =>
-                [
-                ],
-            "test\\bio_callback_test" =>
-                [
-                ],
-            "test\\bio_enc_test" =>
-                [
-                ],
-            "test\\bioprinttest" =>
-                [
-                ],
-            "test\\bntest" =>
-                [
-                ],
-            "test\\buildtest_aes" =>
-                [
-                ],
-            "test\\buildtest_asn1" =>
-                [
-                ],
-            "test\\buildtest_asn1t" =>
-                [
-                ],
-            "test\\buildtest_async" =>
-                [
-                ],
-            "test\\buildtest_bio" =>
-                [
-                ],
-            "test\\buildtest_blowfish" =>
-                [
-                ],
-            "test\\buildtest_bn" =>
-                [
-                ],
-            "test\\buildtest_buffer" =>
-                [
-                ],
-            "test\\buildtest_camellia" =>
-                [
-                ],
-            "test\\buildtest_cast" =>
-                [
-                ],
-            "test\\buildtest_cmac" =>
-                [
-                ],
-            "test\\buildtest_cms" =>
-                [
-                ],
-            "test\\buildtest_comp" =>
-                [
-                ],
-            "test\\buildtest_conf" =>
-                [
-                ],
-            "test\\buildtest_conf_api" =>
-                [
-                ],
-            "test\\buildtest_crypto" =>
-                [
-                ],
-            "test\\buildtest_ct" =>
-                [
-                ],
-            "test\\buildtest_des" =>
-                [
-                ],
-            "test\\buildtest_dh" =>
-                [
-                ],
-            "test\\buildtest_dsa" =>
-                [
-                ],
-            "test\\buildtest_dtls1" =>
-                [
-                ],
-            "test\\buildtest_e_os2" =>
-                [
-                ],
-            "test\\buildtest_ebcdic" =>
-                [
-                ],
-            "test\\buildtest_ec" =>
-                [
-                ],
-            "test\\buildtest_ecdh" =>
-                [
-                ],
-            "test\\buildtest_ecdsa" =>
-                [
-                ],
-            "test\\buildtest_engine" =>
-                [
-                ],
-            "test\\buildtest_evp" =>
-                [
-                ],
-            "test\\buildtest_hmac" =>
-                [
-                ],
-            "test\\buildtest_idea" =>
-                [
-                ],
-            "test\\buildtest_kdf" =>
-                [
-                ],
-            "test\\buildtest_lhash" =>
-                [
-                ],
-            "test\\buildtest_md4" =>
-                [
-                ],
-            "test\\buildtest_md5" =>
-                [
-                ],
-            "test\\buildtest_mdc2" =>
-                [
-                ],
-            "test\\buildtest_modes" =>
-                [
-                ],
-            "test\\buildtest_obj_mac" =>
-                [
-                ],
-            "test\\buildtest_objects" =>
-                [
-                ],
-            "test\\buildtest_ocsp" =>
-                [
-                ],
-            "test\\buildtest_opensslv" =>
-                [
-                ],
-            "test\\buildtest_ossl_typ" =>
-                [
-                ],
-            "test\\buildtest_pem" =>
-                [
-                ],
-            "test\\buildtest_pem2" =>
-                [
-                ],
-            "test\\buildtest_pkcs12" =>
-                [
-                ],
-            "test\\buildtest_pkcs7" =>
-                [
-                ],
-            "test\\buildtest_rand" =>
-                [
-                ],
-            "test\\buildtest_rand_drbg" =>
-                [
-                ],
-            "test\\buildtest_rc2" =>
-                [
-                ],
-            "test\\buildtest_rc4" =>
-                [
-                ],
-            "test\\buildtest_ripemd" =>
-                [
-                ],
-            "test\\buildtest_rsa" =>
-                [
-                ],
-            "test\\buildtest_safestack" =>
-                [
-                ],
-            "test\\buildtest_seed" =>
-                [
-                ],
-            "test\\buildtest_sha" =>
-                [
-                ],
-            "test\\buildtest_srp" =>
-                [
-                ],
-            "test\\buildtest_srtp" =>
-                [
-                ],
-            "test\\buildtest_ssl" =>
-                [
-                ],
-            "test\\buildtest_ssl2" =>
-                [
-                ],
-            "test\\buildtest_stack" =>
-                [
-                ],
-            "test\\buildtest_store" =>
-                [
-                ],
-            "test\\buildtest_symhacks" =>
-                [
-                ],
-            "test\\buildtest_tls1" =>
-                [
-                ],
-            "test\\buildtest_ts" =>
-                [
-                ],
-            "test\\buildtest_txt_db" =>
-                [
-                ],
-            "test\\buildtest_ui" =>
-                [
-                ],
-            "test\\buildtest_whrlpool" =>
-                [
-                ],
-            "test\\buildtest_x509" =>
-                [
-                ],
-            "test\\buildtest_x509_vfy" =>
-                [
-                ],
-            "test\\buildtest_x509v3" =>
-                [
-                ],
-            "test\\casttest" =>
-                [
-                ],
-            "test\\cipherbytes_test" =>
-                [
-                ],
-            "test\\cipherlist_test" =>
-                [
-                ],
-            "test\\ciphername_test" =>
-                [
-                ],
-            "test\\clienthellotest" =>
-                [
-                ],
-            "test\\cmsapitest" =>
-                [
-                ],
-            "test\\conf_include_test" =>
-                [
-                ],
-            "test\\constant_time_test" =>
-                [
-                ],
-            "test\\crltest" =>
-                [
-                ],
-            "test\\ct_test" =>
-                [
-                ],
-            "test\\d2i_test" =>
-                [
-                ],
-            "test\\danetest" =>
-                [
-                ],
-            "test\\destest" =>
-                [
-                ],
-            "test\\dhtest" =>
-                [
-                ],
-            "test\\drbg_cavs_test" =>
-                [
-                ],
-            "test\\drbgtest" =>
-                [
-                ],
-            "test\\dsa_no_digest_size_test" =>
-                [
-                ],
-            "test\\dsatest" =>
-                [
-                ],
-            "test\\dtls_mtu_test" =>
-                [
-                ],
-            "test\\dtlstest" =>
-                [
-                ],
-            "test\\dtlsv1listentest" =>
-                [
-                ],
-            "test\\ecdsatest" =>
-                [
-                ],
-            "test\\ecstresstest" =>
-                [
-                ],
-            "test\\ectest" =>
-                [
-                ],
-            "test\\enginetest" =>
-                [
-                ],
-            "test\\errtest" =>
-                [
-                ],
-            "test\\evp_extra_test" =>
-                [
-                ],
-            "test\\evp_test" =>
-                [
-                ],
-            "test\\exdatatest" =>
-                [
-                ],
-            "test\\exptest" =>
-                [
-                ],
-            "test\\fatalerrtest" =>
-                [
-                ],
-            "test\\gmdifftest" =>
-                [
-                ],
-            "test\\gosttest" =>
-                [
-                ],
-            "test\\hmactest" =>
-                [
-                ],
-            "test\\ideatest" =>
-                [
-                ],
-            "test\\igetest" =>
-                [
-                ],
-            "test\\lhash_test" =>
-                [
-                ],
-            "test\\libtestutil.a" =>
-                [
-                ],
-            "test\\md2test" =>
-                [
-                ],
-            "test\\mdc2_internal_test" =>
-                [
-                ],
-            "test\\mdc2test" =>
-                [
-                ],
-            "test\\memleaktest" =>
-                [
-                ],
-            "test\\ocspapitest" =>
-                [
-                ],
-            "test\\packettest" =>
-                [
-                ],
-            "test\\pbelutest" =>
-                [
-                ],
-            "test\\pemtest" =>
-                [
-                ],
-            "test\\pkey_meth_kdf_test" =>
-                [
-                ],
-            "test\\pkey_meth_test" =>
-                [
-                ],
-            "test\\rc2test" =>
-                [
-                ],
-            "test\\rc4test" =>
-                [
-                ],
-            "test\\rc5test" =>
-                [
-                ],
-            "test\\recordlentest" =>
-                [
-                ],
-            "test\\rsa_mp_test" =>
-                [
-                ],
-            "test\\rsa_test" =>
-                [
-                ],
-            "test\\sanitytest" =>
-                [
-                ],
-            "test\\secmemtest" =>
-                [
-                ],
-            "test\\servername_test" =>
-                [
-                ],
-            "test\\shlibloadtest" =>
-                [
-                ],
-            "test\\srptest" =>
-                [
-                ],
-            "test\\ssl_cert_table_internal_test" =>
-                [
-                ],
-            "test\\ssl_test" =>
-                [
-                ],
-            "test\\ssl_test_ctx_test" =>
-                [
-                ],
-            "test\\sslapitest" =>
-                [
-                ],
-            "test\\sslbuffertest" =>
-                [
-                ],
-            "test\\sslcorrupttest" =>
-                [
-                ],
-            "test\\ssltest_old" =>
-                [
-                ],
-            "test\\stack_test" =>
-                [
-                ],
-            "test\\sysdefaulttest" =>
-                [
-                ],
-            "test\\test_test" =>
-                [
-                ],
-            "test\\threadstest" =>
-                [
-                ],
-            "test\\time_offset_test" =>
-                [
-                ],
-            "test\\tls13ccstest" =>
-                [
-                ],
-            "test\\tls13secretstest" =>
-                [
-                ],
-            "test\\uitest" =>
-                [
-                ],
-            "test\\v3ext" =>
-                [
-                ],
-            "test\\v3nametest" =>
-                [
-                ],
-            "test\\verify_extra_test" =>
-                [
-                ],
-            "test\\versions" =>
-                [
-                ],
-            "test\\x509_check_cert_pkey_test" =>
-                [
-                ],
-            "test\\x509_dup_cert_test" =>
-                [
-                ],
-            "test\\x509_time_test" =>
-                [
-                ],
-            "test\\x509aux" =>
-                [
                 ],
         },
     "sharednames" =>
@@ -13538,6 +14867,10 @@ our %unified_info = (
                 [
                     ".\\crypto\\ex_data.c",
                 ],
+            "crypto\\getenv.o" =>
+                [
+                    ".\\crypto\\getenv.c",
+                ],
             "crypto\\hmac\\hm_ameth.o" =>
                 [
                     ".\\crypto\\hmac\\hm_ameth.c",
@@ -15121,6 +16454,7 @@ our %unified_info = (
                     "crypto\\evp\\pmeth_gn.o",
                     "crypto\\evp\\pmeth_lib.o",
                     "crypto\\ex_data.o",
+                    "crypto\\getenv.o",
                     "crypto\\hmac\\hm_ameth.o",
                     "crypto\\hmac\\hm_pmeth.o",
                     "crypto\\hmac\\hmac.o",
@@ -15665,6 +16999,14 @@ our %unified_info = (
             "test\\asn1_encode_test.o" =>
                 [
                     ".\\test\\asn1_encode_test.c",
+                ],
+            "test\\asn1_internal_test" =>
+                [
+                    "test\\asn1_internal_test.o",
+                ],
+            "test\\asn1_internal_test.o" =>
+                [
+                    ".\\test\\asn1_internal_test.c",
                 ],
             "test\\asn1_string_table_test" =>
                 [
@@ -16307,6 +17649,14 @@ our %unified_info = (
                 [
                     ".\\test\\casttest.c",
                 ],
+            "test\\chacha_internal_test" =>
+                [
+                    "test\\chacha_internal_test.o",
+                ],
+            "test\\chacha_internal_test.o" =>
+                [
+                    ".\\test\\chacha_internal_test.c",
+                ],
             "test\\cipherbytes_test" =>
                 [
                     "test\\cipherbytes_test.o",
@@ -16378,6 +17728,22 @@ our %unified_info = (
             "test\\ct_test.o" =>
                 [
                     ".\\test\\ct_test.c",
+                ],
+            "test\\ctype_internal_test" =>
+                [
+                    "test\\ctype_internal_test.o",
+                ],
+            "test\\ctype_internal_test.o" =>
+                [
+                    ".\\test\\ctype_internal_test.c",
+                ],
+            "test\\curve448_internal_test" =>
+                [
+                    "test\\curve448_internal_test.o",
+                ],
+            "test\\curve448_internal_test.o" =>
+                [
+                    ".\\test\\curve448_internal_test.c",
                 ],
             "test\\d2i_test" =>
                 [
@@ -16654,6 +18020,14 @@ our %unified_info = (
                 [
                     ".\\test\\memleaktest.c",
                 ],
+            "test\\modes_internal_test" =>
+                [
+                    "test\\modes_internal_test.o",
+                ],
+            "test\\modes_internal_test.o" =>
+                [
+                    ".\\test\\modes_internal_test.c",
+                ],
             "test\\ocspapitest" =>
                 [
                     "test\\ocspapitest.o",
@@ -16702,6 +18076,14 @@ our %unified_info = (
                 [
                     ".\\test\\pkey_meth_test.c",
                 ],
+            "test\\poly1305_internal_test" =>
+                [
+                    "test\\poly1305_internal_test.o",
+                ],
+            "test\\poly1305_internal_test.o" =>
+                [
+                    ".\\test\\poly1305_internal_test.c",
+                ],
             "test\\rc2test" =>
                 [
                     "test\\rc2test.o",
@@ -16726,6 +18108,14 @@ our %unified_info = (
                 [
                     ".\\test\\rc5test.c",
                 ],
+            "test\\rdrand_sanitytest" =>
+                [
+                    "test\\rdrand_sanitytest.o",
+                ],
+            "test\\rdrand_sanitytest.o" =>
+                [
+                    ".\\test\\rdrand_sanitytest.c",
+                ],
             "test\\recordlentest" =>
                 [
                     "test\\recordlentest.o",
@@ -16734,6 +18124,14 @@ our %unified_info = (
             "test\\recordlentest.o" =>
                 [
                     ".\\test\\recordlentest.c",
+                ],
+            "test\\rsa_complex" =>
+                [
+                    "test\\rsa_complex.o",
+                ],
+            "test\\rsa_complex.o" =>
+                [
+                    ".\\test\\rsa_complex.c",
                 ],
             "test\\rsa_mp_test" =>
                 [
@@ -16783,6 +18181,30 @@ our %unified_info = (
             "test\\shlibloadtest.o" =>
                 [
                     ".\\test\\shlibloadtest.c",
+                ],
+            "test\\siphash_internal_test" =>
+                [
+                    "test\\siphash_internal_test.o",
+                ],
+            "test\\siphash_internal_test.o" =>
+                [
+                    ".\\test\\siphash_internal_test.c",
+                ],
+            "test\\sm2_internal_test" =>
+                [
+                    "test\\sm2_internal_test.o",
+                ],
+            "test\\sm2_internal_test.o" =>
+                [
+                    ".\\test\\sm2_internal_test.c",
+                ],
+            "test\\sm4_internal_test" =>
+                [
+                    "test\\sm4_internal_test.o",
+                ],
+            "test\\sm4_internal_test.o" =>
+                [
+                    ".\\test\\sm4_internal_test.c",
                 ],
             "test\\srptest" =>
                 [
@@ -16955,6 +18377,14 @@ our %unified_info = (
                 [
                     ".\\test\\tls13ccstest.c",
                 ],
+            "test\\tls13encryptiontest" =>
+                [
+                    "test\\tls13encryptiontest.o",
+                ],
+            "test\\tls13encryptiontest.o" =>
+                [
+                    ".\\test\\tls13encryptiontest.c",
+                ],
             "test\\tls13secretstest" =>
                 [
                     "ssl\\packet.o",
@@ -17006,6 +18436,14 @@ our %unified_info = (
                 [
                     ".\\test\\versions.c",
                 ],
+            "test\\wpackettest" =>
+                [
+                    "test\\wpackettest.o",
+                ],
+            "test\\wpackettest.o" =>
+                [
+                    ".\\test\\wpackettest.c",
+                ],
             "test\\x509_check_cert_pkey_test" =>
                 [
                     "test\\x509_check_cert_pkey_test.o",
@@ -17021,6 +18459,14 @@ our %unified_info = (
             "test\\x509_dup_cert_test.o" =>
                 [
                     ".\\test\\x509_dup_cert_test.c",
+                ],
+            "test\\x509_internal_test" =>
+                [
+                    "test\\x509_internal_test.o",
+                ],
+            "test\\x509_internal_test.o" =>
+                [
+                    ".\\test\\x509_internal_test.c",
                 ],
             "test\\x509_time_test" =>
                 [
