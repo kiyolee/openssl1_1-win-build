@@ -106,7 +106,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\ms\applink.c" />
     <ClCompile Include="..\..\..\test\fatalerrtest.c" />
     <ClCompile Include="..\..\..\test\ssltestlib.c" />
   </ItemGroup>

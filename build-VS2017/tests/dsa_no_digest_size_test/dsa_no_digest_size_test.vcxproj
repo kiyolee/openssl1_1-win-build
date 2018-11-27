@@ -106,7 +106,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\ms\applink.c" />
     <ClCompile Include="..\..\..\test\dsa_no_digest_size_test.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
