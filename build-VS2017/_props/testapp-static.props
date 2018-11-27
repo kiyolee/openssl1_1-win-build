@@ -17,6 +17,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>setargv.obj;ws2_32.lib;crypt32.lib;$(OutDir)libcrypto-1_1-static.lib;$(OutDir)libssl-1_1-static.lib;$(OutDir)libtestutil-static.lib;$(ZLIB_LIB_DIR)libz-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -35,6 +36,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>setargv.obj;ws2_32.lib;crypt32.lib;$(OutDir)libcrypto-1_1-static.lib;$(OutDir)libssl-1_1-static.lib;$(OutDir)libtestutil-static.lib;$(ZLIB_LIB_DIR)libz-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -48,6 +50,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>setargv.obj;ws2_32.lib;crypt32.lib;$(OutDir)libcrypto-1_1-static.lib;$(OutDir)libssl-1_1-static.lib;$(OutDir)libtestutil-static.lib;$(ZLIB_LIB_DIR)libz-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -66,6 +69,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>setargv.obj;ws2_32.lib;crypt32.lib;$(OutDir)libcrypto-1_1-static.lib;$(OutDir)libssl-1_1-static.lib;$(OutDir)libtestutil-static.lib;$(ZLIB_LIB_DIR)libz-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup />
