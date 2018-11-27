@@ -18,5 +18,8 @@
     <ClCompile Include="..\..\..\test\drbg_cavs_test.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\test\drbg_cavs_data.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

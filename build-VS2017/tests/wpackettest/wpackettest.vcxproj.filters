@@ -18,5 +18,8 @@
     <ClCompile Include="..\..\..\test\wpackettest.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\ssl\packet.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
