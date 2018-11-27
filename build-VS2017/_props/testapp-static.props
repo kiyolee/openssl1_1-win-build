@@ -8,7 +8,7 @@
   <PropertyGroup />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(OutDir)include;$(OutDir)_work;..\..;..\..\..;$(ZLIB_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;..\..\..;..\..\..\include;$(ZLIB_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>ZLIB;OPENSSL_THREADS;DSO_WIN32;OPENSSL_SYSNAME_WIN32;WIN32_LEAN_AND_MEAN;L_ENDIAN;_CRT_SECURE_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;OPENSSL_BN_ASM_PART_WORDS;OPENSSL_IA32_SSE2;OPENSSL_BN_ASM_MONT;OPENSSL_BN_ASM_GF2m;RC4_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;MD5_ASM;RMD160_ASM;AES_ASM;VPAES_ASM;WHIRLPOOL_ASM;GHASH_ASM;OPENSSL_USE_APPLINK;OPENSSL_NO_RC5;OPENSSL_NO_MD2;OPENSSL_NO_SSL2;OPENSSL_NO_KRB5;OPENSSL_NO_JPAKE;OPENSSL_NO_WEAK_SSL_CIPHERS;OPENSSL_NO_DYNAMIC_ENGINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <WarningLevel>Level3</WarningLevel>
       <StringPooling>true</StringPooling>
@@ -16,12 +16,12 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>setargv.obj;ws2_32.lib;crypt32.lib;$(OutDir)libcrypto-1_1-static.lib;$(OutDir)libssl-1_1-static.lib;$(ZLIB_LIB_DIR)libz-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>setargv.obj;ws2_32.lib;crypt32.lib;$(OutDir)libcrypto-1_1-static.lib;$(OutDir)libssl-1_1-static.lib;$(OutDir)libtestutil-static.lib;$(ZLIB_LIB_DIR)libz-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(OutDir)include;$(OutDir)_work;..\..;..\..\..;$(ZLIB_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;..\..\..;..\..\..\include;$(ZLIB_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>ZLIB;OPENSSL_THREADS;DSO_WIN32;OPENSSL_SYSNAME_WIN32;WIN32_LEAN_AND_MEAN;L_ENDIAN;_CRT_SECURE_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;OPENSSL_BN_ASM_PART_WORDS;OPENSSL_IA32_SSE2;OPENSSL_BN_ASM_MONT;OPENSSL_BN_ASM_GF2m;RC4_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;MD5_ASM;RMD160_ASM;AES_ASM;VPAES_ASM;WHIRLPOOL_ASM;GHASH_ASM;OPENSSL_USE_APPLINK;OPENSSL_NO_RC5;OPENSSL_NO_MD2;OPENSSL_NO_SSL2;OPENSSL_NO_KRB5;OPENSSL_NO_JPAKE;OPENSSL_NO_WEAK_SSL_CIPHERS;OPENSSL_NO_DYNAMIC_ENGINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Full</Optimization>
@@ -34,12 +34,12 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>setargv.obj;ws2_32.lib;crypt32.lib;$(OutDir)libcrypto-1_1-static.lib;$(OutDir)libssl-1_1-static.lib;$(ZLIB_LIB_DIR)libz-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>setargv.obj;ws2_32.lib;crypt32.lib;$(OutDir)libcrypto-1_1-static.lib;$(OutDir)libssl-1_1-static.lib;$(OutDir)libtestutil-static.lib;$(ZLIB_LIB_DIR)libz-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(OutDir)include;$(OutDir)_work;..\..;..\..\..;$(ZLIB_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;..\..\..;..\..\..\include;$(ZLIB_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>ZLIB;OPENSSL_THREADS;DSO_WIN32;OPENSSL_SYSNAME_WIN32;WIN32_LEAN_AND_MEAN;L_ENDIAN;UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;OPENSSL_IA32_SSE2;OPENSSL_BN_ASM_MONT;OPENSSL_BN_ASM_MONT5;OPENSSL_BN_ASM_GF2m;RC4_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;MD5_ASM;AES_ASM;VPAES_ASM;BSAES_ASM;WHIRLPOOL_ASM;GHASH_ASM;ECP_NISTZ256_ASM;OPENSSL_USE_APPLINK;OPENSSL_NO_RC5;OPENSSL_NO_MD2;OPENSSL_NO_SSL2;OPENSSL_NO_KRB5;OPENSSL_NO_JPAKE;OPENSSL_NO_WEAK_SSL_CIPHERS;OPENSSL_NO_DYNAMIC_ENGINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <WarningLevel>Level3</WarningLevel>
       <StringPooling>true</StringPooling>
@@ -47,12 +47,12 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>setargv.obj;ws2_32.lib;crypt32.lib;$(OutDir)libcrypto-1_1-static.lib;$(OutDir)libssl-1_1-static.lib;$(ZLIB_LIB_DIR)libz-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>setargv.obj;ws2_32.lib;crypt32.lib;$(OutDir)libcrypto-1_1-static.lib;$(OutDir)libssl-1_1-static.lib;$(OutDir)libtestutil-static.lib;$(ZLIB_LIB_DIR)libz-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(OutDir)include;$(OutDir)_work;..\..;..\..\..;$(ZLIB_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;..\..\..;..\..\..\include;$(ZLIB_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>ZLIB;OPENSSL_THREADS;DSO_WIN32;OPENSSL_SYSNAME_WIN32;WIN32_LEAN_AND_MEAN;L_ENDIAN;UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;OPENSSL_IA32_SSE2;OPENSSL_BN_ASM_MONT;OPENSSL_BN_ASM_MONT5;OPENSSL_BN_ASM_GF2m;RC4_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;MD5_ASM;AES_ASM;VPAES_ASM;BSAES_ASM;WHIRLPOOL_ASM;GHASH_ASM;ECP_NISTZ256_ASM;OPENSSL_USE_APPLINK;OPENSSL_NO_RC5;OPENSSL_NO_MD2;OPENSSL_NO_SSL2;OPENSSL_NO_KRB5;OPENSSL_NO_JPAKE;OPENSSL_NO_WEAK_SSL_CIPHERS;OPENSSL_NO_DYNAMIC_ENGINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Full</Optimization>
@@ -65,7 +65,7 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>setargv.obj;ws2_32.lib;crypt32.lib;$(OutDir)libcrypto-1_1-static.lib;$(OutDir)libssl-1_1-static.lib;$(ZLIB_LIB_DIR)libz-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>setargv.obj;ws2_32.lib;crypt32.lib;$(OutDir)libcrypto-1_1-static.lib;$(OutDir)libssl-1_1-static.lib;$(OutDir)libtestutil-static.lib;$(ZLIB_LIB_DIR)libz-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup />
