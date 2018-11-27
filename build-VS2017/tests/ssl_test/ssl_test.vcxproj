@@ -106,7 +106,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\test\handshake_helper.c" />
     <ClCompile Include="..\..\..\test\ssl_test.c" />
+    <ClCompile Include="..\..\..\test\ssl_test_ctx.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -18,5 +18,8 @@
     <ClCompile Include="..\..\..\test\recordlentest.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\test\ssltestlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
