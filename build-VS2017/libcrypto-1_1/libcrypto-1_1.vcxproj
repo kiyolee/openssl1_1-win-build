@@ -1495,11 +1495,13 @@ $(PERL) %(FullPath) masm $(OutDir)_work\%(Filename).asm &amp;&amp; ml64  /c /Cp 
     <CustomBuild Include="..\..\ms\uplink-x86_64.pl">
       <FileType>Document</FileType>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)_work 2&gt;nul
-$(PERL) %(FullPath) nasm &gt; $(OutDir)_work\uptable.asm &amp;&amp; $(NASM) -f win64 -o $(IntDir)uptable.obj $(OutDir)_work\uptable.asm</Command>
+set ASM=ml64
+$(PERL) %(FullPath) masm $(OutDir)_work\%(Filename).asm &amp;&amp; ml64  /c /Cp /Cx /nologo /Zi /Fo$(IntDir)%(Filename).obj $(OutDir)_work\%(Filename).asm</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)_work 2&gt;nul
-$(PERL) %(FullPath) nasm &gt; $(OutDir)_work\uptable.asm &amp;&amp; $(NASM) -f win64 -o $(IntDir)uptable.obj $(OutDir)_work\uptable.asm</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)_work\uptable.asm;$(IntDir)uptable.obj</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)_work\uptable.asm;$(IntDir)uptable.obj</Outputs>
+set ASM=ml64
+$(PERL) %(FullPath) masm $(OutDir)_work\%(Filename).asm &amp;&amp; ml64  /c /Cp /Cx /nologo /Zi /Fo$(IntDir)%(Filename).obj $(OutDir)_work\%(Filename).asm</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)_work\%(Filename).asm;$(IntDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)_work\%(Filename).asm;$(IntDir)%(Filename).obj</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </CustomBuild>
