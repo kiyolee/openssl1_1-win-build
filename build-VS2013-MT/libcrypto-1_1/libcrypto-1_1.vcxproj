@@ -328,7 +328,12 @@
     <ClCompile Include="..\..\crypto\ct\ct_sct_ctx.c" />
     <ClCompile Include="..\..\crypto\ct\ct_vfy.c" />
     <ClCompile Include="..\..\crypto\ct\ct_x509v3.c" />
-    <ClCompile Include="..\..\crypto\cversion.c" />
+    <ClCompile Include="..\..\crypto\cversion.c">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">KL_OSSL11_USE_LIBCMT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">KL_OSSL11_USE_LIBCMT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">KL_OSSL11_USE_LIBCMT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">KL_OSSL11_USE_LIBCMT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
     <ClCompile Include="..\..\crypto\des\cbc_cksm.c" />
     <ClCompile Include="..\..\crypto\des\cbc_enc.c" />
     <ClCompile Include="..\..\crypto\des\cfb64ede.c" />
