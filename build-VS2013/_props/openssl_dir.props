@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Condition="'$(Platform)'=='Win32'" Label="UserMacros">
+    <OPENSSLDIR>C:\Program Files (x86)\Common Files\SSL\</OPENSSLDIR>
+    <OPENSSLDIR_CSTR>C:\\Program Files (x86)\\Common Files\\SSL</OPENSSLDIR_CSTR>
+    <ENGINESDIR>C:\Program Files (x86)\OpenSSL-1_1\lib\engines-1_1\</ENGINESDIR>
+    <ENGINESDIR_CSTR>C:\\Program Files (x86)\\OpenSSL-1_1\\lib\\engines-1_1</ENGINESDIR_CSTR>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)'=='x64'" Label="UserMacros">
+    <OPENSSLDIR>C:\Program Files\Common Files\SSL\</OPENSSLDIR>
+    <OPENSSLDIR_CSTR>C:\\Program Files\\Common Files\\SSL</OPENSSLDIR_CSTR>
+    <ENGINESDIR>C:\Program Files\OpenSSL-1_1\lib\engines-1_1\</ENGINESDIR>
+    <ENGINESDIR_CSTR>C:\\Program Files\\OpenSSL-1_1\\lib\\engines-1_1</ENGINESDIR_CSTR>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+    </ClCompile>
+    <ClCompile>
+      <PreprocessorDefinitions>OPENSSLDIR="$(OPENSSLDIR_CSTR)";ENGINESDIR="$(ENGINESDIR_CSTR)";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="OPENSSLDIR">
+      <Value>$(OPENSSLDIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="OPENSSLDIR_CSTR">
+      <Value>$(OPENSSLDIR_CSTR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ENGINESDIR">
+      <Value>$(ENGINESDIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ENGINESDIR_CSTR">
+      <Value>$(ENGINESDIR_CSTR)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
