@@ -1,0 +1,2059 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\apps\progs.pl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)_work 2&gt;nul
+pushd ..\..
+$(PERL) -Ims\x86 %(FullPath) apps\openssl &gt; $(OutDir)_work\progs.h
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)_work 2&gt;nul
+pushd ..\..
+$(PERL) -Ims\x86 %(FullPath) apps\openssl &gt; $(OutDir)_work\progs.h
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)_work 2&gt;nul
+pushd ..\..
+$(PERL) -Ims\x64 %(FullPath) apps\openssl &gt; $(OutDir)_work\progs.h
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)_work 2&gt;nul
+pushd ..\..
+$(PERL) -Ims\x64 %(FullPath) apps\openssl &gt; $(OutDir)_work\progs.h
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)_work\progs.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)_work\progs.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)_work\progs.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)_work\progs.h</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\include\openssl\aes.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\asn1.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\asn1err.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\asn1t.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\asn1_mac.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\async.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\asyncerr.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\bio.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\bioerr.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\blowfish.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\bn.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\bnerr.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\buffer.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\buffererr.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\camellia.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\cast.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\cmac.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\cms.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\cmserr.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\comp.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\comperr.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\conf.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\conferr.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\conf_api.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\crypto.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\cryptoerr.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\ct.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\cterr.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\des.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\dh.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\dherr.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\dsa.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\dsaerr.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\dtls1.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\ebcdic.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\ec.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\ecdh.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\ecdsa.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\ecerr.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\engine.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\engineerr.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\err.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\evp.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\evperr.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\e_os2.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\hmac.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\idea.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\kdf.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\kdferr.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\lhash.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\md2.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\md4.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\md5.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\mdc2.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\modes.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\objects.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\objectserr.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\obj_mac.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\ocsp.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\ocsperr.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\opensslconf.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\opensslv.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\ossl_typ.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\pem.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\pem2.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\pemerr.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\pkcs12.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\pkcs12err.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\pkcs7.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\pkcs7err.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\rand.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\randerr.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\rand_drbg.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\rc2.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\rc4.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\rc5.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\ripemd.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\rsa.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\rsaerr.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\safestack.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\seed.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\sha.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\srp.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\srtp.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\ssl.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\ssl2.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\ssl3.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\sslerr.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\stack.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\store.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\storeerr.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\symhacks.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\tls1.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\ts.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\tserr.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\txt_db.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\ui.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\uierr.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\whrlpool.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\x509.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\x509err.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\x509v3.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\x509v3err.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\openssl\x509_vfy.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\ms\applink.c">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir $(OutDir)include 2&gt;nul
+mkdir $(OutDir)include\openssl 2&gt;nul
+copy /v /y %(FullPath) $(OutDir)include\openssl</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)include\openssl\%(Filename)%(Extension)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{625D49F1-BC00-4C36-AE25-2F408B208B08}</ProjectGuid>
+    <RootNamespace>_prebuild</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\_props\tools.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\_props\tools.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\_props\tools.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\_props\tools.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <Target Name="AfterClean">
+    <Exec Command="if exist $(OutDir)include\openssl\ del $(OutDir)include\openssl\*.* /F /Q 2&gt;nul" />
+    <Exec Command="if exist $(OutDir)_work\static\ del $(OutDir)_work\static\*.* /F /Q 2&gt;nul" />
+    <Exec Command="if exist $(OutDir)_work\ del $(OutDir)_work\*.* /F /Q 2&gt;nul" />
+    <Exec Command="if exist $(OutDir)include\openssl\ rmdir $(OutDir)include\openssl 2&gt;nul" />
+    <Exec Command="if exist $(OutDir)include\ rmdir $(OutDir)include 2&gt;nul" />
+    <Exec Command="if exist $(OutDir)_work\static\ rmdir $(OutDir)_work\static 2&gt;nul" />
+    <Exec Command="if exist $(OutDir)_work\ rmdir $(OutDir)_work 2&gt;nul" />
+  </Target>
+</Project>
