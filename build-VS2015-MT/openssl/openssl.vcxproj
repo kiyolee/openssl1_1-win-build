@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{6138B808-39FD-4D03-B672-A8CBCD5FF85D}</ProjectGuid>
+    <RootNamespace>openssl</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\_props\openssl.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\_props\openssl.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\_props\openssl.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\_props\openssl.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ResourceCompile>
+      <PreprocessorDefinitions>OPENSSL</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ResourceCompile>
+      <PreprocessorDefinitions>OPENSSL</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ResourceCompile>
+      <PreprocessorDefinitions>OPENSSL</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ResourceCompile>
+      <PreprocessorDefinitions>OPENSSL</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\apps\asn1pars.c" />
+    <ClCompile Include="..\..\apps\ca.c" />
+    <ClCompile Include="..\..\apps\ciphers.c" />
+    <ClCompile Include="..\..\apps\cms.c" />
+    <ClCompile Include="..\..\apps\crl.c" />
+    <ClCompile Include="..\..\apps\crl2p7.c" />
+    <ClCompile Include="..\..\apps\dgst.c" />
+    <ClCompile Include="..\..\apps\dhparam.c" />
+    <ClCompile Include="..\..\apps\dsa.c" />
+    <ClCompile Include="..\..\apps\dsaparam.c" />
+    <ClCompile Include="..\..\apps\ec.c" />
+    <ClCompile Include="..\..\apps\ecparam.c" />
+    <ClCompile Include="..\..\apps\enc.c" />
+    <ClCompile Include="..\..\apps\engine.c" />
+    <ClCompile Include="..\..\apps\errstr.c" />
+    <ClCompile Include="..\..\apps\gendsa.c" />
+    <ClCompile Include="..\..\apps\genpkey.c" />
+    <ClCompile Include="..\..\apps\genrsa.c" />
+    <ClCompile Include="..\..\apps\nseq.c" />
+    <ClCompile Include="..\..\apps\ocsp.c" />
+    <ClCompile Include="..\..\apps\openssl.c" />
+    <ClCompile Include="..\..\apps\passwd.c" />
+    <ClCompile Include="..\..\apps\pkcs12.c" />
+    <ClCompile Include="..\..\apps\pkcs7.c" />
+    <ClCompile Include="..\..\apps\pkcs8.c" />
+    <ClCompile Include="..\..\apps\pkey.c" />
+    <ClCompile Include="..\..\apps\pkeyparam.c" />
+    <ClCompile Include="..\..\apps\pkeyutl.c" />
+    <ClCompile Include="..\..\apps\prime.c" />
+    <ClCompile Include="..\..\apps\rand.c" />
+    <ClCompile Include="..\..\apps\rehash.c" />
+    <ClCompile Include="..\..\apps\req.c" />
+    <ClCompile Include="..\..\apps\rsa.c" />
+    <ClCompile Include="..\..\apps\rsautl.c" />
+    <ClCompile Include="..\..\apps\sess_id.c" />
+    <ClCompile Include="..\..\apps\smime.c" />
+    <ClCompile Include="..\..\apps\speed.c" />
+    <ClCompile Include="..\..\apps\spkac.c" />
+    <ClCompile Include="..\..\apps\srp.c" />
+    <ClCompile Include="..\..\apps\storeutl.c" />
+    <ClCompile Include="..\..\apps\s_client.c" />
+    <ClCompile Include="..\..\apps\s_server.c" />
+    <ClCompile Include="..\..\apps\s_time.c" />
+    <ClCompile Include="..\..\apps\ts.c" />
+    <ClCompile Include="..\..\apps\verify.c" />
+    <ClCompile Include="..\..\apps\version.c" />
+    <ClCompile Include="..\..\apps\x509.c" />
+    <ClCompile Include="..\..\ms\applink.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\ms\openssl1_1.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
