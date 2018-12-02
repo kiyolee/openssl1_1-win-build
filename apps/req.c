@@ -1529,7 +1529,7 @@ static EVP_PKEY_CTX *set_keygen_ctx(const char *gstr,
     if (palgnam != NULL) {
         const EVP_PKEY_ASN1_METHOD *ameth;
         ENGINE *tmpeng;
-        const char *anam;
+        const char *anam = NULL;
 
         ameth = EVP_PKEY_asn1_find(&tmpeng, *pkey_type);
         if (ameth == NULL) {

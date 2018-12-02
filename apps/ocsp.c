@@ -1133,7 +1133,7 @@ static void make_ocsp_response(BIO *err, OCSP_RESPONSE **resp, OCSP_REQUEST *req
     /* Examine each certificate id in the request */
     for (i = 0; i < id_count; i++) {
         OCSP_ONEREQ *one;
-        ASN1_INTEGER *serial;
+        ASN1_INTEGER *serial = NULL;
         char **inf;
         int jj;
         int found = 0;

@@ -248,7 +248,7 @@ static int client_hello_nov12_cb(SSL *s, int *al, void *arg)
 {
     int ret;
     unsigned int v;
-    const unsigned char *p;
+    const unsigned char *p = NULL;
 
     v = SSL_client_hello_get0_legacy_version(s);
     if (v > TLS1_2_VERSION || v < SSL3_VERSION) {
