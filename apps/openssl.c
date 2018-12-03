@@ -593,7 +593,7 @@ static void list_pkey(void)
     for (i = 0; i < EVP_PKEY_asn1_get_count(); i++) {
         const EVP_PKEY_ASN1_METHOD *ameth;
         int pkey_id, pkey_base_id, pkey_flags;
-        const char *pinfo, *pem_str;
+        const char *pinfo, *pem_str = NULL;
         ameth = EVP_PKEY_asn1_get0(i);
         EVP_PKEY_asn1_get0_info(&pkey_id, &pkey_base_id, &pkey_flags,
                                 &pinfo, &pem_str, ameth);
