@@ -6,7 +6,7 @@
 # in the file LICENSE in the source distribution or at
 # https://www.openssl.org/source/license.html
 
-use OpenSSL::Test qw/:DEFAULT bldtop_dir bldtop_file/;
+use OpenSSL::Test qw/:DEFAULT bldtop_dir bldtop_file shlib_file/;
 use OpenSSL::Test::Utils;
 
 #Load configdata.pm
@@ -27,8 +27,8 @@ plan tests => 4;
 # and we end up running with the wrong libraries.  This is resolved by
 # using paths to the shared objects, not just the names.
 
-my $libcrypto = bldtop_file(shlib('libcrypto'));
-my $libssl = bldtop_file(shlib('libssl'));
+my $libcrypto = shlib_file(shlib('libcrypto'));
+my $libssl = shlib_file(shlib('libssl'));
 
 ok(run(test(["shlibloadtest", "-crypto_first", $libcrypto, $libssl])),
    "running shlibloadtest -crypto_first");
