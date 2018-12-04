@@ -20,6 +20,7 @@ $VERSION = "0.8";
                                    perlapp perltest subtest));
 @EXPORT_OK = (@Test::More::EXPORT_OK, qw(bldtop_dir bldtop_file
                                          srctop_dir srctop_file
+                                         cfgtop_file
                                          data_file data_dir
                                          pipe with cmdstr quotify
                                          openssl_versions));
@@ -568,6 +569,10 @@ sub bldtop_file {
     return __bldtop_file(@_);
 }
 
+sub cfgtop_file {
+    return __cfgtop_file(@_);
+}
+
 =over 4
 
 =item B<srctop_dir LIST>
@@ -871,6 +876,7 @@ sub __env {
 
     $directories{SRCTOP}  = $ENV{SRCTOP} || $ENV{TOP};
     $directories{BLDTOP}  = $ENV{BLDTOP} || $ENV{TOP};
+    $directories{CFGTOP}  = $ENV{CFGTOP} || $ENV{BLDTOP} || $ENV{TOP};
     $directories{BLDAPPS} = $ENV{BIN_D}  || __bldtop_dir("apps");
     $directories{SRCAPPS} =                 __srctop_dir("apps");
     $directories{BLDFUZZ} =                 __bldtop_dir("fuzz");
@@ -923,6 +929,13 @@ sub __bldtop_dir {
     BAIL_OUT("Must run setup() first") if (! $test_name);
 
     return catdir($directories{BLDTOP},@_);
+}
+
+sub __cfgtop_file {
+    BAIL_OUT("Must run setup() first") if (! $test_name);
+
+    my $f = pop;
+    return catfile($directories{CFGTOP},@_,$f);
 }
 
 # __exeext is a function that returns the platform dependent file extension
