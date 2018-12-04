@@ -35,6 +35,7 @@ for /f "delims=" %%i in ( '%BIN_DIR%\openssl%BIN_SUFFIX% version -p' ) do set OS
 set SRCTOP=%MY_ROOT%
 set BLDTOP=%MY_ROOT%
 set BIN_D=%BIN_DIR%
+set FUZZ_D=%BIN_DIR%
 set TEST_D=%BIN_DIR%
 
 set RESULT_D=%BIN_DIR%\test-runs

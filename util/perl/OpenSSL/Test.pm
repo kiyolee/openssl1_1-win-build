@@ -879,7 +879,7 @@ sub __env {
     $directories{CFGTOP}  = $ENV{CFGTOP} || $ENV{BLDTOP} || $ENV{TOP};
     $directories{BLDAPPS} = $ENV{BIN_D}  || __bldtop_dir("apps");
     $directories{SRCAPPS} =                 __srctop_dir("apps");
-    $directories{BLDFUZZ} =                 __bldtop_dir("fuzz");
+    $directories{BLDFUZZ} = $ENV{FUZZ_D} || __bldtop_dir("fuzz");
     $directories{SRCFUZZ} =                 __srctop_dir("fuzz");
     $directories{BLDTEST} = $ENV{TEST_D} || __bldtop_dir("test");
     $directories{SRCTEST} =                 __srctop_dir("test");
@@ -890,7 +890,9 @@ sub __env {
     push @direnv, "TOP"       if $ENV{TOP};
     push @direnv, "SRCTOP"    if $ENV{SRCTOP};
     push @direnv, "BLDTOP"    if $ENV{BLDTOP};
+    push @direnv, "CFGTOP"    if $ENV{CFGTOP};
     push @direnv, "BIN_D"     if $ENV{BIN_D};
+    push @direnv, "FUZZ_D"    if $ENV{FUZZ_D};
     push @direnv, "TEST_D"    if $ENV{TEST_D};
     push @direnv, "RESULT_D"  if $ENV{RESULT_D};
 
