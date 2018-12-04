@@ -1,14 +1,14 @@
 #ifdef _WIN64
-  #define PLATFORM "VC-WIN64A"
-  #define DATE "date unspecified"
+  #define PLATFORM "platform: VC-WIN64A"
+  #define DATE "built on: date unspecified"
   #ifdef _DEBUG
     #define CFLAGS_OPTS " -GF -GS -Gd -Gm- -Od -RTC1 -W3 -WX- -Zi"
   #else
     #define CFLAGS_OPTS " -GF -GL -GS -Gd -Gm- -Gy -Ob2 -Oi -Ox -W3 -WX- -Zi"
   #endif
 #else
-  #define PLATFORM "VC-WIN32"
-  #define DATE "date unspecified"
+  #define PLATFORM "platform: VC-WIN32"
+  #define DATE "built on: date unspecified"
   #ifdef _DEBUG
     #define CFLAGS_OPTS " -GF -GS -Gd -Gm- -Od -Oy- -RTC1 -W3 -WX- -Zi"
   #else
