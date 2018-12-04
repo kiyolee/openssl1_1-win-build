@@ -20,7 +20,8 @@ $VERSION = "0.8";
                                    perlapp perltest subtest));
 @EXPORT_OK = (@Test::More::EXPORT_OK, qw(bldtop_dir bldtop_file
                                          srctop_dir srctop_file
-                                         cfgtop_file shlib_file
+                                         cfgtop_dir cfgtop_file
+                                         shlib_dir shlib_file
                                          data_file data_dir
                                          pipe with cmdstr quotify
                                          openssl_versions));
@@ -569,8 +570,16 @@ sub bldtop_file {
     return __bldtop_file(@_);
 }
 
+sub cfgtop_dir {
+    return __cfgtop_dir(@_);
+}
+
 sub cfgtop_file {
     return __cfgtop_file(@_);
+}
+
+sub shlib_dir {
+    return __shlib_dir(@_);
 }
 
 sub shlib_file {
@@ -946,11 +955,23 @@ sub __cfgtop_file {
     return catfile($directories{CFGTOP},@_,$f);
 }
 
+sub __cfgtop_dir {
+    BAIL_OUT("Must run setup() first") if (! $test_name);
+
+    return catdir($directories{CFGTOP},@_);
+}
+
 sub __shlib_file {
     BAIL_OUT("Must run setup() first") if (! $test_name);
 
     my $f = pop;
     return catfile($directories{BLDSHLIB},@_,$f);
+}
+
+sub __shlib_dir {
+    BAIL_OUT("Must run setup() first") if (! $test_name);
+
+    return catdir($directories{BLDSHLIB},@_);
 }
 
 # __exeext is a function that returns the platform dependent file extension
