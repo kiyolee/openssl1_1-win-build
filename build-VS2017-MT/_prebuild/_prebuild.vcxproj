@@ -796,5 +796,6 @@ popd</Command>
     <Exec Command="if exist $(OutDir)include\ rmdir $(OutDir)include 2&gt;nul" />
     <Exec Command="if exist $(OutDir)_work\static\ rmdir $(OutDir)_work\static 2&gt;nul" />
     <Exec Command="if exist $(OutDir)_work\ rmdir $(OutDir)_work 2&gt;nul" />
+    <Exec Command="if exist $(OutDir)static\ rmdir $(OutDir)static 2&gt;nul" />
   </Target>
 </Project>
