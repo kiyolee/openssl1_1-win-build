@@ -22,6 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{CCA4259E-FB1C-4638-A71A-FD82B1E22617}</ProjectGuid>
     <RootNamespace>bndiv-test-static</RootNamespace>
+    <ProjectName>bndiv-test</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

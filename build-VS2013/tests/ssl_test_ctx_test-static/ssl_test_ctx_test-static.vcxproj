@@ -22,6 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{42253D24-BA83-4316-8BF5-B0C34FD632AE}</ProjectGuid>
     <RootNamespace>ssl_test_ctx_test-static</RootNamespace>
+    <ProjectName>ssl_test_ctx_test</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

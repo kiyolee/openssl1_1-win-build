@@ -22,6 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{1628A578-018A-4D3E-A81C-31B0871D429F}</ProjectGuid>
     <RootNamespace>bioprinttest-static</RootNamespace>
+    <ProjectName>bioprinttest</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

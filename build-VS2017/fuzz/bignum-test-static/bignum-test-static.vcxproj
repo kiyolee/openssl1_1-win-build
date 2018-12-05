@@ -22,6 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{DF436F6C-437B-4281-811C-2E6D936253AA}</ProjectGuid>
     <RootNamespace>bignum-test-static</RootNamespace>
+    <ProjectName>bignum-test</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

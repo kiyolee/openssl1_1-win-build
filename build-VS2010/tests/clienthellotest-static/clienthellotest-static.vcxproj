@@ -22,6 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{8F439A9D-C2AE-4F35-B9C4-C364373837F8}</ProjectGuid>
     <RootNamespace>clienthellotest-static</RootNamespace>
+    <ProjectName>clienthellotest</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

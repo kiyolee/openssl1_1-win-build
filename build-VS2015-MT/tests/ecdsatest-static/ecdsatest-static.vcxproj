@@ -22,6 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{9D287426-76F6-484B-AFBF-FB9FED44A7AF}</ProjectGuid>
     <RootNamespace>ecdsatest-static</RootNamespace>
+    <ProjectName>ecdsatest</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

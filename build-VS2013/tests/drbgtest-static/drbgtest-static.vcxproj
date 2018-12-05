@@ -22,6 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{BB6F079F-443D-4F3E-8C77-F204413A0946}</ProjectGuid>
     <RootNamespace>drbgtest-static</RootNamespace>
+    <ProjectName>drbgtest</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

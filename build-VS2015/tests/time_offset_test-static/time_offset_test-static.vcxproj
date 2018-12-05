@@ -22,6 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{7F6A43CA-7117-4EBB-9C95-9547C9DCFA07}</ProjectGuid>
     <RootNamespace>time_offset_test-static</RootNamespace>
+    <ProjectName>time_offset_test</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

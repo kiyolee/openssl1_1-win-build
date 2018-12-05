@@ -22,6 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{E04D1CF3-91FE-4288-8E24-94BA38636BC0}</ProjectGuid>
     <RootNamespace>asynctest-static</RootNamespace>
+    <ProjectName>asynctest</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

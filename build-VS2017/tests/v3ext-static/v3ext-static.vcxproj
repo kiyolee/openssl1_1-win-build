@@ -22,6 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{54999E16-3F72-4B73-B80A-DFB490292ED7}</ProjectGuid>
     <RootNamespace>v3ext-static</RootNamespace>
+    <ProjectName>v3ext</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

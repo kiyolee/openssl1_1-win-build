@@ -22,6 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{8B14F8D4-7495-4364-B806-E8F58A573C7D}</ProjectGuid>
     <RootNamespace>x509_dup_cert_test-static</RootNamespace>
+    <ProjectName>x509_dup_cert_test</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

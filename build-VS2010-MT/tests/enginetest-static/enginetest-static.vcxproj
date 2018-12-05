@@ -22,6 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{4D1DCE81-3ECF-4B86-9143-89966ABA26E8}</ProjectGuid>
     <RootNamespace>enginetest-static</RootNamespace>
+    <ProjectName>enginetest</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -22,6 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{9BA27110-B520-4CCF-AE4D-7F30626BEC0D}</ProjectGuid>
     <RootNamespace>crl-test-static</RootNamespace>
+    <ProjectName>crl-test</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -22,6 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{864ABAA9-702F-4989-B142-4C958B06ECB0}</ProjectGuid>
     <RootNamespace>sanitytest-static</RootNamespace>
+    <ProjectName>sanitytest</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

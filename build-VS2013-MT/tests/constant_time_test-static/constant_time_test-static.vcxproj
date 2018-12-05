@@ -22,6 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{783B4549-F1B7-4C7F-BCB6-45E6D9BD0947}</ProjectGuid>
     <RootNamespace>constant_time_test-static</RootNamespace>
+    <ProjectName>constant_time_test</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

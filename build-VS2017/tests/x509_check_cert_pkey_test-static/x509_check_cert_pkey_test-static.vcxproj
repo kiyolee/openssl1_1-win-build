@@ -22,6 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{F5089C0C-C99A-4FAB-ADCC-8C90457DB974}</ProjectGuid>
     <RootNamespace>x509_check_cert_pkey_test-static</RootNamespace>
+    <ProjectName>x509_check_cert_pkey_test</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -22,6 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{EA01B3FC-34E9-45F3-AED6-66F1E86725C7}</ProjectGuid>
     <RootNamespace>dtlsv1listentest-static</RootNamespace>
+    <ProjectName>dtlsv1listentest</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

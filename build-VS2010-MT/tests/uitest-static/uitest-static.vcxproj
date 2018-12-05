@@ -22,6 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{9EF99042-E077-4D5B-B2F4-74287D2502EC}</ProjectGuid>
     <RootNamespace>uitest-static</RootNamespace>
+    <ProjectName>uitest</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

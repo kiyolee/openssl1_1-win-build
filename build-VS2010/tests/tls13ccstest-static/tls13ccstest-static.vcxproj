@@ -22,6 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{E041DC23-48AD-4262-B4C8-1CE6EB3B61B0}</ProjectGuid>
     <RootNamespace>tls13ccstest-static</RootNamespace>
+    <ProjectName>tls13ccstest</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

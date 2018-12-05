@@ -22,6 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{9FDABCB6-2FD5-44BB-B460-C98F19C4965D}</ProjectGuid>
     <RootNamespace>cms-test-static</RootNamespace>
+    <ProjectName>cms-test</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -22,6 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{2B5EB588-2F01-4C53-AE43-01EA306C783C}</ProjectGuid>
     <RootNamespace>recordlentest-static</RootNamespace>
+    <ProjectName>recordlentest</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
