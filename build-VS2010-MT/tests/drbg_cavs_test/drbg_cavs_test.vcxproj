@@ -102,6 +102,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\ms\applink.c" />
     <ClCompile Include="..\..\..\test\drbg_cavs_data.c" />
     <ClCompile Include="..\..\..\test\drbg_cavs_test.c" />
   </ItemGroup>

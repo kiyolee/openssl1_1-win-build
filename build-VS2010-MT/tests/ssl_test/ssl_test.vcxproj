@@ -102,6 +102,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\ms\applink.c" />
     <ClCompile Include="..\..\..\test\handshake_helper.c" />
     <ClCompile Include="..\..\..\test\ssl_test.c" />
     <ClCompile Include="..\..\..\test\ssl_test_ctx.c" />
