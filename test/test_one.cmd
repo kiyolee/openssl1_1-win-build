@@ -13,7 +13,7 @@ set BIN_DIR=%1
 
 :start0
 if .%BIN_SUFFIX%. == .. goto :nosuffix
-echo TESTING: %BIN_DIR% (BIN_SUFFIX:%BIN_SUFFIX%)
+echo TESTING: %BIN_DIR% (TESTOPT:%BIN_SUFFIX%)
 goto :start
 :nosuffix
 echo TESTING: %BIN_DIR%
