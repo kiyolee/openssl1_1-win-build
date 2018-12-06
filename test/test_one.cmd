@@ -39,19 +39,26 @@ set BIN_D=%BIN_DIR%
 set FUZZ_D=%BIN_DIR%
 set TEST_D=%BIN_DIR%
 
-set RESULT_D=%BIN_DIR%\test-runs
-mkdir %RESULT_D% 2>nul
-if not exist %RESULT_D%\ goto :nores
-
 echo.%OSSL_PLATFORM% | findstr WIN64 >nul
 if ERRORLEVEL 1 goto :osslx86
 set CFGTOP=%MY_ROOT%\ms\x64
-goto :dotest
+goto :chkstatic
 :osslx86
 set CFGTOP=%MY_ROOT%\ms\x86
-goto :dotest
+goto :chkstatic
+
+:chkstatic
+if not .%BIN_SUFFIX%. == .-static. goto :dotest
+set CFGTOP=%CFGTOP%\static
+set BIN_D=%BIN_D%\static
+set FUZZ_D=%FUZZ_D%\static
+set TEST_D=%TEST_D%\static
 
 :dotest
+
+set RESULT_D=%BIN_D%\test-runs
+mkdir %RESULT_D% 2>nul
+if not exist %RESULT_D%\ goto :nores
 
 perl test\run_tests.pl
 
