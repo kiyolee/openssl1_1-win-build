@@ -813,6 +813,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tls13encryptiontest", "test
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uitest", "tests\uitest\uitest.vcxproj", "{2224970B-3CCF-41BB-A542-9F36C3F42D9A}"
 	ProjectSection(ProjectDependencies) = postProject
+		{D170F81B-97DA-4313-A52A-640C17502B9D} = {D170F81B-97DA-4313-A52A-640C17502B9D}
 		{DB307C21-DF5A-4592-8BF5-2F84070E49C4} = {DB307C21-DF5A-4592-8BF5-2F84070E49C4}
 		{1E068827-5CD6-4648-98DD-B0417F0B9DDC} = {1E068827-5CD6-4648-98DD-B0417F0B9DDC}
 		{C92E1E46-3C94-4DD6-8E7D-E23ECED32A8C} = {C92E1E46-3C94-4DD6-8E7D-E23ECED32A8C}
@@ -895,833 +896,834 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tls13secretstest", "tests\t
 		{C92E1E46-3C94-4DD6-8E7D-E23ECED32A8C} = {C92E1E46-3C94-4DD6-8E7D-E23ECED32A8C}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bad_dtls_test-static", "tests\bad_dtls_test-static\bad_dtls_test-static.vcxproj", "{D86044CA-4CD5-4507-802B-982212AFB4B0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bad_dtls_test", "tests\bad_dtls_test-static\bad_dtls_test-static.vcxproj", "{D86044CA-4CD5-4507-802B-982212AFB4B0}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bftest-static", "tests\bftest-static\bftest-static.vcxproj", "{BDFAD855-C841-4ED0-8563-D12BCB8BE4AF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bftest", "tests\bftest-static\bftest-static.vcxproj", "{BDFAD855-C841-4ED0-8563-D12BCB8BE4AF}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bntest-static", "tests\bntest-static\bntest-static.vcxproj", "{C0997873-B839-4B20-B4DE-F22696FC80BC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bntest", "tests\bntest-static\bntest-static.vcxproj", "{C0997873-B839-4B20-B4DE-F22696FC80BC}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "casttest-static", "tests\casttest-static\casttest-static.vcxproj", "{C0BEDD61-5B91-4DED-8345-CEE918D68258}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "casttest", "tests\casttest-static\casttest-static.vcxproj", "{C0BEDD61-5B91-4DED-8345-CEE918D68258}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clienthellotest-static", "tests\clienthellotest-static\clienthellotest-static.vcxproj", "{8F439A9D-C2AE-4F35-B9C4-C364373837F8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clienthellotest", "tests\clienthellotest-static\clienthellotest-static.vcxproj", "{8F439A9D-C2AE-4F35-B9C4-C364373837F8}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "constant_time_test-static", "tests\constant_time_test-static\constant_time_test-static.vcxproj", "{783B4549-F1B7-4C7F-BCB6-45E6D9BD0947}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "constant_time_test", "tests\constant_time_test-static\constant_time_test-static.vcxproj", "{783B4549-F1B7-4C7F-BCB6-45E6D9BD0947}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "destest-static", "tests\destest-static\destest-static.vcxproj", "{EBB50638-2290-4682-A94D-8D188C4145E6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "destest", "tests\destest-static\destest-static.vcxproj", "{EBB50638-2290-4682-A94D-8D188C4145E6}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dhtest-static", "tests\dhtest-static\dhtest-static.vcxproj", "{3B13967B-BE43-4F62-8475-5916339844B8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dhtest", "tests\dhtest-static\dhtest-static.vcxproj", "{3B13967B-BE43-4F62-8475-5916339844B8}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dsatest-static", "tests\dsatest-static\dsatest-static.vcxproj", "{A7BE9D51-9535-450A-BCE1-13DFDB7CB9BC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dsatest", "tests\dsatest-static\dsatest-static.vcxproj", "{A7BE9D51-9535-450A-BCE1-13DFDB7CB9BC}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dtlstest-static", "tests\dtlstest-static\dtlstest-static.vcxproj", "{5EF092B8-B117-4A03-9D38-16A59D1F37DD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dtlstest", "tests\dtlstest-static\dtlstest-static.vcxproj", "{5EF092B8-B117-4A03-9D38-16A59D1F37DD}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ecdsatest-static", "tests\ecdsatest-static\ecdsatest-static.vcxproj", "{9D287426-76F6-484B-AFBF-FB9FED44A7AF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ecdsatest", "tests\ecdsatest-static\ecdsatest-static.vcxproj", "{9D287426-76F6-484B-AFBF-FB9FED44A7AF}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ectest-static", "tests\ectest-static\ectest-static.vcxproj", "{48E1F97B-973E-4822-A0ED-BCDBBAAABFCD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ectest", "tests\ectest-static\ectest-static.vcxproj", "{48E1F97B-973E-4822-A0ED-BCDBBAAABFCD}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "enginetest-static", "tests\enginetest-static\enginetest-static.vcxproj", "{4D1DCE81-3ECF-4B86-9143-89966ABA26E8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "enginetest", "tests\enginetest-static\enginetest-static.vcxproj", "{4D1DCE81-3ECF-4B86-9143-89966ABA26E8}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "evp_extra_test-static", "tests\evp_extra_test-static\evp_extra_test-static.vcxproj", "{A4AEA9EA-FA05-46B2-88FA-A51732F5D7D2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "evp_extra_test", "tests\evp_extra_test-static\evp_extra_test-static.vcxproj", "{A4AEA9EA-FA05-46B2-88FA-A51732F5D7D2}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "evp_test-static", "tests\evp_test-static\evp_test-static.vcxproj", "{82ADDF96-0882-4F9E-A85D-B1C84FC795B6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "evp_test", "tests\evp_test-static\evp_test-static.vcxproj", "{82ADDF96-0882-4F9E-A85D-B1C84FC795B6}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "exptest-static", "tests\exptest-static\exptest-static.vcxproj", "{AB9E175F-9CC9-4FC9-A9AC-9367CBBE1D9B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "exptest", "tests\exptest-static\exptest-static.vcxproj", "{AB9E175F-9CC9-4FC9-A9AC-9367CBBE1D9B}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fatalerrtest-static", "tests\fatalerrtest-static\fatalerrtest-static.vcxproj", "{1EB4BA91-9D5C-4531-80B6-9A7A055CACDF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fatalerrtest", "tests\fatalerrtest-static\fatalerrtest-static.vcxproj", "{1EB4BA91-9D5C-4531-80B6-9A7A055CACDF}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hmactest-static", "tests\hmactest-static\hmactest-static.vcxproj", "{A9F8B1CC-F813-401B-A37B-3AF226D49EDA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hmactest", "tests\hmactest-static\hmactest-static.vcxproj", "{A9F8B1CC-F813-401B-A37B-3AF226D49EDA}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ideatest-static", "tests\ideatest-static\ideatest-static.vcxproj", "{E9EDF232-3E0C-492A-BEEE-1824C265207F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ideatest", "tests\ideatest-static\ideatest-static.vcxproj", "{E9EDF232-3E0C-492A-BEEE-1824C265207F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "igetest-static", "tests\igetest-static\igetest-static.vcxproj", "{8C52C809-D650-4EF0-94CE-749E8FC80184}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "igetest", "tests\igetest-static\igetest-static.vcxproj", "{8C52C809-D650-4EF0-94CE-749E8FC80184}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mdc2test-static", "tests\mdc2test-static\mdc2test-static.vcxproj", "{A84ACC07-7717-486E-9FA1-5805B99A7E07}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mdc2test", "tests\mdc2test-static\mdc2test-static.vcxproj", "{A84ACC07-7717-486E-9FA1-5805B99A7E07}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rc2test-static", "tests\rc2test-static\rc2test-static.vcxproj", "{BD51EBD5-F240-48ED-AD9B-50FF801A1CF9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rc2test", "tests\rc2test-static\rc2test-static.vcxproj", "{BD51EBD5-F240-48ED-AD9B-50FF801A1CF9}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rc4test-static", "tests\rc4test-static\rc4test-static.vcxproj", "{94CBB7C2-8421-4467-AB05-2A9902905576}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rc4test", "tests\rc4test-static\rc4test-static.vcxproj", "{94CBB7C2-8421-4467-AB05-2A9902905576}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rsa_test-static", "tests\rsa_test-static\rsa_test-static.vcxproj", "{2DB898FA-2B16-401C-822F-8B6A8C5AB60F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rsa_test", "tests\rsa_test-static\rsa_test-static.vcxproj", "{2DB898FA-2B16-401C-822F-8B6A8C5AB60F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "srptest-static", "tests\srptest-static\srptest-static.vcxproj", "{4378E007-6FE6-4BAC-83D1-45381C9F5C0D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "srptest", "tests\srptest-static\srptest-static.vcxproj", "{4378E007-6FE6-4BAC-83D1-45381C9F5C0D}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "v3nametest-static", "tests\v3nametest-static\v3nametest-static.vcxproj", "{226A2E98-26B9-4262-A7AD-FB4E1F1EDA97}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "v3nametest", "tests\v3nametest-static\v3nametest-static.vcxproj", "{226A2E98-26B9-4262-A7AD-FB4E1F1EDA97}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "verify_extra_test-static", "tests\verify_extra_test-static\verify_extra_test-static.vcxproj", "{CE5DD1F5-E2F8-4CB3-B4F7-372A34B583DE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "verify_extra_test", "tests\verify_extra_test-static\verify_extra_test-static.vcxproj", "{CE5DD1F5-E2F8-4CB3-B4F7-372A34B583DE}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "aborttest-static", "tests\aborttest-static\aborttest-static.vcxproj", "{6A322AC7-3189-45D6-B912-928FA4141395}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "aborttest", "tests\aborttest-static\aborttest-static.vcxproj", "{6A322AC7-3189-45D6-B912-928FA4141395}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "afalgtest-static", "tests\afalgtest-static\afalgtest-static.vcxproj", "{4013DFE4-9ED2-43B1-A18D-1436F44FD1D8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "afalgtest", "tests\afalgtest-static\afalgtest-static.vcxproj", "{4013DFE4-9ED2-43B1-A18D-1436F44FD1D8}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asn1_decode_test-static", "tests\asn1_decode_test-static\asn1_decode_test-static.vcxproj", "{5B56C29A-1C77-401B-A44F-1ECD0764815C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asn1_decode_test", "tests\asn1_decode_test-static\asn1_decode_test-static.vcxproj", "{5B56C29A-1C77-401B-A44F-1ECD0764815C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asn1_encode_test-static", "tests\asn1_encode_test-static\asn1_encode_test-static.vcxproj", "{408F8D51-6070-4BC3-9984-9400C4C62A7D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asn1_encode_test", "tests\asn1_encode_test-static\asn1_encode_test-static.vcxproj", "{408F8D51-6070-4BC3-9984-9400C4C62A7D}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asn1_internal_test-static", "tests\asn1_internal_test-static\asn1_internal_test-static.vcxproj", "{D8638B39-8302-4A27-BDB8-23C485A80B73}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asn1_internal_test", "tests\asn1_internal_test-static\asn1_internal_test-static.vcxproj", "{D8638B39-8302-4A27-BDB8-23C485A80B73}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asn1_string_table_test-static", "tests\asn1_string_table_test-static\asn1_string_table_test-static.vcxproj", "{B15F6E74-3463-4736-8204-33A4BD43477C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asn1_string_table_test", "tests\asn1_string_table_test-static\asn1_string_table_test-static.vcxproj", "{B15F6E74-3463-4736-8204-33A4BD43477C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asn1_time_test-static", "tests\asn1_time_test-static\asn1_time_test-static.vcxproj", "{353C95A4-BBD2-4060-B62D-724FE4F1DB5A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asn1_time_test", "tests\asn1_time_test-static\asn1_time_test-static.vcxproj", "{353C95A4-BBD2-4060-B62D-724FE4F1DB5A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asn1parse-test-static", "fuzz\asn1parse-test-static\asn1parse-test-static.vcxproj", "{7C90AE74-26EA-409B-8500-11B4BCD216FE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asn1parse-test", "fuzz\asn1parse-test-static\asn1parse-test-static.vcxproj", "{7C90AE74-26EA-409B-8500-11B4BCD216FE}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asn1-test-static", "fuzz\asn1-test-static\asn1-test-static.vcxproj", "{685C55F4-F7AF-49E5-8FD6-B069AA67A3A0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asn1-test", "fuzz\asn1-test-static\asn1-test-static.vcxproj", "{685C55F4-F7AF-49E5-8FD6-B069AA67A3A0}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asynciotest-static", "tests\asynciotest-static\asynciotest-static.vcxproj", "{6DD4DF0E-4F7F-478B-BA65-F9F2577F7157}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asynciotest", "tests\asynciotest-static\asynciotest-static.vcxproj", "{6DD4DF0E-4F7F-478B-BA65-F9F2577F7157}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asynctest-static", "tests\asynctest-static\asynctest-static.vcxproj", "{E04D1CF3-91FE-4288-8E24-94BA38636BC0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asynctest", "tests\asynctest-static\asynctest-static.vcxproj", "{E04D1CF3-91FE-4288-8E24-94BA38636BC0}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bignum-test-static", "fuzz\bignum-test-static\bignum-test-static.vcxproj", "{DF436F6C-437B-4281-811C-2E6D936253AA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bignum-test", "fuzz\bignum-test-static\bignum-test-static.vcxproj", "{DF436F6C-437B-4281-811C-2E6D936253AA}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bio_callback_test-static", "tests\bio_callback_test-static\bio_callback_test-static.vcxproj", "{96C8017D-7B5F-454D-86A6-BDC67A046A9C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bio_callback_test", "tests\bio_callback_test-static\bio_callback_test-static.vcxproj", "{96C8017D-7B5F-454D-86A6-BDC67A046A9C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bio_enc_test-static", "tests\bio_enc_test-static\bio_enc_test-static.vcxproj", "{F7D99E71-5FA2-49BF-93CC-5818ACA7774C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bio_enc_test", "tests\bio_enc_test-static\bio_enc_test-static.vcxproj", "{F7D99E71-5FA2-49BF-93CC-5818ACA7774C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bioprinttest-static", "tests\bioprinttest-static\bioprinttest-static.vcxproj", "{1628A578-018A-4D3E-A81C-31B0871D429F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bioprinttest", "tests\bioprinttest-static\bioprinttest-static.vcxproj", "{1628A578-018A-4D3E-A81C-31B0871D429F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bndiv-test-static", "fuzz\bndiv-test-static\bndiv-test-static.vcxproj", "{CCA4259E-FB1C-4638-A71A-FD82B1E22617}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bndiv-test", "fuzz\bndiv-test-static\bndiv-test-static.vcxproj", "{CCA4259E-FB1C-4638-A71A-FD82B1E22617}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chacha_internal_test-static", "tests\chacha_internal_test-static\chacha_internal_test-static.vcxproj", "{1D3C6DCF-BE8A-4B80-B450-7344A4A342E9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chacha_internal_test", "tests\chacha_internal_test-static\chacha_internal_test-static.vcxproj", "{1D3C6DCF-BE8A-4B80-B450-7344A4A342E9}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cipher_overhead_test-static", "tests\cipher_overhead_test-static\cipher_overhead_test-static.vcxproj", "{8C0474D6-6285-4C21-B3B5-99240C3D67C9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cipher_overhead_test", "tests\cipher_overhead_test-static\cipher_overhead_test-static.vcxproj", "{8C0474D6-6285-4C21-B3B5-99240C3D67C9}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cipherbytes_test-static", "tests\cipherbytes_test-static\cipherbytes_test-static.vcxproj", "{E2688827-950F-4691-82CB-741495D20D65}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cipherbytes_test", "tests\cipherbytes_test-static\cipherbytes_test-static.vcxproj", "{E2688827-950F-4691-82CB-741495D20D65}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cipherlist_test-static", "tests\cipherlist_test-static\cipherlist_test-static.vcxproj", "{84A4CFC5-AFEB-40A4-9B9B-EB32B0C57B04}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cipherlist_test", "tests\cipherlist_test-static\cipherlist_test-static.vcxproj", "{84A4CFC5-AFEB-40A4-9B9B-EB32B0C57B04}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ciphername_test-static", "tests\ciphername_test-static\ciphername_test-static.vcxproj", "{1222179B-2130-4B90-B15A-A59F84F1A8B5}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ciphername_test", "tests\ciphername_test-static\ciphername_test-static.vcxproj", "{1222179B-2130-4B90-B15A-A59F84F1A8B5}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "client-test-static", "fuzz\client-test-static\client-test-static.vcxproj", "{351985D7-43DF-4F68-805D-C1C7E4AE2D17}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "client-test", "fuzz\client-test-static\client-test-static.vcxproj", "{351985D7-43DF-4F68-805D-C1C7E4AE2D17}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cmsapitest-static", "tests\cmsapitest-static\cmsapitest-static.vcxproj", "{87DF207D-53AB-4503-8E0B-4926B8FF116A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cmsapitest", "tests\cmsapitest-static\cmsapitest-static.vcxproj", "{87DF207D-53AB-4503-8E0B-4926B8FF116A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cms-test-static", "fuzz\cms-test-static\cms-test-static.vcxproj", "{9FDABCB6-2FD5-44BB-B460-C98F19C4965D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cms-test", "fuzz\cms-test-static\cms-test-static.vcxproj", "{9FDABCB6-2FD5-44BB-B460-C98F19C4965D}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "conf_include_test-static", "tests\conf_include_test-static\conf_include_test-static.vcxproj", "{3856B553-7A34-4950-8528-B235B7450D27}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "conf_include_test", "tests\conf_include_test-static\conf_include_test-static.vcxproj", "{3856B553-7A34-4950-8528-B235B7450D27}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "conf-test-static", "fuzz\conf-test-static\conf-test-static.vcxproj", "{FEDB7C78-88FB-4F99-80CD-67AC0E0F76F8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "conf-test", "fuzz\conf-test-static\conf-test-static.vcxproj", "{FEDB7C78-88FB-4F99-80CD-67AC0E0F76F8}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "crltest-static", "tests\crltest-static\crltest-static.vcxproj", "{C7514A79-6107-4668-B8AB-FC9E431D2AEA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "crltest", "tests\crltest-static\crltest-static.vcxproj", "{C7514A79-6107-4668-B8AB-FC9E431D2AEA}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "crl-test-static", "fuzz\crl-test-static\crl-test-static.vcxproj", "{9BA27110-B520-4CCF-AE4D-7F30626BEC0D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "crl-test", "fuzz\crl-test-static\crl-test-static.vcxproj", "{9BA27110-B520-4CCF-AE4D-7F30626BEC0D}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ct_test-static", "tests\ct_test-static\ct_test-static.vcxproj", "{E4A90737-9459-4B50-9F01-3DA706903B22}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ct_test", "tests\ct_test-static\ct_test-static.vcxproj", "{E4A90737-9459-4B50-9F01-3DA706903B22}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ct-test-static", "fuzz\ct-test-static\ct-test-static.vcxproj", "{DB26379D-EE08-426A-8C46-C724BFB2092F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ct-test", "fuzz\ct-test-static\ct-test-static.vcxproj", "{DB26379D-EE08-426A-8C46-C724BFB2092F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ctype_internal_test-static", "tests\ctype_internal_test-static\ctype_internal_test-static.vcxproj", "{354B4E32-1D0F-46C3-872E-C95ED09C5C45}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ctype_internal_test", "tests\ctype_internal_test-static\ctype_internal_test-static.vcxproj", "{354B4E32-1D0F-46C3-872E-C95ED09C5C45}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "curve448_internal_test-static", "tests\curve448_internal_test-static\curve448_internal_test-static.vcxproj", "{999EBABF-4667-4ADA-907A-34F35B3BAF64}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "curve448_internal_test", "tests\curve448_internal_test-static\curve448_internal_test-static.vcxproj", "{999EBABF-4667-4ADA-907A-34F35B3BAF64}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "d2i_test-static", "tests\d2i_test-static\d2i_test-static.vcxproj", "{7B91D941-4FE8-40A9-A7B3-6B1B82153404}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "d2i_test", "tests\d2i_test-static\d2i_test-static.vcxproj", "{7B91D941-4FE8-40A9-A7B3-6B1B82153404}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "danetest-static", "tests\danetest-static\danetest-static.vcxproj", "{F047B09A-784C-44A0-BB15-25748B93F4F7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "danetest", "tests\danetest-static\danetest-static.vcxproj", "{F047B09A-784C-44A0-BB15-25748B93F4F7}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "drbg_cavs_test-static", "tests\drbg_cavs_test-static\drbg_cavs_test-static.vcxproj", "{8DA18BB1-288E-488C-B638-3BAD8E462ED7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "drbg_cavs_test", "tests\drbg_cavs_test-static\drbg_cavs_test-static.vcxproj", "{8DA18BB1-288E-488C-B638-3BAD8E462ED7}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "drbgtest-static", "tests\drbgtest-static\drbgtest-static.vcxproj", "{BB6F079F-443D-4F3E-8C77-F204413A0946}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "drbgtest", "tests\drbgtest-static\drbgtest-static.vcxproj", "{BB6F079F-443D-4F3E-8C77-F204413A0946}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dsa_no_digest_size_test-static", "tests\dsa_no_digest_size_test-static\dsa_no_digest_size_test-static.vcxproj", "{2AFB693A-B652-445F-A698-E3749F33FE28}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dsa_no_digest_size_test", "tests\dsa_no_digest_size_test-static\dsa_no_digest_size_test-static.vcxproj", "{2AFB693A-B652-445F-A698-E3749F33FE28}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dtls_mtu_test-static", "tests\dtls_mtu_test-static\dtls_mtu_test-static.vcxproj", "{C4D8744D-4CC3-446E-A520-C28450B6B3D6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dtls_mtu_test", "tests\dtls_mtu_test-static\dtls_mtu_test-static.vcxproj", "{C4D8744D-4CC3-446E-A520-C28450B6B3D6}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dtlsv1listentest-static", "tests\dtlsv1listentest-static\dtlsv1listentest-static.vcxproj", "{EA01B3FC-34E9-45F3-AED6-66F1E86725C7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dtlsv1listentest", "tests\dtlsv1listentest-static\dtlsv1listentest-static.vcxproj", "{EA01B3FC-34E9-45F3-AED6-66F1E86725C7}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ecstresstest-static", "tests\ecstresstest-static\ecstresstest-static.vcxproj", "{E4B05196-8544-43DE-BAB3-5C11D3D91261}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ecstresstest", "tests\ecstresstest-static\ecstresstest-static.vcxproj", "{E4B05196-8544-43DE-BAB3-5C11D3D91261}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "errtest-static", "tests\errtest-static\errtest-static.vcxproj", "{28BD91BC-DAC5-40B9-BD67-DEB7488E885E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "errtest", "tests\errtest-static\errtest-static.vcxproj", "{28BD91BC-DAC5-40B9-BD67-DEB7488E885E}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "exdatatest-static", "tests\exdatatest-static\exdatatest-static.vcxproj", "{7E2C7DAC-F415-486D-9492-5A1F5E47E7AA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "exdatatest", "tests\exdatatest-static\exdatatest-static.vcxproj", "{7E2C7DAC-F415-486D-9492-5A1F5E47E7AA}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gmdifftest-static", "tests\gmdifftest-static\gmdifftest-static.vcxproj", "{56BD2979-918A-4029-92FE-FE90687CB241}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gmdifftest", "tests\gmdifftest-static\gmdifftest-static.vcxproj", "{56BD2979-918A-4029-92FE-FE90687CB241}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gosttest-static", "tests\gosttest-static\gosttest-static.vcxproj", "{6273C37B-13E8-4887-B62A-FACED0C41738}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gosttest", "tests\gosttest-static\gosttest-static.vcxproj", "{6273C37B-13E8-4887-B62A-FACED0C41738}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lhash_test-static", "tests\lhash_test-static\lhash_test-static.vcxproj", "{E235AC64-FB69-4586-9143-7E177D0BFE30}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lhash_test", "tests\lhash_test-static\lhash_test-static.vcxproj", "{E235AC64-FB69-4586-9143-7E177D0BFE30}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "md2test-static", "tests\md2test-static\md2test-static.vcxproj", "{8679DBAC-13AE-4B53-836B-8CD67E5EAA1C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "md2test", "tests\md2test-static\md2test-static.vcxproj", "{8679DBAC-13AE-4B53-836B-8CD67E5EAA1C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mdc2_internal_test-static", "tests\mdc2_internal_test-static\mdc2_internal_test-static.vcxproj", "{63A61755-B1BA-4F96-BBC3-176539070EDF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mdc2_internal_test", "tests\mdc2_internal_test-static\mdc2_internal_test-static.vcxproj", "{63A61755-B1BA-4F96-BBC3-176539070EDF}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "memleaktest-static", "tests\memleaktest-static\memleaktest-static.vcxproj", "{5F952BF8-D2ED-4BF1-B876-93E64BACF5DF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "memleaktest", "tests\memleaktest-static\memleaktest-static.vcxproj", "{5F952BF8-D2ED-4BF1-B876-93E64BACF5DF}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "modes_internal_test-static", "tests\modes_internal_test-static\modes_internal_test-static.vcxproj", "{FE72388F-838E-43B4-9F8E-4A267034E235}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "modes_internal_test", "tests\modes_internal_test-static\modes_internal_test-static.vcxproj", "{FE72388F-838E-43B4-9F8E-4A267034E235}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ocspapitest-static", "tests\ocspapitest-static\ocspapitest-static.vcxproj", "{ED05FA41-44AD-4609-98B7-312E791D6500}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ocspapitest", "tests\ocspapitest-static\ocspapitest-static.vcxproj", "{ED05FA41-44AD-4609-98B7-312E791D6500}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "packettest-static", "tests\packettest-static\packettest-static.vcxproj", "{EBB207AE-E9BB-4947-BCD9-258DA1EAF494}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "packettest", "tests\packettest-static\packettest-static.vcxproj", "{EBB207AE-E9BB-4947-BCD9-258DA1EAF494}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pbelutest-static", "tests\pbelutest-static\pbelutest-static.vcxproj", "{FF58E11B-B537-4842-9EDB-1F01C57CE418}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pbelutest", "tests\pbelutest-static\pbelutest-static.vcxproj", "{FF58E11B-B537-4842-9EDB-1F01C57CE418}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pemtest-static", "tests\pemtest-static\pemtest-static.vcxproj", "{2EC2EC24-C0C6-4BB8-9322-EA4165FE14AE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pemtest", "tests\pemtest-static\pemtest-static.vcxproj", "{2EC2EC24-C0C6-4BB8-9322-EA4165FE14AE}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pkey_meth_kdf_test-static", "tests\pkey_meth_kdf_test-static\pkey_meth_kdf_test-static.vcxproj", "{9F17F9D1-3883-4EAA-A8F1-FB19AAF28635}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pkey_meth_kdf_test", "tests\pkey_meth_kdf_test-static\pkey_meth_kdf_test-static.vcxproj", "{9F17F9D1-3883-4EAA-A8F1-FB19AAF28635}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pkey_meth_test-static", "tests\pkey_meth_test-static\pkey_meth_test-static.vcxproj", "{2620926B-A151-487B-ACC4-E5F58FFD88F9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pkey_meth_test", "tests\pkey_meth_test-static\pkey_meth_test-static.vcxproj", "{2620926B-A151-487B-ACC4-E5F58FFD88F9}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "poly1305_internal_test-static", "tests\poly1305_internal_test-static\poly1305_internal_test-static.vcxproj", "{AF69CE44-72AF-455E-B9CA-9DA6F1CD8B22}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "poly1305_internal_test", "tests\poly1305_internal_test-static\poly1305_internal_test-static.vcxproj", "{AF69CE44-72AF-455E-B9CA-9DA6F1CD8B22}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rc5test-static", "tests\rc5test-static\rc5test-static.vcxproj", "{FBA43C76-C13C-4D09-B7BD-4AAFC388D4DA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rc5test", "tests\rc5test-static\rc5test-static.vcxproj", "{FBA43C76-C13C-4D09-B7BD-4AAFC388D4DA}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rdrand_sanitytest-static", "tests\rdrand_sanitytest-static\rdrand_sanitytest-static.vcxproj", "{2CA70DF7-CE6C-4835-88E7-3CD344FB84D6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rdrand_sanitytest", "tests\rdrand_sanitytest-static\rdrand_sanitytest-static.vcxproj", "{2CA70DF7-CE6C-4835-88E7-3CD344FB84D6}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "recordlentest-static", "tests\recordlentest-static\recordlentest-static.vcxproj", "{2B5EB588-2F01-4C53-AE43-01EA306C783C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "recordlentest", "tests\recordlentest-static\recordlentest-static.vcxproj", "{2B5EB588-2F01-4C53-AE43-01EA306C783C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rsa_complex-static", "tests\rsa_complex-static\rsa_complex-static.vcxproj", "{9D7712F6-ABEF-41B2-8D4A-2919EA06683B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rsa_complex", "tests\rsa_complex-static\rsa_complex-static.vcxproj", "{9D7712F6-ABEF-41B2-8D4A-2919EA06683B}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rsa_mp_test-static", "tests\rsa_mp_test-static\rsa_mp_test-static.vcxproj", "{FC4D2A6E-8656-4CD6-A482-5EEE852A417F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rsa_mp_test", "tests\rsa_mp_test-static\rsa_mp_test-static.vcxproj", "{FC4D2A6E-8656-4CD6-A482-5EEE852A417F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sanitytest-static", "tests\sanitytest-static\sanitytest-static.vcxproj", "{864ABAA9-702F-4989-B142-4C958B06ECB0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sanitytest", "tests\sanitytest-static\sanitytest-static.vcxproj", "{864ABAA9-702F-4989-B142-4C958B06ECB0}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "secmemtest-static", "tests\secmemtest-static\secmemtest-static.vcxproj", "{304DEB0A-0B74-441E-A136-055727CA0F61}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "secmemtest", "tests\secmemtest-static\secmemtest-static.vcxproj", "{304DEB0A-0B74-441E-A136-055727CA0F61}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "servername_test-static", "tests\servername_test-static\servername_test-static.vcxproj", "{C6E1E0C4-D5D4-485A-B513-6A697608B8B2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "servername_test", "tests\servername_test-static\servername_test-static.vcxproj", "{C6E1E0C4-D5D4-485A-B513-6A697608B8B2}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "server-test-static", "fuzz\server-test-static\server-test-static.vcxproj", "{8E2BBE60-16D6-4F22-9C60-F95CC0EDF21D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "server-test", "fuzz\server-test-static\server-test-static.vcxproj", "{8E2BBE60-16D6-4F22-9C60-F95CC0EDF21D}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "siphash_internal_test-static", "tests\siphash_internal_test-static\siphash_internal_test-static.vcxproj", "{9051A1D1-1CFA-4373-8F05-ECE4B3782E46}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "siphash_internal_test", "tests\siphash_internal_test-static\siphash_internal_test-static.vcxproj", "{9051A1D1-1CFA-4373-8F05-ECE4B3782E46}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sm2_internal_test-static", "tests\sm2_internal_test-static\sm2_internal_test-static.vcxproj", "{5385CB39-ED86-46E7-8934-E6332AF2C16A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sm2_internal_test", "tests\sm2_internal_test-static\sm2_internal_test-static.vcxproj", "{5385CB39-ED86-46E7-8934-E6332AF2C16A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sm4_internal_test-static", "tests\sm4_internal_test-static\sm4_internal_test-static.vcxproj", "{649BE690-BD25-4F08-8689-AAFB2E50CB1C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sm4_internal_test", "tests\sm4_internal_test-static\sm4_internal_test-static.vcxproj", "{649BE690-BD25-4F08-8689-AAFB2E50CB1C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ssl_cert_table_internal_test-static", "tests\ssl_cert_table_internal_test-static\ssl_cert_table_internal_test-static.vcxproj", "{CF8FEABB-867A-4F83-9E08-8ED2790883E3}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ssl_cert_table_internal_test", "tests\ssl_cert_table_internal_test-static\ssl_cert_table_internal_test-static.vcxproj", "{CF8FEABB-867A-4F83-9E08-8ED2790883E3}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ssl_test_ctx_test-static", "tests\ssl_test_ctx_test-static\ssl_test_ctx_test-static.vcxproj", "{42253D24-BA83-4316-8BF5-B0C34FD632AE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ssl_test_ctx_test", "tests\ssl_test_ctx_test-static\ssl_test_ctx_test-static.vcxproj", "{42253D24-BA83-4316-8BF5-B0C34FD632AE}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ssl_test-static", "tests\ssl_test-static\ssl_test-static.vcxproj", "{F7960E2B-E7F6-4A51-81D0-364D11649C3C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ssl_test", "tests\ssl_test-static\ssl_test-static.vcxproj", "{F7960E2B-E7F6-4A51-81D0-364D11649C3C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sslapitest-static", "tests\sslapitest-static\sslapitest-static.vcxproj", "{69707521-91EB-4A2F-8FBD-A1890EA5CC3E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sslapitest", "tests\sslapitest-static\sslapitest-static.vcxproj", "{69707521-91EB-4A2F-8FBD-A1890EA5CC3E}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sslbuffertest-static", "tests\sslbuffertest-static\sslbuffertest-static.vcxproj", "{E5174966-D832-4EB8-86A5-27CC0CEE4AB8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sslbuffertest", "tests\sslbuffertest-static\sslbuffertest-static.vcxproj", "{E5174966-D832-4EB8-86A5-27CC0CEE4AB8}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sslcorrupttest-static", "tests\sslcorrupttest-static\sslcorrupttest-static.vcxproj", "{61121BEE-C4FC-41F4-A503-DBF7B70FE95A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sslcorrupttest", "tests\sslcorrupttest-static\sslcorrupttest-static.vcxproj", "{61121BEE-C4FC-41F4-A503-DBF7B70FE95A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ssltest_old-static", "tests\ssltest_old-static\ssltest_old-static.vcxproj", "{7C357B24-6B7F-460D-9BDD-4D2450086EBF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ssltest_old", "tests\ssltest_old-static\ssltest_old-static.vcxproj", "{7C357B24-6B7F-460D-9BDD-4D2450086EBF}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stack_test-static", "tests\stack_test-static\stack_test-static.vcxproj", "{37DDEB9E-5319-43C9-90D6-CD965BF8E1F7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stack_test", "tests\stack_test-static\stack_test-static.vcxproj", "{37DDEB9E-5319-43C9-90D6-CD965BF8E1F7}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sysdefaulttest-static", "tests\sysdefaulttest-static\sysdefaulttest-static.vcxproj", "{8512CD2C-F7D6-4A48-BE10-3141C32F6884}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sysdefaulttest", "tests\sysdefaulttest-static\sysdefaulttest-static.vcxproj", "{8512CD2C-F7D6-4A48-BE10-3141C32F6884}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_test-static", "tests\test_test-static\test_test-static.vcxproj", "{A24AEBA2-7257-4C51-BE1A-B85F572ED4D8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_test", "tests\test_test-static\test_test-static.vcxproj", "{A24AEBA2-7257-4C51-BE1A-B85F572ED4D8}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "threadstest-static", "tests\threadstest-static\threadstest-static.vcxproj", "{3B578A79-4B8B-4AA6-A666-96BFD8574DA4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "threadstest", "tests\threadstest-static\threadstest-static.vcxproj", "{3B578A79-4B8B-4AA6-A666-96BFD8574DA4}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "time_offset_test-static", "tests\time_offset_test-static\time_offset_test-static.vcxproj", "{7F6A43CA-7117-4EBB-9C95-9547C9DCFA07}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "time_offset_test", "tests\time_offset_test-static\time_offset_test-static.vcxproj", "{7F6A43CA-7117-4EBB-9C95-9547C9DCFA07}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tls13ccstest-static", "tests\tls13ccstest-static\tls13ccstest-static.vcxproj", "{E041DC23-48AD-4262-B4C8-1CE6EB3B61B0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tls13ccstest", "tests\tls13ccstest-static\tls13ccstest-static.vcxproj", "{E041DC23-48AD-4262-B4C8-1CE6EB3B61B0}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tls13encryptiontest-static", "tests\tls13encryptiontest-static\tls13encryptiontest-static.vcxproj", "{9DE17367-A247-4623-B2AA-A8EF46286405}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tls13encryptiontest", "tests\tls13encryptiontest-static\tls13encryptiontest-static.vcxproj", "{9DE17367-A247-4623-B2AA-A8EF46286405}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uitest-static", "tests\uitest-static\uitest-static.vcxproj", "{9EF99042-E077-4D5B-B2F4-74287D2502EC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uitest", "tests\uitest-static\uitest-static.vcxproj", "{9EF99042-E077-4D5B-B2F4-74287D2502EC}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
+		{6B53B941-33A6-469D-883B-3D533EA2F64C} = {6B53B941-33A6-469D-883B-3D533EA2F64C}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "v3ext-static", "tests\v3ext-static\v3ext-static.vcxproj", "{54999E16-3F72-4B73-B80A-DFB490292ED7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "v3ext", "tests\v3ext-static\v3ext-static.vcxproj", "{54999E16-3F72-4B73-B80A-DFB490292ED7}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "versions-static", "tests\versions-static\versions-static.vcxproj", "{16B74028-8E32-4EC3-BB66-3DF438380965}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "versions", "tests\versions-static\versions-static.vcxproj", "{16B74028-8E32-4EC3-BB66-3DF438380965}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wpackettest-static", "tests\wpackettest-static\wpackettest-static.vcxproj", "{8794C0CC-CB9B-4410-8CAC-A1B3AF353915}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wpackettest", "tests\wpackettest-static\wpackettest-static.vcxproj", "{8794C0CC-CB9B-4410-8CAC-A1B3AF353915}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "x509_check_cert_pkey_test-static", "tests\x509_check_cert_pkey_test-static\x509_check_cert_pkey_test-static.vcxproj", "{F5089C0C-C99A-4FAB-ADCC-8C90457DB974}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "x509_check_cert_pkey_test", "tests\x509_check_cert_pkey_test-static\x509_check_cert_pkey_test-static.vcxproj", "{F5089C0C-C99A-4FAB-ADCC-8C90457DB974}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "x509_dup_cert_test-static", "tests\x509_dup_cert_test-static\x509_dup_cert_test-static.vcxproj", "{8B14F8D4-7495-4364-B806-E8F58A573C7D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "x509_dup_cert_test", "tests\x509_dup_cert_test-static\x509_dup_cert_test-static.vcxproj", "{8B14F8D4-7495-4364-B806-E8F58A573C7D}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "x509_internal_test-static", "tests\x509_internal_test-static\x509_internal_test-static.vcxproj", "{09E17694-6478-4399-A6E3-777047040643}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "x509_internal_test", "tests\x509_internal_test-static\x509_internal_test-static.vcxproj", "{09E17694-6478-4399-A6E3-777047040643}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "x509_time_test-static", "tests\x509_time_test-static\x509_time_test-static.vcxproj", "{0E93513B-4561-412F-BF37-BF378060516A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "x509_time_test", "tests\x509_time_test-static\x509_time_test-static.vcxproj", "{0E93513B-4561-412F-BF37-BF378060516A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "x509aux-static", "tests\x509aux-static\x509aux-static.vcxproj", "{0A80879A-0304-473E-8952-2A41798B6E9B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "x509aux", "tests\x509aux-static\x509aux-static.vcxproj", "{0A80879A-0304-473E-8952-2A41798B6E9B}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
 		{09F451A2-DA76-4340-B4CF-39982FA65C01} = {09F451A2-DA76-4340-B4CF-39982FA65C01}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "x509-test-static", "fuzz\x509-test-static\x509-test-static.vcxproj", "{7EE2C68E-7249-482A-B5C8-5DABEE93AB44}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "x509-test", "fuzz\x509-test-static\x509-test-static.vcxproj", "{7EE2C68E-7249-482A-B5C8-5DABEE93AB44}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6C2BC411-3453-4E33-8245-ED2A51A140BB} = {6C2BC411-3453-4E33-8245-ED2A51A140BB}
 		{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA} = {EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}
