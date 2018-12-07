@@ -16,17 +16,17 @@
   #endif
 #endif
 
-#ifdef KL_OSSL11_USE_LIBCMT
-#ifdef _DEBUG
-#define CFLAG_RT " -MTd"
-#else
-#define CFLAG_RT " -MT"
-#endif
-#else
+#ifdef _DLL
 #ifdef _DEBUG
 #define CFLAG_RT " -MDd"
 #else
 #define CFLAG_RT " -MD"
+#endif
+#else
+#ifdef _DEBUG
+#define CFLAG_RT " -MTd"
+#else
+#define CFLAG_RT " -MT"
 #endif
 #endif
 
