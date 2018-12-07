@@ -21,4 +21,5 @@ for /d %%d in ( build-* ) do (
         )
     )
 )
+
 endlocal
