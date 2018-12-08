@@ -1546,7 +1546,7 @@ CA_DB *load_index(const char *dbfile, DB_ATTR *db_attr)
 #ifndef OPENSSL_NO_POSIX_IO
     BIO_get_fp(in, &dbfp);
     if (
-#if defined(_DLL) || !defined(OPENSSL_USE_APPLINK)
+#if !defined(_MSC_VER) || defined(_DLL) || !defined(OPENSSL_USE_APPLINK)
         fstat(fileno(dbfp), &dbst) == -1
 #else
         /*
