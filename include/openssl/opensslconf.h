@@ -7,7 +7,7 @@
  * https://www.openssl.org/source/license.html
  */
 /*
- * Derived from opensslconf.h.in for https://github.com/kiyolee/openssl1_1-win-build.
+ * Derived from opensslconf.h.in for https://github.com/kiyolee/openssl1_1-win-build.git.
  */
 
 #include <openssl/opensslv.h>
