@@ -11402,11 +11402,11 @@ our %unified_info = (
             "ms\\applink.o" =>
                 [
                     ".",
-                    "include",
                     "apps",
+                    "include",
                     ".",
-                    ".\\include",
                     ".\\apps",
+                    ".\\include",
                 ],
             "ms\\uplink.o" =>
                 [

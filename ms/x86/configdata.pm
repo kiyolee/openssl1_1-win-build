@@ -3202,8 +3202,6 @@ our %unified_info = (
                 {
                     "deps" =>
                         [
-                            "ssl\\packet.o",
-                            "ssl\\tls13_enc.o",
                             "ssl\\bio_ssl.o",
                             "ssl\\d1_lib.o",
                             "ssl\\d1_msg.o",
