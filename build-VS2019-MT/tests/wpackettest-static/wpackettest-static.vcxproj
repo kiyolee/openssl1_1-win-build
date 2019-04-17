@@ -23,7 +23,6 @@
     <ProjectGuid>{8794C0CC-CB9B-4410-8CAC-A1B3AF353915}</ProjectGuid>
     <RootNamespace>wpackettest-static</RootNamespace>
     <ProjectName>wpackettest</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

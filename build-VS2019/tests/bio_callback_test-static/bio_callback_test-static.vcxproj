@@ -23,7 +23,6 @@
     <ProjectGuid>{96C8017D-7B5F-454D-86A6-BDC67A046A9C}</ProjectGuid>
     <RootNamespace>bio_callback_test-static</RootNamespace>
     <ProjectName>bio_callback_test</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

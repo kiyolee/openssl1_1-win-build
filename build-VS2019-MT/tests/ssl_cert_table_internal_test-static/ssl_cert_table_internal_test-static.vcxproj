@@ -23,7 +23,6 @@
     <ProjectGuid>{CF8FEABB-867A-4F83-9E08-8ED2790883E3}</ProjectGuid>
     <RootNamespace>ssl_cert_table_internal_test-static</RootNamespace>
     <ProjectName>ssl_cert_table_internal_test</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

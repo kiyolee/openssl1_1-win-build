@@ -23,7 +23,6 @@
     <ProjectGuid>{B15F6E74-3463-4736-8204-33A4BD43477C}</ProjectGuid>
     <RootNamespace>asn1_string_table_test-static</RootNamespace>
     <ProjectName>asn1_string_table_test</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

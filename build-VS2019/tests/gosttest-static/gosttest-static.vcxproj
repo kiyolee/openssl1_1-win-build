@@ -23,7 +23,6 @@
     <ProjectGuid>{6273C37B-13E8-4887-B62A-FACED0C41738}</ProjectGuid>
     <RootNamespace>gosttest-static</RootNamespace>
     <ProjectName>gosttest</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

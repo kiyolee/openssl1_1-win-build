@@ -23,7 +23,6 @@
     <ProjectGuid>{4378E007-6FE6-4BAC-83D1-45381C9F5C0D}</ProjectGuid>
     <RootNamespace>srptest-static</RootNamespace>
     <ProjectName>srptest</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

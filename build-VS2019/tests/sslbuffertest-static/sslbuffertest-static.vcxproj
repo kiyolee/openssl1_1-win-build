@@ -23,7 +23,6 @@
     <ProjectGuid>{E5174966-D832-4EB8-86A5-27CC0CEE4AB8}</ProjectGuid>
     <RootNamespace>sslbuffertest-static</RootNamespace>
     <ProjectName>sslbuffertest</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

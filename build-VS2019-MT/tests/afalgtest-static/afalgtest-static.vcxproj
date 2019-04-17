@@ -23,7 +23,6 @@
     <ProjectGuid>{4013DFE4-9ED2-43B1-A18D-1436F44FD1D8}</ProjectGuid>
     <RootNamespace>afalgtest-static</RootNamespace>
     <ProjectName>afalgtest</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

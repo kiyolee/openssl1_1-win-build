@@ -23,7 +23,6 @@
     <ProjectGuid>{28BD91BC-DAC5-40B9-BD67-DEB7488E885E}</ProjectGuid>
     <RootNamespace>errtest-static</RootNamespace>
     <ProjectName>errtest</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

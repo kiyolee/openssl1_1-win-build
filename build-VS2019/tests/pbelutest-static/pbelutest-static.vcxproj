@@ -23,7 +23,6 @@
     <ProjectGuid>{FF58E11B-B537-4842-9EDB-1F01C57CE418}</ProjectGuid>
     <RootNamespace>pbelutest-static</RootNamespace>
     <ProjectName>pbelutest</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

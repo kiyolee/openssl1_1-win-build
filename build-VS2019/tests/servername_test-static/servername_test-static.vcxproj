@@ -23,7 +23,6 @@
     <ProjectGuid>{C6E1E0C4-D5D4-485A-B513-6A697608B8B2}</ProjectGuid>
     <RootNamespace>servername_test-static</RootNamespace>
     <ProjectName>servername_test</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

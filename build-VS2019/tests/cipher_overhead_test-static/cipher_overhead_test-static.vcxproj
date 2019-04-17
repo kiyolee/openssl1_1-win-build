@@ -23,7 +23,6 @@
     <ProjectGuid>{8C0474D6-6285-4C21-B3B5-99240C3D67C9}</ProjectGuid>
     <RootNamespace>cipher_overhead_test-static</RootNamespace>
     <ProjectName>cipher_overhead_test</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -23,7 +23,6 @@
     <ProjectGuid>{FBA43C76-C13C-4D09-B7BD-4AAFC388D4DA}</ProjectGuid>
     <RootNamespace>rc5test-static</RootNamespace>
     <ProjectName>rc5test</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

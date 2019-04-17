@@ -23,7 +23,6 @@
     <ProjectGuid>{A84ACC07-7717-486E-9FA1-5805B99A7E07}</ProjectGuid>
     <RootNamespace>mdc2test-static</RootNamespace>
     <ProjectName>mdc2test</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

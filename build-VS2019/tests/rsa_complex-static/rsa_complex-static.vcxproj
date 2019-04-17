@@ -23,7 +23,6 @@
     <ProjectGuid>{9D7712F6-ABEF-41B2-8D4A-2919EA06683B}</ProjectGuid>
     <RootNamespace>rsa_complex-static</RootNamespace>
     <ProjectName>rsa_complex</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

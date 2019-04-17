@@ -23,7 +23,6 @@
     <ProjectGuid>{09E17694-6478-4399-A6E3-777047040643}</ProjectGuid>
     <RootNamespace>x509_internal_test-static</RootNamespace>
     <ProjectName>x509_internal_test</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

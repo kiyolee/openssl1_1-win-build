@@ -23,7 +23,6 @@
     <ProjectGuid>{2EC2EC24-C0C6-4BB8-9322-EA4165FE14AE}</ProjectGuid>
     <RootNamespace>pemtest-static</RootNamespace>
     <ProjectName>pemtest</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

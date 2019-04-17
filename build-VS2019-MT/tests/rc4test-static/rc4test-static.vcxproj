@@ -23,7 +23,6 @@
     <ProjectGuid>{94CBB7C2-8421-4467-AB05-2A9902905576}</ProjectGuid>
     <RootNamespace>rc4test-static</RootNamespace>
     <ProjectName>rc4test</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

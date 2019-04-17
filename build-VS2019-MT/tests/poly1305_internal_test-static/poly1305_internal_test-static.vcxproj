@@ -23,7 +23,6 @@
     <ProjectGuid>{AF69CE44-72AF-455E-B9CA-9DA6F1CD8B22}</ProjectGuid>
     <RootNamespace>poly1305_internal_test-static</RootNamespace>
     <ProjectName>poly1305_internal_test</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -23,7 +23,6 @@
     <ProjectGuid>{82ADDF96-0882-4F9E-A85D-B1C84FC795B6}</ProjectGuid>
     <RootNamespace>evp_test-static</RootNamespace>
     <ProjectName>evp_test</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

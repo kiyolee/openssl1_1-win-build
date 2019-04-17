@@ -23,7 +23,6 @@
     <ProjectGuid>{F7960E2B-E7F6-4A51-81D0-364D11649C3C}</ProjectGuid>
     <RootNamespace>ssl_test-static</RootNamespace>
     <ProjectName>ssl_test</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

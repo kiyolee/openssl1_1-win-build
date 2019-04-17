@@ -23,7 +23,6 @@
     <ProjectGuid>{C0997873-B839-4B20-B4DE-F22696FC80BC}</ProjectGuid>
     <RootNamespace>bntest-static</RootNamespace>
     <ProjectName>bntest</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

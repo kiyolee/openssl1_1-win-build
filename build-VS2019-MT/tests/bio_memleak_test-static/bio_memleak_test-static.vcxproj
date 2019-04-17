@@ -23,7 +23,6 @@
     <ProjectGuid>{14B452B1-7C43-44C4-8A6C-B2D0BCBD277C}</ProjectGuid>
     <RootNamespace>bio_memleak_test-static</RootNamespace>
     <ProjectName>bio_memleak_test</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

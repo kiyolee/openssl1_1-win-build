@@ -23,7 +23,6 @@
     <ProjectGuid>{DB26379D-EE08-426A-8C46-C724BFB2092F}</ProjectGuid>
     <RootNamespace>ct-test-static</RootNamespace>
     <ProjectName>ct-test</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

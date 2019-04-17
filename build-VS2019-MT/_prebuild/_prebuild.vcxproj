@@ -682,7 +682,6 @@ popd</Command>
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{625D49F1-BC00-4C36-AE25-2F408B208B08}</ProjectGuid>
     <RootNamespace>_prebuild</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

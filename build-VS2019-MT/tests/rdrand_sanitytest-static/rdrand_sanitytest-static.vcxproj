@@ -23,7 +23,6 @@
     <ProjectGuid>{2CA70DF7-CE6C-4835-88E7-3CD344FB84D6}</ProjectGuid>
     <RootNamespace>rdrand_sanitytest-static</RootNamespace>
     <ProjectName>rdrand_sanitytest</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

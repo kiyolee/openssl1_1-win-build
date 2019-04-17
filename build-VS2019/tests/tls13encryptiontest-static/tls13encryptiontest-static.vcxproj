@@ -23,7 +23,6 @@
     <ProjectGuid>{9DE17367-A247-4623-B2AA-A8EF46286405}</ProjectGuid>
     <RootNamespace>tls13encryptiontest-static</RootNamespace>
     <ProjectName>tls13encryptiontest</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

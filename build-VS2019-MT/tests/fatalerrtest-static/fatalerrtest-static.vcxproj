@@ -23,7 +23,6 @@
     <ProjectGuid>{1EB4BA91-9D5C-4531-80B6-9A7A055CACDF}</ProjectGuid>
     <RootNamespace>fatalerrtest-static</RootNamespace>
     <ProjectName>fatalerrtest</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

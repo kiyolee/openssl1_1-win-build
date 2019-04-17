@@ -23,7 +23,6 @@
     <ProjectGuid>{E2688827-950F-4691-82CB-741495D20D65}</ProjectGuid>
     <RootNamespace>cipherbytes_test-static</RootNamespace>
     <ProjectName>cipherbytes_test</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

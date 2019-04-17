@@ -23,7 +23,6 @@
     <ProjectGuid>{F7D99E71-5FA2-49BF-93CC-5818ACA7774C}</ProjectGuid>
     <RootNamespace>bio_enc_test-static</RootNamespace>
     <ProjectName>bio_enc_test</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

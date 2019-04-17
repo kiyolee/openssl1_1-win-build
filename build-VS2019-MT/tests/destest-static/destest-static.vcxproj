@@ -23,7 +23,6 @@
     <ProjectGuid>{EBB50638-2290-4682-A94D-8D188C4145E6}</ProjectGuid>
     <RootNamespace>destest-static</RootNamespace>
     <ProjectName>destest</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

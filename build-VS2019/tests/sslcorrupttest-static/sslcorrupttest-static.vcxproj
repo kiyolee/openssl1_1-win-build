@@ -23,7 +23,6 @@
     <ProjectGuid>{61121BEE-C4FC-41F4-A503-DBF7B70FE95A}</ProjectGuid>
     <RootNamespace>sslcorrupttest-static</RootNamespace>
     <ProjectName>sslcorrupttest</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

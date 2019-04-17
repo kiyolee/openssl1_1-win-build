@@ -23,7 +23,6 @@
     <ProjectGuid>{E4B05196-8544-43DE-BAB3-5C11D3D91261}</ProjectGuid>
     <RootNamespace>ecstresstest-static</RootNamespace>
     <ProjectName>ecstresstest</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

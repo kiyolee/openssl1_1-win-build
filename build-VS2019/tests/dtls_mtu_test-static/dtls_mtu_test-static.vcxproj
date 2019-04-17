@@ -23,7 +23,6 @@
     <ProjectGuid>{C4D8744D-4CC3-446E-A520-C28450B6B3D6}</ProjectGuid>
     <RootNamespace>dtls_mtu_test-static</RootNamespace>
     <ProjectName>dtls_mtu_test</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

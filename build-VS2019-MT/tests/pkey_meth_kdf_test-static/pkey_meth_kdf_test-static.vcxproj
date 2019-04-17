@@ -23,7 +23,6 @@
     <ProjectGuid>{9F17F9D1-3883-4EAA-A8F1-FB19AAF28635}</ProjectGuid>
     <RootNamespace>pkey_meth_kdf_test-static</RootNamespace>
     <ProjectName>pkey_meth_kdf_test</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -23,7 +23,6 @@
     <ProjectGuid>{304DEB0A-0B74-441E-A136-055727CA0F61}</ProjectGuid>
     <RootNamespace>secmemtest-static</RootNamespace>
     <ProjectName>secmemtest</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

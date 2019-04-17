@@ -23,7 +23,6 @@
     <ProjectGuid>{1222179B-2130-4B90-B15A-A59F84F1A8B5}</ProjectGuid>
     <RootNamespace>ciphername_test-static</RootNamespace>
     <ProjectName>ciphername_test</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

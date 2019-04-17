@@ -23,7 +23,6 @@
     <ProjectGuid>{5B56C29A-1C77-401B-A44F-1ECD0764815C}</ProjectGuid>
     <RootNamespace>asn1_decode_test-static</RootNamespace>
     <ProjectName>asn1_decode_test</ProjectName>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
