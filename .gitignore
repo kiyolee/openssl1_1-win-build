@@ -9,6 +9,10 @@
 /build-*/*/x64/Release
 /build-*/Debug
 /build-*/Release
+/build-*/fuzz/*/Debug
+/build-*/fuzz/*/Release
+/build-*/fuzz/*/x64/Debug
+/build-*/fuzz/*/x64/Release
 /build-*/tests/*/Debug
 /build-*/tests/*/Release
 /build-*/tests/*/x64/Debug
