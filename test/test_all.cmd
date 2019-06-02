@@ -7,8 +7,6 @@ set MY_ROOT=%cd%
 echo ROOT: %MY_ROOT%
 echo.
 
-set PATH=%PATH_ORG%
-
 for /d %%d in ( build-* ) do (
     for %%r in ( Release Debug x64\Release x64\Debug ) do (
         if exist %MY_ROOT%\%%d\%%r\openssl.exe (
