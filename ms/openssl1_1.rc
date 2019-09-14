@@ -3,8 +3,8 @@
 LANGUAGE 0x09,0x01
 
 1 VERSIONINFO
-  FILEVERSION 1,1,1,3
-  PRODUCTVERSION 1,1,1,3
+  FILEVERSION 1,1,1,4
+  PRODUCTVERSION 1,1,1,4
   FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
   FILEFLAGS 0x01L
@@ -30,7 +30,7 @@ BEGIN
 #else
             VALUE "FileDescription", "OpenSSL library\0"
 #endif
-            VALUE "FileVersion", "1.1.1c\0"
+            VALUE "FileVersion", "1.1.1d\0"
 #if defined(LIBCRYPTO)
             VALUE "InternalName", "libcrypto\0"
             VALUE "OriginalFilename", "libcrypto-1_1.dll\0"
@@ -42,7 +42,7 @@ BEGIN
             VALUE "OriginalFilename", "openssl.exe\0"
 #endif
             VALUE "ProductName", "The OpenSSL Toolkit\0"
-            VALUE "ProductVersion", "1.1.1c\0"
+            VALUE "ProductVersion", "1.1.1d\0"
             // Optional:
             //VALUE "Comments", "\0"
             VALUE "LegalCopyright", "Copyright 1998-2019 The OpenSSL Authors. All rights reserved.\0"

@@ -1,9 +1,9 @@
 setlocal
 
-set OPENSSL_VER=1.1.1c
+set OPENSSL_VER=1.1.1d
 set OPENSSL_BASE=openssl-%OPENSSL_VER%
 set OPENSSL_DIR=..\%OPENSSL_BASE%
-set OPENSSL_DIR_SED=\.\.\\\\openssl-1\.1\.1c
+set OPENSSL_DIR_SED=\.\.\\\\openssl-1\.1\.1d
 
 set ZLIB_DIR=..\zlib
 

@@ -2127,6 +2127,12 @@
     <ClCompile Include="..\..\crypto\getenv.c">
       <Filter>Source Files\crypto</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\crypto\aes\aes_cbc.c">
+      <Filter>Source Files\crypto\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\crypto\aes\aes_core.c">
+      <Filter>Source Files\crypto\aes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\crypto\modes\asm\aesni-gcm-x86_64.pl">
@@ -2144,12 +2150,6 @@
     <CustomBuild Include="..\..\crypto\aes\asm\aesni-x86_64.pl">
       <Filter>Source Files\asm\x64</Filter>
     </CustomBuild>
-    <CustomBuild Include="..\..\crypto\aes\asm\aes-x86_64.pl">
-      <Filter>Source Files\asm\x64</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\..\crypto\aes\asm\bsaes-x86_64.pl">
-      <Filter>Source Files\asm\x64</Filter>
-    </CustomBuild>
     <CustomBuild Include="..\..\crypto\camellia\asm\cmll-x86_64.pl">
       <Filter>Source Files\asm\x64</Filter>
     </CustomBuild>
@@ -2158,9 +2158,6 @@
     </CustomBuild>
     <CustomBuild Include="..\..\crypto\modes\asm\ghash-x86_64.pl">
       <Filter>Source Files\asm\x64</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\..\crypto\aes\asm\aes-586.pl">
-      <Filter>Source Files\asm\x86</Filter>
     </CustomBuild>
     <CustomBuild Include="..\..\crypto\aes\asm\aesni-x86.pl">
       <Filter>Source Files\asm\x86</Filter>

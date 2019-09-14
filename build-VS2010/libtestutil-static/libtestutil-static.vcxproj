@@ -109,6 +109,7 @@
     <ClCompile Include="..\..\test\testutil\init.c" />
     <ClCompile Include="..\..\test\testutil\main.c" />
     <ClCompile Include="..\..\test\testutil\output_helpers.c" />
+    <ClCompile Include="..\..\test\testutil\random.c" />
     <ClCompile Include="..\..\test\testutil\stanza.c" />
     <ClCompile Include="..\..\test\testutil\tap_bio.c" />
     <ClCompile Include="..\..\test\testutil\tests.c" />

@@ -54,5 +54,8 @@
     <ClCompile Include="..\..\test\testutil\format_output.c">
       <Filter>Source Files\test\testutil</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\test\testutil\random.c">
+      <Filter>Source Files\test\testutil</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
