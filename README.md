@@ -71,7 +71,7 @@ To test one set of output binaries that use static libraries:
 To test all binaries that have been built:
 
 > \> cd {somewhere}\openssl1_1-win-build\
-> \> ms\test_all.cmd
+> \> test\test_all.cmd
 
 ### Using The Build:
 
