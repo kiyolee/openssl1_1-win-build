@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{E9EDF232-3E0C-492A-BEEE-1824C265207F}</ProjectGuid>
     <RootNamespace>ideatest-static</RootNamespace>
     <ProjectName>ideatest</ProjectName>

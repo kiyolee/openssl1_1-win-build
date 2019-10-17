@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{EE2A9818-15EA-4DA2-8BB6-E722AFCCA2B6}</ProjectGuid>
     <RootNamespace>dhtest</RootNamespace>
   </PropertyGroup>

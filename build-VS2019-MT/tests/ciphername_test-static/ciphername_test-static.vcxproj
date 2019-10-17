@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{1222179B-2130-4B90-B15A-A59F84F1A8B5}</ProjectGuid>
     <RootNamespace>ciphername_test-static</RootNamespace>
     <ProjectName>ciphername_test</ProjectName>

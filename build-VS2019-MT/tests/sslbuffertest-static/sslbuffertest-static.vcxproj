@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{E5174966-D832-4EB8-86A5-27CC0CEE4AB8}</ProjectGuid>
     <RootNamespace>sslbuffertest-static</RootNamespace>
     <ProjectName>sslbuffertest</ProjectName>

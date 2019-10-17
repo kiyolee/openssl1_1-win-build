@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{CC84746D-414F-406F-977B-7CEC0B56570A}</ProjectGuid>
     <RootNamespace>shlibloadtest</RootNamespace>
   </PropertyGroup>

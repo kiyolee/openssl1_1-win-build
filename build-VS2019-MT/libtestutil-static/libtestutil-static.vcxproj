@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{EFBC9744-A234-4EBE-8D81-EB233CDFD6AA}</ProjectGuid>
     <RootNamespace>libtestutil-static</RootNamespace>
   </PropertyGroup>

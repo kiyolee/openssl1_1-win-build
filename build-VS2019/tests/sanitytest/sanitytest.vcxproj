@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{D5E768A1-8294-42E9-8D00-5EAC72CC2D6C}</ProjectGuid>
     <RootNamespace>sanitytest</RootNamespace>
   </PropertyGroup>

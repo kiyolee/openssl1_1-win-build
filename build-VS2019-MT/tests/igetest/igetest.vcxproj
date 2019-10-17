@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{9A62FE89-87BF-4561-AE18-1EA93BF789FB}</ProjectGuid>
     <RootNamespace>igetest</RootNamespace>
   </PropertyGroup>

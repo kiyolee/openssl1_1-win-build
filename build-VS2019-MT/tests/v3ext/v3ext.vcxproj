@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{62A33024-4A32-4908-A1AB-B06E3C27A1F2}</ProjectGuid>
     <RootNamespace>v3ext</RootNamespace>
   </PropertyGroup>

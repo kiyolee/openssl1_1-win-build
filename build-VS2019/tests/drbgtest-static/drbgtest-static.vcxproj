@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{BB6F079F-443D-4F3E-8C77-F204413A0946}</ProjectGuid>
     <RootNamespace>drbgtest-static</RootNamespace>
     <ProjectName>drbgtest</ProjectName>

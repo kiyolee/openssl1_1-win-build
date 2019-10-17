@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{53E211F8-E16C-4DE2-9B8F-1046CD040217}</ProjectGuid>
     <RootNamespace>sysdefaulttest</RootNamespace>
   </PropertyGroup>

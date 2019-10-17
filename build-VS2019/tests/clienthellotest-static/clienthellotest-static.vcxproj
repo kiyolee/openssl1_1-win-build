@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{8F439A9D-C2AE-4F35-B9C4-C364373837F8}</ProjectGuid>
     <RootNamespace>clienthellotest-static</RootNamespace>
     <ProjectName>clienthellotest</ProjectName>

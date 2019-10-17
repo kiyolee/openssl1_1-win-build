@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{E235AC64-FB69-4586-9143-7E177D0BFE30}</ProjectGuid>
     <RootNamespace>lhash_test-static</RootNamespace>
     <ProjectName>lhash_test</ProjectName>

@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{408F8D51-6070-4BC3-9984-9400C4C62A7D}</ProjectGuid>
     <RootNamespace>asn1_encode_test-static</RootNamespace>
     <ProjectName>asn1_encode_test</ProjectName>

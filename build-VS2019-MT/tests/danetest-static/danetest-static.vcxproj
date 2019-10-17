@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{F047B09A-784C-44A0-BB15-25748B93F4F7}</ProjectGuid>
     <RootNamespace>danetest-static</RootNamespace>
     <ProjectName>danetest</ProjectName>

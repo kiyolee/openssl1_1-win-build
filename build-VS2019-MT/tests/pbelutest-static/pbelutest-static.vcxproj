@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{FF58E11B-B537-4842-9EDB-1F01C57CE418}</ProjectGuid>
     <RootNamespace>pbelutest-static</RootNamespace>
     <ProjectName>pbelutest</ProjectName>

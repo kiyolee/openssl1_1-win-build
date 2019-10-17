@@ -679,7 +679,7 @@ popd</Command>
     </CopyFileToFolders>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{625D49F1-BC00-4C36-AE25-2F408B208B08}</ProjectGuid>
     <RootNamespace>_prebuild</RootNamespace>
   </PropertyGroup>

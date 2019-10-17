@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{353C95A4-BBD2-4060-B62D-724FE4F1DB5A}</ProjectGuid>
     <RootNamespace>asn1_time_test-static</RootNamespace>
     <ProjectName>asn1_time_test</ProjectName>

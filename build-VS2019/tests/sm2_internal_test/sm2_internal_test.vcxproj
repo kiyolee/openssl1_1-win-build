@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{653D6BCD-8370-4CB8-91E0-EAA422C6FC37}</ProjectGuid>
     <RootNamespace>sm2_internal_test</RootNamespace>
   </PropertyGroup>

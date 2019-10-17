@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{12C881EC-A972-4058-B330-34C1CAB3F805}</ProjectGuid>
     <RootNamespace>pemtest</RootNamespace>
   </PropertyGroup>

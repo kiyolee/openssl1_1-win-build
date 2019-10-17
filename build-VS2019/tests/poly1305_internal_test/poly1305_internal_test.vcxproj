@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{9A859866-F391-47BA-B8B0-83B06E0A257F}</ProjectGuid>
     <RootNamespace>poly1305_internal_test</RootNamespace>
   </PropertyGroup>

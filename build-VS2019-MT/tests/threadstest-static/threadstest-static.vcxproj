@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{3B578A79-4B8B-4AA6-A666-96BFD8574DA4}</ProjectGuid>
     <RootNamespace>threadstest-static</RootNamespace>
     <ProjectName>threadstest</ProjectName>

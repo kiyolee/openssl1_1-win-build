@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{96FDE531-A223-4F71-8134-9FC75E1F943D}</ProjectGuid>
     <RootNamespace>time_offset_test</RootNamespace>
   </PropertyGroup>

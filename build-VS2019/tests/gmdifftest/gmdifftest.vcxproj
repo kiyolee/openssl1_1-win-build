@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{7A7D6182-A34E-430B-AC78-D2D810BCECE9}</ProjectGuid>
     <RootNamespace>gmdifftest</RootNamespace>
   </PropertyGroup>

@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{C7514A79-6107-4668-B8AB-FC9E431D2AEA}</ProjectGuid>
     <RootNamespace>crltest-static</RootNamespace>
     <ProjectName>crltest</ProjectName>

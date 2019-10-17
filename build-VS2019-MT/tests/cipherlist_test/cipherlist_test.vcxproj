@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{657FBF4E-EB2E-49E5-AB9D-534EB0E889CE}</ProjectGuid>
     <RootNamespace>cipherlist_test</RootNamespace>
   </PropertyGroup>

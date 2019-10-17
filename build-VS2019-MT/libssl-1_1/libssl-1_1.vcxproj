@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{1E068827-5CD6-4648-98DD-B0417F0B9DDC}</ProjectGuid>
     <RootNamespace>libssl-1_1</RootNamespace>
   </PropertyGroup>

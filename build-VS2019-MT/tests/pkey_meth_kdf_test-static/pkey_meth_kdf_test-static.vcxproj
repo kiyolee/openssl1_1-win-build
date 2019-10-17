@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{9F17F9D1-3883-4EAA-A8F1-FB19AAF28635}</ProjectGuid>
     <RootNamespace>pkey_meth_kdf_test-static</RootNamespace>
     <ProjectName>pkey_meth_kdf_test</ProjectName>

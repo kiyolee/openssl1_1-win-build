@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{872A49DC-94B0-4DDF-BB7B-5077B54B9379}</ProjectGuid>
     <RootNamespace>asynciotest</RootNamespace>
   </PropertyGroup>

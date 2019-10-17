@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{8F9B94C0-2A1C-4295-A6CD-A90750976913}</ProjectGuid>
     <RootNamespace>openssl-static</RootNamespace>
   </PropertyGroup>

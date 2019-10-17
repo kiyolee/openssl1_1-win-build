@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{8794C0CC-CB9B-4410-8CAC-A1B3AF353915}</ProjectGuid>
     <RootNamespace>wpackettest-static</RootNamespace>
     <ProjectName>wpackettest</ProjectName>

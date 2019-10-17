@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{8B14F8D4-7495-4364-B806-E8F58A573C7D}</ProjectGuid>
     <RootNamespace>x509_dup_cert_test-static</RootNamespace>
     <ProjectName>x509_dup_cert_test</ProjectName>

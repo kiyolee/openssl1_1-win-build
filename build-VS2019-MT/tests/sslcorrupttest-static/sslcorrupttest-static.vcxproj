@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{61121BEE-C4FC-41F4-A503-DBF7B70FE95A}</ProjectGuid>
     <RootNamespace>sslcorrupttest-static</RootNamespace>
     <ProjectName>sslcorrupttest</ProjectName>

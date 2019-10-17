@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{9051A1D1-1CFA-4373-8F05-ECE4B3782E46}</ProjectGuid>
     <RootNamespace>siphash_internal_test-static</RootNamespace>
     <ProjectName>siphash_internal_test</ProjectName>

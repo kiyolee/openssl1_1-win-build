@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{69707521-91EB-4A2F-8FBD-A1890EA5CC3E}</ProjectGuid>
     <RootNamespace>sslapitest-static</RootNamespace>
     <ProjectName>sslapitest</ProjectName>

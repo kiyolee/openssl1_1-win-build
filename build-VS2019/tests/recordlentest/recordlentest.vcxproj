@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{903503AA-72F7-46DD-8D8A-9A03A4B13F44}</ProjectGuid>
     <RootNamespace>recordlentest</RootNamespace>
   </PropertyGroup>

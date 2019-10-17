@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{CE5DD1F5-E2F8-4CB3-B4F7-372A34B583DE}</ProjectGuid>
     <RootNamespace>verify_extra_test-static</RootNamespace>
     <ProjectName>verify_extra_test</ProjectName>

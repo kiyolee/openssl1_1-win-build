@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{6326BAB4-C194-4437-A982-A76658B9F556}</ProjectGuid>
     <RootNamespace>bignum-test</RootNamespace>
   </PropertyGroup>

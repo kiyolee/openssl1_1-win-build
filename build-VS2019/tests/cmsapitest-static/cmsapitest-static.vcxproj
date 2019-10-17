@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{87DF207D-53AB-4503-8E0B-4926B8FF116A}</ProjectGuid>
     <RootNamespace>cmsapitest-static</RootNamespace>
     <ProjectName>cmsapitest</ProjectName>

@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{9DE17367-A247-4623-B2AA-A8EF46286405}</ProjectGuid>
     <RootNamespace>tls13encryptiontest-static</RootNamespace>
     <ProjectName>tls13encryptiontest</ProjectName>

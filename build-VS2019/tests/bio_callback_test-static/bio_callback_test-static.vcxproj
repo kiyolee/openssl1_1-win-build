@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{96C8017D-7B5F-454D-86A6-BDC67A046A9C}</ProjectGuid>
     <RootNamespace>bio_callback_test-static</RootNamespace>
     <ProjectName>bio_callback_test</ProjectName>

@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{4DB8AC2B-1B20-47AC-AC01-90F0385A31AC}</ProjectGuid>
     <RootNamespace>ct_test</RootNamespace>
   </PropertyGroup>

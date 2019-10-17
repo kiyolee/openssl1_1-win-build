@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{66D70B89-1FA3-479F-AADB-AA735D74DA7F}</ProjectGuid>
     <RootNamespace>cms-test</RootNamespace>
   </PropertyGroup>

@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{8C1D325E-73A2-4DFA-8C69-37A966669DCC}</ProjectGuid>
     <RootNamespace>curve448_internal_test</RootNamespace>
   </PropertyGroup>

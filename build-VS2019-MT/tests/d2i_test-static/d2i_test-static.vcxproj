@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{7B91D941-4FE8-40A9-A7B3-6B1B82153404}</ProjectGuid>
     <RootNamespace>d2i_test-static</RootNamespace>
     <ProjectName>d2i_test</ProjectName>

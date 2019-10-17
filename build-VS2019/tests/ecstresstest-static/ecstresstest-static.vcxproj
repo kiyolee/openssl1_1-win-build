@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{E4B05196-8544-43DE-BAB3-5C11D3D91261}</ProjectGuid>
     <RootNamespace>ecstresstest-static</RootNamespace>
     <ProjectName>ecstresstest</ProjectName>

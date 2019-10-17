@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{D23D7F50-E36B-4232-A0D7-F9F631968301}</ProjectGuid>
     <RootNamespace>bio_memleak_test</RootNamespace>
   </PropertyGroup>

@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{E37FA51E-D01E-49F4-8021-602C1AA23155}</ProjectGuid>
     <RootNamespace>srptest</RootNamespace>
   </PropertyGroup>

@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{8BA5A9EF-1679-4F2E-A86A-B862A15F6138}</ProjectGuid>
     <RootNamespace>bio_enc_test</RootNamespace>
   </PropertyGroup>

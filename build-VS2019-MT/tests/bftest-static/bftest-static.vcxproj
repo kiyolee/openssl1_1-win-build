@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{BDFAD855-C841-4ED0-8563-D12BCB8BE4AF}</ProjectGuid>
     <RootNamespace>bftest-static</RootNamespace>
     <ProjectName>bftest</ProjectName>

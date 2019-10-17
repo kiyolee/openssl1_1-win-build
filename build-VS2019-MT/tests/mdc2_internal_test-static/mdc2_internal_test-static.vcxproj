@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{63A61755-B1BA-4F96-BBC3-176539070EDF}</ProjectGuid>
     <RootNamespace>mdc2_internal_test-static</RootNamespace>
     <ProjectName>mdc2_internal_test</ProjectName>

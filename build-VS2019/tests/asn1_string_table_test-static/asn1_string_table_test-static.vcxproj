@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{B15F6E74-3463-4736-8204-33A4BD43477C}</ProjectGuid>
     <RootNamespace>asn1_string_table_test-static</RootNamespace>
     <ProjectName>asn1_string_table_test</ProjectName>

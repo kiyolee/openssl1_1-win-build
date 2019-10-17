@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{9E041C99-DB1A-44F8-9543-AC3321B726A4}</ProjectGuid>
     <RootNamespace>hmactest</RootNamespace>
   </PropertyGroup>

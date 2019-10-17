@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{CCA4259E-FB1C-4638-A71A-FD82B1E22617}</ProjectGuid>
     <RootNamespace>bndiv-test-static</RootNamespace>
     <ProjectName>bndiv-test</ProjectName>

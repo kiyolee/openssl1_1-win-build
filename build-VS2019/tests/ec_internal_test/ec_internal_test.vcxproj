@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{B05F7077-0E6C-450C-B4E1-9564A218D2B1}</ProjectGuid>
     <RootNamespace>ec_internal_test</RootNamespace>
   </PropertyGroup>

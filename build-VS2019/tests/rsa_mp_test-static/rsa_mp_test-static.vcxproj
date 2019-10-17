@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{FC4D2A6E-8656-4CD6-A482-5EEE852A417F}</ProjectGuid>
     <RootNamespace>rsa_mp_test-static</RootNamespace>
     <ProjectName>rsa_mp_test</ProjectName>

@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{EC66AFDF-9632-4435-8F09-B3732DD1FC69}</ProjectGuid>
     <RootNamespace>rsa_complex</RootNamespace>
   </PropertyGroup>

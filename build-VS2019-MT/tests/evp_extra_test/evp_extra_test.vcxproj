@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{96E9D2AB-EC23-42E5-B8D9-6E561F66FB17}</ProjectGuid>
     <RootNamespace>evp_extra_test</RootNamespace>
   </PropertyGroup>

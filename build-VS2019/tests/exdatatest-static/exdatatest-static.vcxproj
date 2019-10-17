@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{7E2C7DAC-F415-486D-9492-5A1F5E47E7AA}</ProjectGuid>
     <RootNamespace>exdatatest-static</RootNamespace>
     <ProjectName>exdatatest</ProjectName>

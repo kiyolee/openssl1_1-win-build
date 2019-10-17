@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{4013DFE4-9ED2-43B1-A18D-1436F44FD1D8}</ProjectGuid>
     <RootNamespace>afalgtest-static</RootNamespace>
     <ProjectName>afalgtest</ProjectName>

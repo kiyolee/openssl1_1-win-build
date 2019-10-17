@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{FF93E30B-CEC3-4487-84D7-24FF7743DCDF}</ProjectGuid>
     <RootNamespace>dsatest</RootNamespace>
   </PropertyGroup>

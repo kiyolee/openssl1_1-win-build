@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{1D3C6DCF-BE8A-4B80-B450-7344A4A342E9}</ProjectGuid>
     <RootNamespace>chacha_internal_test-static</RootNamespace>
     <ProjectName>chacha_internal_test</ProjectName>

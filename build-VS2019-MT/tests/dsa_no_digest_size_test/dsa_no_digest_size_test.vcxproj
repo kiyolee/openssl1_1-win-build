@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{ABF29E8D-3AA9-4581-B854-68C3BAFAD882}</ProjectGuid>
     <RootNamespace>dsa_no_digest_size_test</RootNamespace>
   </PropertyGroup>

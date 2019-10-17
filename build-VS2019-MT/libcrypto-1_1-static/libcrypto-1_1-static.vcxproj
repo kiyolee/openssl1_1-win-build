@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{09F451A2-DA76-4340-B4CF-39982FA65C01}</ProjectGuid>
     <RootNamespace>libcrypto-1_1-static</RootNamespace>
   </PropertyGroup>

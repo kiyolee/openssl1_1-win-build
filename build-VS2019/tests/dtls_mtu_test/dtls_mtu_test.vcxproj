@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{AA447732-99B9-42B8-9691-FA542DCC1B06}</ProjectGuid>
     <RootNamespace>dtls_mtu_test</RootNamespace>
   </PropertyGroup>

@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{2CA70DF7-CE6C-4835-88E7-3CD344FB84D6}</ProjectGuid>
     <RootNamespace>rdrand_sanitytest-static</RootNamespace>
     <ProjectName>rdrand_sanitytest</ProjectName>

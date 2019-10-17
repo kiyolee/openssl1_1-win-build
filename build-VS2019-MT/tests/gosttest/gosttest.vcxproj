@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{AF5293A5-BFD0-452C-88EC-BA50D57154B3}</ProjectGuid>
     <RootNamespace>gosttest</RootNamespace>
   </PropertyGroup>

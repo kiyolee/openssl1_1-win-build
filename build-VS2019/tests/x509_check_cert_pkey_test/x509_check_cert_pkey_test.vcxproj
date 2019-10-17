@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{BE342BFF-9218-4F09-B4F5-D907DEB0E4A3}</ProjectGuid>
     <RootNamespace>x509_check_cert_pkey_test</RootNamespace>
   </PropertyGroup>

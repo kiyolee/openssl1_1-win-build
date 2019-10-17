@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{D170F81B-97DA-4313-A52A-640C17502B9D}</ProjectGuid>
     <RootNamespace>libapps</RootNamespace>
   </PropertyGroup>

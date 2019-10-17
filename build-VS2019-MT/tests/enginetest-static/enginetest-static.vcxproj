@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{4D1DCE81-3ECF-4B86-9143-89966ABA26E8}</ProjectGuid>
     <RootNamespace>enginetest-static</RootNamespace>
     <ProjectName>enginetest</ProjectName>

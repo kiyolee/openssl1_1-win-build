@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{43350689-7102-411F-88EC-02F57384DAC4}</ProjectGuid>
     <RootNamespace>ocspapitest</RootNamespace>
   </PropertyGroup>
