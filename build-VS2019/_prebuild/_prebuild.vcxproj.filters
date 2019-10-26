@@ -345,7 +345,7 @@
       <Filter>Header Files\include\openssl</Filter>
     </CopyFileToFolders>
     <CopyFileToFolders Include="..\..\ms\applink.c">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\ms</Filter>
     </CopyFileToFolders>
   </ItemGroup>
 </Project>
