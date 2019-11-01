@@ -3,7 +3,7 @@
   <ImportGroup Label="PropertySheets">
     <Import Project="win-build.props" />
     <Import Project="zlib.props" />
-    <Import Project="openssl_dir.props" />
+    <Import Project="openssl_config.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
