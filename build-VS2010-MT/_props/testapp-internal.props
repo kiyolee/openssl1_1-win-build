@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets">
+    <Import Project="vs_common.props" />
     <Import Project="win-build.props" />
     <Import Project="zlib-testapp.props" />
   </ImportGroup>
@@ -10,10 +11,6 @@
     <ClCompile>
       <AdditionalIncludeDirectories>..\..;..\..\..;..\..\..\include;$(OutDir)_work;$(ZLIB_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>ZLIB;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;OPENSSL_SYS_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <WarningLevel>Level3</WarningLevel>
-      <StringPooling>true</StringPooling>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <AdditionalDependencies>setargv.obj;ws2_32.lib;crypt32.lib;$(OutDir)libcrypto-1_1-static.lib;$(OutDir)libssl-1_1-static.lib;$(OutDir)libtestutil-static.lib;$(ZLIB_LIB_DIR)libz-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -24,15 +21,6 @@
     <ClCompile>
       <AdditionalIncludeDirectories>..\..;..\..\..;..\..\..\include;$(OutDir)_work;$(ZLIB_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>ZLIB;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;OPENSSL_SYS_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>Full</Optimization>
-      <StringPooling>true</StringPooling>
-      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <AdditionalOptions>/Gs0 %(AdditionalOptions)</AdditionalOptions>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <AdditionalDependencies>setargv.obj;ws2_32.lib;crypt32.lib;$(OutDir)libcrypto-1_1-static.lib;$(OutDir)libssl-1_1-static.lib;$(OutDir)libtestutil-static.lib;$(ZLIB_LIB_DIR)libz-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -43,10 +31,6 @@
     <ClCompile>
       <AdditionalIncludeDirectories>..\..;..\..\..;..\..\..\include;$(OutDir)_work;$(ZLIB_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>ZLIB;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;OPENSSL_SYS_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <WarningLevel>Level3</WarningLevel>
-      <StringPooling>true</StringPooling>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <AdditionalDependencies>setargv.obj;ws2_32.lib;crypt32.lib;$(OutDir)libcrypto-1_1-static.lib;$(OutDir)libssl-1_1-static.lib;$(OutDir)libtestutil-static.lib;$(ZLIB_LIB_DIR)libz-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -57,15 +41,6 @@
     <ClCompile>
       <AdditionalIncludeDirectories>..\..;..\..\..;..\..\..\include;$(OutDir)_work;$(ZLIB_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>ZLIB;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;OPENSSL_SYS_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>Full</Optimization>
-      <StringPooling>true</StringPooling>
-      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <AdditionalOptions>/Gs0 %(AdditionalOptions)</AdditionalOptions>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <AdditionalDependencies>setargv.obj;ws2_32.lib;crypt32.lib;$(OutDir)libcrypto-1_1-static.lib;$(OutDir)libssl-1_1-static.lib;$(OutDir)libtestutil-static.lib;$(ZLIB_LIB_DIR)libz-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
