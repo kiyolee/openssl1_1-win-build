@@ -2,16 +2,21 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Condition="'$(Platform)'=='Win32'" Label="UserMacros">
-    <OPENSSLDIR>C:\Program Files (x86)\Common Files\SSL\</OPENSSLDIR>
-    <OPENSSLDIR_CSTR>C:\\Program Files (x86)\\Common Files\\SSL</OPENSSLDIR_CSTR>
-    <ENGINESDIR>C:\Program Files (x86)\OpenSSL-1_1\lib\engines-1_1\</ENGINESDIR>
-    <ENGINESDIR_CSTR>C:\\Program Files (x86)\\OpenSSL-1_1\\lib\\engines-1_1</ENGINESDIR_CSTR>
+    <OPENSSL_WIN_BUILD_PF_DIR>C:\Program Files (x86)\</OPENSSL_WIN_BUILD_PF_DIR>
+    <OPENSSL_WIN_BUILD_PF_DIR_CSTR>C:\\Program Files (x86)\\</OPENSSL_WIN_BUILD_PF_DIR_CSTR>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Platform)'=='x64'" Label="UserMacros">
-    <OPENSSLDIR>C:\Program Files\Common Files\SSL\</OPENSSLDIR>
-    <OPENSSLDIR_CSTR>C:\\Program Files\\Common Files\\SSL</OPENSSLDIR_CSTR>
-    <ENGINESDIR>C:\Program Files\OpenSSL-1_1\lib\engines-1_1\</ENGINESDIR>
-    <ENGINESDIR_CSTR>C:\\Program Files\\OpenSSL-1_1\\lib\\engines-1_1</ENGINESDIR_CSTR>
+    <OPENSSL_WIN_BUILD_PF_DIR>C:\Program Files\</OPENSSL_WIN_BUILD_PF_DIR>
+    <OPENSSL_WIN_BUILD_PF_DIR_CSTR>C:\\Program Files\\</OPENSSL_WIN_BUILD_PF_DIR_CSTR>
+  </PropertyGroup>
+  <PropertyGroup Label="UserMacros">
+    <OPENSSL_WIN_BUILD_VERSION_MAJOR>1</OPENSSL_WIN_BUILD_VERSION_MAJOR>
+    <OPENSSL_WIN_BUILD_VERSION_MINOR>1</OPENSSL_WIN_BUILD_VERSION_MINOR>
+    <OPENSSL_WIN_BUILD_DIR_SUFFIX>$(OPENSSL_WIN_BUILD_VERSION_MAJOR)_$(OPENSSL_WIN_BUILD_VERSION_MINOR)</OPENSSL_WIN_BUILD_DIR_SUFFIX>
+    <OPENSSLDIR>$(OPENSSL_WIN_BUILD_PF_DIR)Common Files\SSL\</OPENSSLDIR>
+    <OPENSSLDIR_CSTR>$(OPENSSL_WIN_BUILD_PF_DIR_CSTR)Common Files\\SSL</OPENSSLDIR_CSTR>
+    <ENGINESDIR>$(OPENSSL_WIN_BUILD_PF_DIR)OpenSSL-$(OPENSSL_WIN_BUILD_DIR_SUFFIX)\lib\engines-$(OPENSSL_WIN_BUILD_DIR_SUFFIX)\</ENGINESDIR>
+    <ENGINESDIR_CSTR>$(OPENSSL_WIN_BUILD_PF_DIR_CSTR)OpenSSL-$(OPENSSL_WIN_BUILD_DIR_SUFFIX)\\lib\\engines-$(OPENSSL_WIN_BUILD_DIR_SUFFIX)</ENGINESDIR_CSTR>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
@@ -21,6 +26,21 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <BuildMacro Include="OPENSSL_WIN_BUILD_PF_DIR">
+      <Value>$(OPENSSL_WIN_BUILD_PF_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="OPENSSL_WIN_BUILD_PF_DIR_CSTR">
+      <Value>$(OPENSSL_WIN_BUILD_PF_DIR_CSTR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="OPENSSL_WIN_BUILD_VERSION_MAJOR">
+      <Value>$(OPENSSL_WIN_BUILD_VERSION_MAJOR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="OPENSSL_WIN_BUILD_VERSION_MINOR">
+      <Value>$(OPENSSL_WIN_BUILD_VERSION_MINOR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="OPENSSL_WIN_BUILD_DIR_SUFFIX">
+      <Value>$(OPENSSL_WIN_BUILD_DIR_SUFFIX)</Value>
+    </BuildMacro>
     <BuildMacro Include="OPENSSLDIR">
       <Value>$(OPENSSLDIR)</Value>
     </BuildMacro>
