@@ -1,9 +1,11 @@
 setlocal
 
 set OPENSSL_VER=1.1.1d
+set OPENSSL_VER_SED=1\.1\.1d
 set OPENSSL_BASE=openssl-%OPENSSL_VER%
+set OPENSSL_BASE_SED=openssl-%OPENSSL_VER_SED%
 set OPENSSL_DIR=..\%OPENSSL_BASE%
-set OPENSSL_DIR_SED=\.\.\\\\openssl-1\.1\.1d
+set OPENSSL_DIR_SED=\.\.\\\\openssl-%OPENSSL_VER_SED%
 
 set ZLIB_DIR=..\zlib
 
@@ -35,13 +37,14 @@ popd
 goto :end
 
 :genfile
-sed -i -e "s/%OPENSSL_DIR_SED%/\./g" configdata.pm
 perl -I. -Mconfigdata %OPENSSL_DIR%\util\dofile.pl -omakefile %OPENSSL_DIR%\crypto\include\internal\bn_conf.h.in > bn_conf.h
 perl -I. -Mconfigdata %OPENSSL_DIR%\util\dofile.pl -omakefile %OPENSSL_DIR%\crypto\include\internal\dso_conf.h.in > dso_conf.h
 perl -I. -Mconfigdata %OPENSSL_DIR%\util\dofile.pl -omakefile %OPENSSL_DIR%\include\openssl\opensslconf.h.in > opensslconf.h
 perl -I. -Mconfigdata %OPENSSL_DIR%\util\dofile.pl -omakefile %OPENSSL_DIR%\apps\CA.pl.in > apps\CA.pl
 perl -I. -Mconfigdata %OPENSSL_DIR%\util\dofile.pl -omakefile %OPENSSL_DIR%\apps\tsget.in > apps\tsget.pl
 perl -I. -Mconfigdata %OPENSSL_DIR%\util\dofile.pl -omakefile %OPENSSL_DIR%\tools\c_rehash.in > tools\c_rehash.pl
+ren configdata.pm configdata.pm.org
+sed -e "s/%OPENSSL_DIR_SED%/\./g" configdata.pm.org > configdata.pm
 dos2unix bn_conf.h dso_conf.h opensslconf.h apps\CA.pl apps\tsget.pl tools\c_rehash.pl
 exit /b
 
