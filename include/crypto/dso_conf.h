@@ -10,8 +10,8 @@
  * Derived from dso_conf.h.in for https://github.com/kiyolee/openssl1_1-win-build.git.
  */
 
-#ifndef HEADER_DSO_CONF_H
-# define HEADER_DSO_CONF_H
+#ifndef OSSL_CRYPTO_DSO_CONF_H
+# define OSSL_CRYPTO_DSO_CONF_H
 # define DSO_WIN32
 # define DSO_EXTENSION ".dll"
 #endif

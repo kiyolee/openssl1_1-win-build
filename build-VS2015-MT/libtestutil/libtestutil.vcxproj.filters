@@ -21,7 +21,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\test\testutil\init.c">
+    <ClCompile Include="..\..\test\testutil\testutil_init.c">
       <Filter>Source Files\test\testutil</Filter>
     </ClCompile>
     <ClCompile Include="..\..\test\testutil\main.c">

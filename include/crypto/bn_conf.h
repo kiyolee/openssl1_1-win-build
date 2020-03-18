@@ -10,8 +10,8 @@
  * Derived from bn_conf.h.in for https://github.com/kiyolee/openssl1_1-win-build.git.
  */
 
-#ifndef HEADER_BN_CONF_H
-# define HEADER_BN_CONF_H
+#ifndef OSSL_CRYPTO_BN_CONF_H
+# define OSSL_CRYPTO_BN_CONF_H
 
 /*
  * The contents of this file are not used in the UEFI build, as
