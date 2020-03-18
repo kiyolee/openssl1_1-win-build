@@ -1,5 +1,5 @@
 /*
- * Copyright 1995-2019 The OpenSSL Project Authors. All Rights Reserved.
+ * Copyright 1995-2020 The OpenSSL Project Authors. All Rights Reserved.
  *
  * Licensed under the OpenSSL license (the "License").  You may not use
  * this file except in compliance with the License.  You can obtain a copy
@@ -7,8 +7,8 @@
  * https://www.openssl.org/source/license.html
  */
 
-#ifndef HEADER_RAND_LCL_H
-# define HEADER_RAND_LCL_H
+#ifndef OSSL_CRYPTO_RAND_LOCAL_H
+# define OSSL_CRYPTO_RAND_LOCAL_H
 
 # include <openssl/aes.h>
 # include <openssl/evp.h>
@@ -82,7 +82,7 @@
  * Typically, the DRBGs will set a minimum larger than this so optimal
  * allocation ought to take place (for full quality seed material).
  *
- * The normal value has been chosed by noticing that the rand_drbg_get_nonce
+ * The normal value has been chosen by noticing that the rand_drbg_get_nonce
  * function is usually the largest of the built in allocation (twenty four
  * bytes and then appending another sixteen bytes).  This means the buffer ends
  * with 40 bytes.  The value of forty eight is comfortably above this which

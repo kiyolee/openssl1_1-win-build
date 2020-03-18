@@ -31,7 +31,7 @@ void md4_block_data_order(MD4_CTX *c, const void *p, size_t num);
         } while (0)
 #define HASH_BLOCK_DATA_ORDER   md4_block_data_order
 
-#include "internal/md32_common.h"
+#include "crypto/md32_common.h"
 
 /*-
 #define F(x,y,z)        (((x) & (y))  |  ((~(x)) & (z)))
@@ -53,7 +53,7 @@ void md4_block_data_order(MD4_CTX *c, const void *p, size_t num);
 
 #define R1(a,b,c,d,k,s,t) { \
         a+=((k)+(t)+G((b),(c),(d))); \
-        a=ROTATE(a,s); };\
+        a=ROTATE(a,s); };
 
 #define R2(a,b,c,d,k,s,t) { \
         a+=((k)+(t)+H((b),(c),(d))); \

@@ -7,8 +7,8 @@
  * https://www.openssl.org/source/license.html
  */
 
-#ifndef HEADER_BN_LCL_H
-# define HEADER_BN_LCL_H
+#ifndef OSSL_CRYPTO_BN_LOCAL_H
+# define OSSL_CRYPTO_BN_LOCAL_H
 
 /*
  * The EDK2 build doesn't use bn_conf.h; it sets THIRTY_TWO_BIT or
@@ -18,10 +18,10 @@
 # include <openssl/opensslconf.h>
 
 # if !defined(OPENSSL_SYS_UEFI)
-#  include "internal/bn_conf.h"
+#  include "crypto/bn_conf.h"
 # endif
 
-# include "internal/bn_int.h"
+# include "crypto/bn.h"
 
 /*
  * These preprocessor symbols control various aspects of the bignum headers
