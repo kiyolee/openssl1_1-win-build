@@ -50,6 +50,7 @@ goto :chkstatic
 :chkstatic
 if not .%BIN_SUFFIX%. == .-static. goto :dotest
 set CFGTOP=%CFGTOP%\static
+set SHLIB_D=%SHLIB_D%\static
 set BIN_D=%BIN_D%\static
 set FUZZ_D=%FUZZ_D%\static
 set TEST_D=%TEST_D%\static
