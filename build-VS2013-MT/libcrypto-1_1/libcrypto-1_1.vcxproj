@@ -74,7 +74,6 @@
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>$(OutDir)_work\libcrypto-1_1.def</ModuleDefinitionFile>
     </Link>
     <ResourceCompile>
@@ -86,9 +85,6 @@
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>$(OutDir)_work\libcrypto-1_1.def</ModuleDefinitionFile>
     </Link>
     <ResourceCompile>
@@ -100,7 +96,6 @@
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>$(OutDir)_work\libcrypto-1_1.def</ModuleDefinitionFile>
     </Link>
     <ResourceCompile>
@@ -112,9 +107,6 @@
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>$(OutDir)_work\libcrypto-1_1.def</ModuleDefinitionFile>
     </Link>
     <ResourceCompile>

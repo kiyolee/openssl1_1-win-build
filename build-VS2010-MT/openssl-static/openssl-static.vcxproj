@@ -69,9 +69,7 @@
     <ClCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
-    <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-    </Link>
+    <Link />
     <ResourceCompile>
       <PreprocessorDefinitions>OPENSSL</PreprocessorDefinitions>
     </ResourceCompile>
@@ -85,11 +83,7 @@ copy $(TargetPath) $(OutDir)static\openssl.exe 2&gt;nul</Command>
     <ClCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
-    <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-    </Link>
+    <Link />
     <ResourceCompile>
       <PreprocessorDefinitions>OPENSSL</PreprocessorDefinitions>
     </ResourceCompile>
@@ -103,9 +97,7 @@ copy $(TargetPath) $(OutDir)static\openssl.exe 2&gt;nul</Command>
     <ClCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
-    <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-    </Link>
+    <Link />
     <ResourceCompile>
       <PreprocessorDefinitions>OPENSSL</PreprocessorDefinitions>
     </ResourceCompile>
@@ -119,11 +111,7 @@ copy $(TargetPath) $(OutDir)static\openssl.exe 2&gt;nul</Command>
     <ClCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
-    <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-    </Link>
+    <Link />
     <ResourceCompile>
       <PreprocessorDefinitions>OPENSSL</PreprocessorDefinitions>
     </ResourceCompile>
