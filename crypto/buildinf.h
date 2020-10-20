@@ -1,5 +1,9 @@
 #ifdef _WIN64
-  #define PLATFORM "platform: VC-WIN64A"
+  #ifdef _M_ARM64
+    #define PLATFORM "platform: VC-WIN64-ARM"
+  #else
+    #define PLATFORM "platform: VC-WIN64A"
+  #endif
   #define DATE "built on: date unspecified"
   #ifdef _DEBUG
     #define CFLAGS_OPTS " -GF -GS -Gd -Gm- -Od -RTC1 -W3 -WX- -Zi"
@@ -7,7 +11,11 @@
     #define CFLAGS_OPTS " -GF -GL -GS -Gd -Gm- -Gy -Ob2 -Oi -Ox -W3 -WX- -Zi"
   #endif
 #else
-  #define PLATFORM "platform: VC-WIN32"
+  #ifdef _M_ARM
+    #define PLATFORM "platform: VC-WIN32-ARM"
+  #else
+    #define PLATFORM "platform: VC-WIN32"
+  #endif
   #define DATE "built on: date unspecified"
   #ifdef _DEBUG
     #define CFLAGS_OPTS " -GF -GS -Gd -Gm- -Od -Oy- -RTC1 -W3 -WX- -Zi"
@@ -79,6 +87,16 @@
 #define CFLAG_DEF_OPENSSL_SYS_WIN32 " -DOPENSSL_SYS_WIN32"
 #else
 #define CFLAG_DEF_OPENSSL_SYS_WIN32 ""
+#endif
+#ifdef OPENSSL_SYS_WIN64A
+#define CFLAG_DEF_OPENSSL_SYS_WIN64A " -DOPENSSL_SYS_WIN64A"
+#else
+#define CFLAG_DEF_OPENSSL_SYS_WIN64A ""
+#endif
+#ifdef OPENSSL_SYS_WIN_CORE
+#define CFLAG_DEF_OPENSSL_SYS_WIN_CORE " -DOPENSSL_SYS_WIN_CORE"
+#else
+#define CFLAG_DEF_OPENSSL_SYS_WIN_CORE ""
 #endif
 #ifdef OPENSSL_IA32_SSE2
 #define CFLAG_DEF_OPENSSL_IA32_SSE2 " -DOPENSSL_IA32_SSE2"
@@ -217,6 +235,8 @@
    CFLAG_DEF_L_ENDIAN \
    CFLAG_DEF_ZLIB \
    CFLAG_DEF_OPENSSL_SYS_WIN32 \
+   CFLAG_DEF_OPENSSL_SYS_WIN64A \
+   CFLAG_DEF_OPENSSL_SYS_WIN_CORE \
    CFLAG_DEF_OPENSSL_IA32_SSE2 \
    CFLAG_DEF_OPENSSL_PIC \
    CFLAG_DEF_OPENSSL_USE_APPLINK \

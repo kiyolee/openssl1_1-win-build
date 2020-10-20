@@ -13,6 +13,10 @@ mkdir dll64
 mkdir lib64
 mkdir dll32
 mkdir lib32
+mkdir dllarm64
+mkdir libarm64
+mkdir dllarm32
+mkdir libarm32
 
 pushd dll64
 perl %OPENSSL_DIR%\Configure --prefix="%ProgramFiles%\OpenSSL-1_1" --with-zlib-include=%ZLIB_DIR% --with-zlib-lib=%ZLIB_DIR%\build\x64\Release\libz-static.lib VC-WIN64A-masm no-dynamic-engine zlib
@@ -34,6 +38,30 @@ popd
 
 pushd lib32
 perl %OPENSSL_DIR%\Configure --prefix="%ProgramFiles(x86)%\OpenSSL-1_1" --with-zlib-include=%ZLIB_DIR% --with-zlib-lib=%ZLIB_DIR%\build\Release\libz-static.lib VC-WIN32 no-shared no-dynamic-engine zlib
+call :genfile
+call :clndir
+popd
+
+pushd dllarm64
+perl %OPENSSL_DIR%\Configure --prefix="%ProgramFiles%\OpenSSL-1_1" --with-zlib-include=%ZLIB_DIR% --with-zlib-lib=%ZLIB_DIR%\build\ARM64\Release\libz-static.lib VC-WIN64-ARM no-dynamic-engine zlib
+call :genfile
+call :clndir
+popd
+
+pushd libarm64
+perl %OPENSSL_DIR%\Configure --prefix="%ProgramFiles%\OpenSSL-1_1" --with-zlib-include=%ZLIB_DIR% --with-zlib-lib=%ZLIB_DIR%\build\ARM64\Release\libz-static.lib VC-WIN64-ARM no-shared no-dynamic-engine zlib
+call :genfile
+call :clndir
+popd
+
+pushd dllarm32
+perl %OPENSSL_DIR%\Configure --prefix="%ProgramFiles%\OpenSSL-1_1" --with-zlib-include=%ZLIB_DIR% --with-zlib-lib=%ZLIB_DIR%\build\ARM\Release\libz-static.lib VC-WIN32-ARM no-dynamic-engine zlib
+call :genfile
+call :clndir
+popd
+
+pushd libarm32
+perl %OPENSSL_DIR%\Configure --prefix="%ProgramFiles%\OpenSSL-1_1" --with-zlib-include=%ZLIB_DIR% --with-zlib-lib=%ZLIB_DIR%\build\ARM\Release\libz-static.lib VC-WIN32-ARM no-shared no-dynamic-engine zlib
 call :genfile
 call :clndir
 popd
