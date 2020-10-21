@@ -13,6 +13,8 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>onecore.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>kernel32.lib</IgnoreSpecificDefaultLibraries>
     </Link>
     <Lib>
       <TargetMachine>MachineARM</TargetMachine>
@@ -35,6 +37,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>onecore.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>kernel32.lib</IgnoreSpecificDefaultLibraries>
     </Link>
     <Lib>
       <TargetMachine>MachineARM</TargetMachine>
@@ -50,6 +54,8 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>onecore.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>kernel32.lib</IgnoreSpecificDefaultLibraries>
     </Link>
     <Lib>
       <TargetMachine>MachineARM64</TargetMachine>
@@ -72,6 +78,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>onecore.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>kernel32.lib</IgnoreSpecificDefaultLibraries>
     </Link>
     <Lib>
       <TargetMachine>MachineARM64</TargetMachine>
