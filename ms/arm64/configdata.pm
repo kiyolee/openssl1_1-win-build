@@ -11498,8 +11498,8 @@ our %unified_info = (
         },
     "sharednames" =>
         {
-            "libcrypto" => "libcrypto-1_1-arm64",
-            "libssl" => "libssl-1_1-arm64",
+            "libcrypto" => "libcrypto-1_1",
+            "libssl" => "libssl-1_1",
         },
     "sources" =>
         {
