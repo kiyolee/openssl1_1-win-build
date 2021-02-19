@@ -113,8 +113,8 @@ our %config = (
   sourcedir => ".",
   target => "VC-WIN64-ARM",
   tdirs => [ "ossl_shim" ],
-  version => "1.1.1i",
-  version_num => "0x1010109fL",
+  version => "1.1.1j",
+  version_num => "0x101010afL",
 );
 
 our %target = (
@@ -128,7 +128,7 @@ our %target = (
   LDFLAGS => "/nologo /debug",
   MT => "mt",
   MTFLAGS => "-nologo",
-  RANLIB => "CODE(0x25a1cc8)",
+  RANLIB => "CODE(0x25ec888)",
   RC => "rc",
   _conf_fname_int => [ ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\10-main.conf", ".\\Configurations\\10-main.conf", ".\\Configurations\\50-win-onecore.conf", ".\\Configurations\\shared-info.pl" ],
   aes_asm_src => "aes_core.c aes_cbc.c",
@@ -3174,8 +3174,6 @@ our %unified_info = (
                 {
                     "deps" =>
                         [
-                            "ssl\\packet.o",
-                            "ssl\\tls13_enc.o",
                             "ssl\\bio_ssl.o",
                             "ssl\\d1_lib.o",
                             "ssl\\d1_msg.o",
@@ -3205,6 +3203,8 @@ our %unified_info = (
                             "ssl\\t1_trce.o",
                             "ssl\\tls13_enc.o",
                             "ssl\\tls_srp.o",
+                            "ssl\\packet.o",
+                            "ssl\\tls13_enc.o",
                         ],
                     "products" =>
                         {
@@ -10657,9 +10657,7 @@ our %unified_info = (
             "test\\cmactest.o" =>
                 [
                     "include",
-                    "apps\\include",
                     ".\\include",
-                    ".\\apps\\include",
                 ],
             "test\\cmsapitest.o" =>
                 [
@@ -11498,8 +11496,8 @@ our %unified_info = (
         },
     "sharednames" =>
         {
-            "libcrypto" => "libcrypto-1_1",
-            "libssl" => "libssl-1_1",
+            "libcrypto" => "libcrypto-1_1-arm64",
+            "libssl" => "libssl-1_1-arm64",
         },
     "sources" =>
         {
@@ -17052,19 +17050,22 @@ _____
         }
         print "\nEnabled features:\n\n";
         foreach my $what (@disablables) {
-            print "    $what\n" unless $disabled{$what};
+            print "    $what\n"
+                unless grep { $_ =~ /^${what}$/ } keys %disabled;
         }
         print "\nDisabled features:\n\n";
         foreach my $what (@disablables) {
-            if ($disabled{$what}) {
-                print "    $what", ' ' x ($longest - length($what) + 1),
-                    "[$disabled{$what}]", ' ' x ($longest2 - length($disabled{$what}) + 1);
-                print $disabled_info{$what}->{macro}
-                    if $disabled_info{$what}->{macro};
+            my @what2 = grep { $_ =~ /^${what}$/ } keys %disabled;
+            my $what3 = $what2[0];
+            if ($what3) {
+                print "    $what3", ' ' x ($longest - length($what3) + 1),
+                    "[$disabled{$what3}]", ' ' x ($longest2 - length($disabled{$what3}) + 1);
+                print $disabled_info{$what3}->{macro}
+                    if $disabled_info{$what3}->{macro};
                 print ' (skip ',
-                    join(', ', @{$disabled_info{$what}->{skipped}}),
+                    join(', ', @{$disabled_info{$what3}->{skipped}}),
                     ')'
-                    if $disabled_info{$what}->{skipped};
+                    if $disabled_info{$what3}->{skipped};
                 print "\n";
             }
         }

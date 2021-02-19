@@ -115,8 +115,8 @@ our %config = (
   sourcedir => ".",
   target => "VC-WIN32",
   tdirs => [ "ossl_shim" ],
-  version => "1.1.1i",
-  version_num => "0x1010109fL",
+  version => "1.1.1j",
+  version_num => "0x101010afL",
 );
 
 our %target = (
@@ -132,7 +132,7 @@ our %target = (
   LDFLAGS => "/nologo /debug",
   MT => "mt",
   MTFLAGS => "-nologo",
-  RANLIB => "CODE(0x693a98)",
+  RANLIB => "CODE(0xf2e688)",
   RC => "rc",
   _conf_fname_int => [ ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\10-main.conf", ".\\Configurations\\10-main.conf", ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\10-main.conf", ".\\Configurations\\shared-info.pl" ],
   aes_asm_src => "aes_core.c aes_cbc.c vpaes-x86.s aesni-x86.s",
@@ -10023,12 +10023,12 @@ our %unified_info = (
                 ],
             "ms\\applink.o" =>
                 [
-                    "apps",
                     ".",
                     "include",
-                    ".\\apps",
+                    "apps",
                     ".",
                     ".\\include",
+                    ".\\apps",
                 ],
             "ms\\uplink.o" =>
                 [
@@ -10807,9 +10807,7 @@ our %unified_info = (
             "test\\cmactest.o" =>
                 [
                     "include",
-                    "apps\\include",
                     ".\\include",
-                    ".\\apps\\include",
                 ],
             "test\\cmsapitest.o" =>
                 [
@@ -17278,19 +17276,22 @@ _____
         }
         print "\nEnabled features:\n\n";
         foreach my $what (@disablables) {
-            print "    $what\n" unless $disabled{$what};
+            print "    $what\n"
+                unless grep { $_ =~ /^${what}$/ } keys %disabled;
         }
         print "\nDisabled features:\n\n";
         foreach my $what (@disablables) {
-            if ($disabled{$what}) {
-                print "    $what", ' ' x ($longest - length($what) + 1),
-                    "[$disabled{$what}]", ' ' x ($longest2 - length($disabled{$what}) + 1);
-                print $disabled_info{$what}->{macro}
-                    if $disabled_info{$what}->{macro};
+            my @what2 = grep { $_ =~ /^${what}$/ } keys %disabled;
+            my $what3 = $what2[0];
+            if ($what3) {
+                print "    $what3", ' ' x ($longest - length($what3) + 1),
+                    "[$disabled{$what3}]", ' ' x ($longest2 - length($disabled{$what3}) + 1);
+                print $disabled_info{$what3}->{macro}
+                    if $disabled_info{$what3}->{macro};
                 print ' (skip ',
-                    join(', ', @{$disabled_info{$what}->{skipped}}),
+                    join(', ', @{$disabled_info{$what3}->{skipped}}),
                     ')'
-                    if $disabled_info{$what}->{skipped};
+                    if $disabled_info{$what3}->{skipped};
                 print "\n";
             }
         }
