@@ -116,8 +116,8 @@ our %config = (
   sourcedir => ".",
   target => "VC-WIN64A-masm",
   tdirs => [ "ossl_shim" ],
-  version => "1.1.1j",
-  version_num => "0x101010afL",
+  version => "1.1.1k",
+  version_num => "0x101010bfL",
 );
 
 our %target = (
@@ -133,7 +133,7 @@ our %target = (
   LDFLAGS => "/nologo /debug",
   MT => "mt",
   MTFLAGS => "-nologo",
-  RANLIB => "CODE(0x25fca88)",
+  RANLIB => "CODE(0x691138)",
   RC => "rc",
   _conf_fname_int => [ ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\10-main.conf", ".\\Configurations\\10-main.conf", ".\\Configurations\\10-main.conf", ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\50-masm.conf", ".\\Configurations\\shared-info.pl" ],
   aes_asm_src => "aes_core.c aes_cbc.c vpaes-x86_64.s aesni-x86_64.s aesni-sha1-x86_64.s aesni-sha256-x86_64.s aesni-mb-x86_64.s",
@@ -3208,9 +3208,9 @@ our %unified_info = (
                 {
                     "deps" =>
                         [
-                            "ms\\applink.o",
-                            "ms\\applink.o",
                             "ms\\uplink.o",
+                            "ms\\applink.o",
+                            "ms\\applink.o",
                         ],
                     "products" =>
                         {
@@ -3229,8 +3229,6 @@ our %unified_info = (
                 {
                     "deps" =>
                         [
-                            "ssl\\packet.o",
-                            "ssl\\tls13_enc.o",
                             "ssl\\bio_ssl.o",
                             "ssl\\d1_lib.o",
                             "ssl\\d1_msg.o",
@@ -3260,6 +3258,8 @@ our %unified_info = (
                             "ssl\\t1_trce.o",
                             "ssl\\tls13_enc.o",
                             "ssl\\tls_srp.o",
+                            "ssl\\packet.o",
+                            "ssl\\tls13_enc.o",
                         ],
                     "products" =>
                         {
@@ -10112,12 +10112,12 @@ our %unified_info = (
                 ],
             "ms\\applink.o" =>
                 [
-                    ".",
-                    "include",
                     "apps",
                     ".",
-                    ".\\include",
+                    "include",
                     ".\\apps",
+                    ".",
+                    ".\\include",
                 ],
             "ms\\uplink.o" =>
                 [
