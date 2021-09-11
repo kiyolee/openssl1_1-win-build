@@ -344,10 +344,8 @@
     <CopyFileToFolders Include="..\..\include\openssl\objects.h">
       <Filter>Header Files\include\openssl</Filter>
     </CopyFileToFolders>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\ms\applink.c">
+    <CopyFileToFolders Include="..\..\ms\applink.c">
       <Filter>Source Files\ms</Filter>
-    </ClCompile>
+    </CopyFileToFolders>
   </ItemGroup>
 </Project>
