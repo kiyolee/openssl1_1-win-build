@@ -106,6 +106,7 @@ static int atexit_handler_done = 0;
 
 static void atexit_handler(void)
 {
+#if !defined(_WIN32) || defined(_DLL)
     FILE *atexit_file = fopen(path_atexit, "w");
 
     if (atexit_file == NULL)
@@ -113,6 +114,20 @@ static void atexit_handler(void)
 
     fprintf(atexit_file, "atexit() run\n");
     fclose(atexit_file);
+#else
+    DWORD bytes_written;
+    HANDLE atexit_file = CreateFileA(path_atexit, GENERIC_WRITE, (FILE_SHARE_READ|FILE_SHARE_WRITE),
+                                     NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
+    HeapFree(GetProcessHeap(), 0, (LPVOID)path_atexit);
+    path_atexit = NULL;
+
+    if (atexit_file == INVALID_HANDLE_VALUE)
+        return;
+
+    bytes_written = 0;
+    WriteFile(atexit_file, "atexit() run\n", 13, &bytes_written, NULL);
+    CloseHandle(atexit_file);
+#endif
     atexit_handler_done++;
 }
 
@@ -286,8 +301,19 @@ static int test_lib(void)
 end:
     return result;
 }
+
+#if defined(_WIN32) && !defined(_DLL)
+static char* win_strdup(const char* str)
+{
+    size_t len = strlen(str);
+    char* copy = HeapAlloc(GetProcessHeap(), 0, len + 1);
+    if (!copy) abort();
+    strcpy(copy, str);
+    return copy;
+}
 #endif
 
+#endif
 
 /*
  * shlibloadtest should not use the normal test framework because we don't want
@@ -321,7 +347,11 @@ int main(int argc, char *argv[])
     }
     path_crypto = argv[2];
     path_ssl = argv[3];
+#if !defined(_WIN32) || defined(_DLL)
     path_atexit = argv[4];
+#else
+    path_atexit = win_strdup(argv[4]);
+#endif
     if (path_crypto == NULL || path_ssl == NULL) {
         fprintf(stderr, "Invalid libcrypto/libssl path\n");
         return 1;
