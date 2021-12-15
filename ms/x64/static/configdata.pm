@@ -28,7 +28,7 @@ our %config = (
   LDLIBS => [  ],
   MT => "mt",
   MTFLAGS => [ "-nologo" ],
-  PERL => "C:\\Perl\\bin\\perl.exe",
+  PERL => "C:\\Strawberry\\perl\\bin\\perl.exe",
   RC => "rc",
   RCFLAGS => [  ],
   afalgeng => "",
@@ -66,8 +66,8 @@ our %config = (
   openssldir => "",
   options => "--prefix=C:\\Program Files\\OpenSSL-1_1 --with-zlib-include=..\\zlib --with-zlib-lib=..\\zlib\\build\\x64\\Release\\libz-static.lib enable-zlib no-afalgeng no-asan no-buildtest-c++ no-crypto-mdebug no-crypto-mdebug-backtrace no-devcryptoeng no-dynamic-engine no-ec_nistp_64_gcc_128 no-egd no-external-tests no-fuzz-afl no-fuzz-libfuzzer no-heartbeats no-md2 no-msan no-rc5 no-sctp no-shared no-ssl-trace no-ssl3 no-ssl3-method no-ubsan no-unit-test no-weak-ssl-ciphers no-zlib-dynamic",
   perl_archname => "MSWin32-x64-multi-thread",
-  perl_cmd => "C:\\Perl\\bin\\perl.exe",
-  perl_version => "5.28.1",
+  perl_cmd => "C:\\Strawberry\\perl\\bin\\perl.exe",
+  perl_version => "5.32.1",
   perlargv => [ "--prefix=C:\\Program Files\\OpenSSL-1_1", "--with-zlib-include=..\\zlib", "--with-zlib-lib=..\\zlib\\build\\x64\\Release\\libz-static.lib", "VC-WIN64A-masm", "no-shared", "no-dynamic-engine", "zlib" ],
   perlenv => {
       "AR" => undef,
@@ -116,8 +116,8 @@ our %config = (
   sourcedir => ".",
   target => "VC-WIN64A-masm",
   tdirs => [ "ossl_shim" ],
-  version => "1.1.1l",
-  version_num => "0x101010cfL",
+  version => "1.1.1m",
+  version_num => "0x101010dfL",
 );
 
 our %target = (
@@ -133,7 +133,7 @@ our %target = (
   LDFLAGS => "/nologo /debug",
   MT => "mt",
   MTFLAGS => "-nologo",
-  RANLIB => "CODE(0x2621170)",
+  RANLIB => "CODE(0x26039c8)",
   RC => "rc",
   _conf_fname_int => [ ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\10-main.conf", ".\\Configurations\\10-main.conf", ".\\Configurations\\10-main.conf", ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\50-masm.conf", ".\\Configurations\\shared-info.pl" ],
   aes_asm_src => "aes_core.c aes_cbc.c vpaes-x86_64.s aesni-x86_64.s aesni-sha1-x86_64.s aesni-sha256-x86_64.s aesni-mb-x86_64.s",
@@ -1310,6 +1310,7 @@ our %unified_info = (
                 ],
             "test\\ec_internal_test" =>
                 [
+                    "apps\\libapps.a",
                     "libcrypto.a",
                     "test\\libtestutil.a",
                 ],

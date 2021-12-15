@@ -27,7 +27,7 @@ our %config = (
   LDLIBS => [  ],
   MT => "mt",
   MTFLAGS => [ "-nologo" ],
-  PERL => "C:\\Perl\\bin\\perl.exe",
+  PERL => "C:\\Strawberry\\perl\\bin\\perl.exe",
   RC => "rc",
   RCFLAGS => [  ],
   afalgeng => "",
@@ -65,8 +65,8 @@ our %config = (
   openssldir => "",
   options => "--prefix=C:\\Program Files (x86)\\OpenSSL-1_1 --with-zlib-include=..\\zlib --with-zlib-lib=..\\zlib\\build\\Release\\libz-static.lib enable-zlib no-afalgeng no-asan no-buildtest-c++ no-crypto-mdebug no-crypto-mdebug-backtrace no-devcryptoeng no-dynamic-engine no-ec_nistp_64_gcc_128 no-egd no-external-tests no-fuzz-afl no-fuzz-libfuzzer no-heartbeats no-md2 no-msan no-rc5 no-sctp no-ssl-trace no-ssl3 no-ssl3-method no-ubsan no-unit-test no-weak-ssl-ciphers no-zlib-dynamic",
   perl_archname => "MSWin32-x64-multi-thread",
-  perl_cmd => "C:\\Perl\\bin\\perl.exe",
-  perl_version => "5.28.1",
+  perl_cmd => "C:\\Strawberry\\perl\\bin\\perl.exe",
+  perl_version => "5.32.1",
   perlargv => [ "--prefix=C:\\Program Files (x86)\\OpenSSL-1_1", "--with-zlib-include=..\\zlib", "--with-zlib-lib=..\\zlib\\build\\Release\\libz-static.lib", "VC-WIN32", "no-dynamic-engine", "zlib" ],
   perlenv => {
       "AR" => undef,
@@ -115,8 +115,8 @@ our %config = (
   sourcedir => ".",
   target => "VC-WIN32",
   tdirs => [ "ossl_shim" ],
-  version => "1.1.1l",
-  version_num => "0x101010cfL",
+  version => "1.1.1m",
+  version_num => "0x101010dfL",
 );
 
 our %target = (
@@ -132,7 +132,7 @@ our %target = (
   LDFLAGS => "/nologo /debug",
   MT => "mt",
   MTFLAGS => "-nologo",
-  RANLIB => "CODE(0x7220e8)",
+  RANLIB => "CODE(0x2643ab0)",
   RC => "rc",
   _conf_fname_int => [ ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\10-main.conf", ".\\Configurations\\10-main.conf", ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\10-main.conf", ".\\Configurations\\shared-info.pl" ],
   aes_asm_src => "aes_core.c aes_cbc.c vpaes-x86.s aesni-x86.s",
@@ -1302,6 +1302,7 @@ our %unified_info = (
                 ],
             "test\\ec_internal_test" =>
                 [
+                    "apps\\libapps.a",
                     "libcrypto.a",
                     "test\\libtestutil.a",
                 ],
@@ -3196,15 +3197,17 @@ our %unified_info = (
                 {
                     "deps" =>
                         [
-                            "ms\\applink.o",
-                            "ms\\applink.o",
                             "ms\\uplink.o",
+                            "ms\\applink.o",
+                            "ms\\applink.o",
+                            "ms\\applink.o",
                         ],
                     "products" =>
                         {
                             "bin" =>
                                 [
                                     "apps\\openssl",
+                                    "test\\ec_internal_test",
                                     "test\\uitest",
                                 ],
                             "lib" =>
@@ -3217,8 +3220,6 @@ our %unified_info = (
                 {
                     "deps" =>
                         [
-                            "ssl\\packet.o",
-                            "ssl\\tls13_enc.o",
                             "ssl\\bio_ssl.o",
                             "ssl\\d1_lib.o",
                             "ssl\\d1_msg.o",
@@ -3248,6 +3249,8 @@ our %unified_info = (
                             "ssl\\t1_trce.o",
                             "ssl\\tls13_enc.o",
                             "ssl\\tls_srp.o",
+                            "ssl\\packet.o",
+                            "ssl\\tls13_enc.o",
                         ],
                     "products" =>
                         {
@@ -10023,12 +10026,14 @@ our %unified_info = (
                 ],
             "ms\\applink.o" =>
                 [
+                    ".",
                     "apps",
-                    ".",
                     "include",
-                    ".\\apps",
+                    "crypto\\ec",
                     ".",
+                    ".\\apps",
                     ".\\include",
+                    ".\\crypto\\ec",
                 ],
             "ms\\uplink.o" =>
                 [
@@ -16441,6 +16446,7 @@ our %unified_info = (
                 ],
             "test\\ec_internal_test" =>
                 [
+                    "ms\\applink.o",
                     "test\\ec_internal_test.o",
                 ],
             "test\\ec_internal_test.o" =>
