@@ -116,8 +116,8 @@ our %config = (
   sourcedir => ".",
   target => "VC-WIN64A-masm",
   tdirs => [ "ossl_shim" ],
-  version => "1.1.1o",
-  version_num => "0x101010ffL",
+  version => "1.1.1p",
+  version_num => "0x1010110fL",
 );
 
 our %target = (
@@ -133,7 +133,7 @@ our %target = (
   LDFLAGS => "/nologo /debug",
   MT => "mt",
   MTFLAGS => "-nologo",
-  RANLIB => "CODE(0xdc6420)",
+  RANLIB => "CODE(0xd945c0)",
   RC => "rc",
   _conf_fname_int => [ ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\10-main.conf", ".\\Configurations\\10-main.conf", ".\\Configurations\\10-main.conf", ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\50-masm.conf", ".\\Configurations\\shared-info.pl" ],
   aes_asm_src => "aes_core.c aes_cbc.c vpaes-x86_64.s aesni-x86_64.s aesni-sha1-x86_64.s aesni-sha256-x86_64.s aesni-mb-x86_64.s",
@@ -10114,14 +10114,14 @@ our %unified_info = (
                 ],
             "ms\\applink.o" =>
                 [
-                    "apps",
                     "crypto\\ec",
                     ".",
                     "include",
-                    ".\\apps",
+                    "apps",
                     ".\\crypto\\ec",
                     ".",
                     ".\\include",
+                    ".\\apps",
                 ],
             "ms\\uplink.o" =>
                 [
