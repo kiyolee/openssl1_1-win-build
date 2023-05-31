@@ -1,7 +1,7 @@
 setlocal
 
-set OPENSSL_VER=1.1.1t
-set OPENSSL_VER_SED=1\.1\.1t
+set OPENSSL_VER=1.1.1u
+set OPENSSL_VER_SED=1\.1\.1u
 set OPENSSL_BASE=openssl-%OPENSSL_VER%
 set OPENSSL_BASE_SED=openssl-%OPENSSL_VER_SED%
 set OPENSSL_DIR=..\%OPENSSL_BASE%
@@ -76,7 +76,8 @@ perl -I. -Mconfigdata %OPENSSL_DIR%\util\dofile.pl -omakefile %OPENSSL_DIR%\apps
 perl -I. -Mconfigdata %OPENSSL_DIR%\util\dofile.pl -omakefile %OPENSSL_DIR%\apps\tsget.in > apps\tsget.pl
 perl -I. -Mconfigdata %OPENSSL_DIR%\util\dofile.pl -omakefile %OPENSSL_DIR%\tools\c_rehash.in > tools\c_rehash.pl
 ren configdata.pm configdata.pm.org
-sed -e "s/%OPENSSL_DIR_SED%/\./g" configdata.pm.org > configdata.pm
+@rem Redirection must be at front for "^^" to work. Strange.
+>configdata.pm sed -e "s/%OPENSSL_DIR_SED%/\./g" -e "s/RANLIB => \"CODE(0x[0-9a-f]\+)\"/RANLIB => \"CODE(0xf1e2d3c4)\"/" -e "s/\<\(multilib\)\>/#\1/" -e "s/1_1-arm\(64\)\?\>/1_1/" configdata.pm.org
 dos2unix bn_conf.h dso_conf.h opensslconf.h apps\CA.pl apps\tsget.pl tools\c_rehash.pl
 exit /b
 

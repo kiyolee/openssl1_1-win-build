@@ -115,8 +115,8 @@ our %config = (
   sourcedir => ".",
   target => "VC-WIN32",
   tdirs => [ "ossl_shim" ],
-  version => "1.1.1t",
-  version_num => "0x1010114fL",
+  version => "1.1.1u",
+  version_num => "0x1010115fL",
 );
 
 our %target = (
@@ -132,7 +132,7 @@ our %target = (
   LDFLAGS => "/nologo /debug",
   MT => "mt",
   MTFLAGS => "-nologo",
-  RANLIB => "CODE(0x27056c8)",
+  RANLIB => "CODE(0xf1e2d3c4)",
   RC => "rc",
   _conf_fname_int => [ ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\10-main.conf", ".\\Configurations\\10-main.conf", ".\\Configurations\\00-base-templates.conf", ".\\Configurations\\10-main.conf", ".\\Configurations\\shared-info.pl" ],
   aes_asm_src => "aes_core.c aes_cbc.c vpaes-x86.s aesni-x86.s",
@@ -1976,7 +1976,6 @@ our %unified_info = (
                             "crypto\\bn\\bn_word.o",
                             "crypto\\bn\\bn_x931p.o",
                             "crypto\\bn\\co-586.o",
-                            "crypto\\bn\\rsa_sup_mul.o",
                             "crypto\\bn\\x86-gf2m.o",
                             "crypto\\bn\\x86-mont.o",
                         ],
@@ -6112,13 +6111,6 @@ our %unified_info = (
                 [
                     "crypto",
                     ".\\crypto",
-                ],
-            "crypto\\bn\\rsa_sup_mul.o" =>
-                [
-                    ".",
-                    "include",
-                    ".",
-                    ".\\include",
                 ],
             "crypto\\bn\\sparct4-mont.o" =>
                 [
@@ -12456,10 +12448,6 @@ our %unified_info = (
                 [
                     "crypto\\bn\\co-586.s",
                 ],
-            "crypto\\bn\\rsa_sup_mul.o" =>
-                [
-                    ".\\crypto\\bn\\rsa_sup_mul.c",
-                ],
             "crypto\\bn\\x86-gf2m.o" =>
                 [
                     "crypto\\bn\\x86-gf2m.s",
@@ -14738,7 +14726,6 @@ our %unified_info = (
                     "crypto\\bn\\bn_word.o",
                     "crypto\\bn\\bn_x931p.o",
                     "crypto\\bn\\co-586.o",
-                    "crypto\\bn\\rsa_sup_mul.o",
                     "crypto\\bn\\x86-gf2m.o",
                     "crypto\\bn\\x86-mont.o",
                     "crypto\\buffer\\buf_err.o",

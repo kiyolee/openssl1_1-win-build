@@ -2130,9 +2130,6 @@
     <ClCompile Include="..\..\crypto\bf\bf_enc.c">
       <Filter>Source Files\crypto\bf</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\crypto\bn\rsa_sup_mul.c">
-      <Filter>Source Files\crypto\bn</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\util\mkdef.pl">

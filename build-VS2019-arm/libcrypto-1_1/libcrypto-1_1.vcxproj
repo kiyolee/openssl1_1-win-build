@@ -256,7 +256,6 @@
     <ClCompile Include="..\..\crypto\bn\bn_srp.c" />
     <ClCompile Include="..\..\crypto\bn\bn_word.c" />
     <ClCompile Include="..\..\crypto\bn\bn_x931p.c" />
-    <ClCompile Include="..\..\crypto\bn\rsa_sup_mul.c" />
     <ClCompile Include="..\..\crypto\buffer\buffer.c" />
     <ClCompile Include="..\..\crypto\buffer\buf_err.c" />
     <ClCompile Include="..\..\crypto\camellia\camellia.c" />

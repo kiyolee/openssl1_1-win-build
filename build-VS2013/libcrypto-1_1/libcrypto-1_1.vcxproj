@@ -266,7 +266,6 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\crypto\bn\rsa_sup_mul.c" />
     <ClCompile Include="..\..\crypto\buffer\buffer.c" />
     <ClCompile Include="..\..\crypto\buffer\buf_err.c" />
     <ClCompile Include="..\..\crypto\camellia\cmll_cfb.c" />
