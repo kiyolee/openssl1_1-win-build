@@ -67,7 +67,7 @@ our %config = (
   options => "--prefix=C:\\Program Files\\OpenSSL-1_1 --with-zlib-include=..\\zlib --with-zlib-lib=..\\zlib\\build\\x64\\Release\\libz-static.lib enable-zlib no-afalgeng no-asan no-buildtest-c++ no-crypto-mdebug no-crypto-mdebug-backtrace no-devcryptoeng no-dynamic-engine no-ec_nistp_64_gcc_128 no-egd no-external-tests no-fuzz-afl no-fuzz-libfuzzer no-heartbeats no-md2 no-msan no-rc5 no-sctp no-shared no-ssl-trace no-ssl3 no-ssl3-method no-ubsan no-unit-test no-weak-ssl-ciphers no-zlib-dynamic",
   perl_archname => "MSWin32-x64-multi-thread",
   perl_cmd => "C:\\Strawberry\\perl\\bin\\perl.exe",
-  perl_version => "5.32.1",
+  perl_version => "5.38.0",
   perlargv => [ "--prefix=C:\\Program Files\\OpenSSL-1_1", "--with-zlib-include=..\\zlib", "--with-zlib-lib=..\\zlib\\build\\x64\\Release\\libz-static.lib", "VC-WIN64A-masm", "no-shared", "no-dynamic-engine", "zlib" ],
   perlenv => {
       "AR" => undef,
@@ -116,8 +116,8 @@ our %config = (
   sourcedir => ".",
   target => "VC-WIN64A-masm",
   tdirs => [ "ossl_shim" ],
-  version => "1.1.1u",
-  version_num => "0x1010115fL",
+  version => "1.1.1v",
+  version_num => "0x1010116fL",
 );
 
 our %target = (
