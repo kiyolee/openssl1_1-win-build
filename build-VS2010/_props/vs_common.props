@@ -8,6 +8,7 @@
       <WarningLevel>Level3</WarningLevel>
       <StringPooling>true</StringPooling>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/arch:AVX %(AdditionalOptions)</AdditionalOptions>
       <DisableSpecificWarnings>4090</DisableSpecificWarnings>
     </ClCompile>
     <Link>
@@ -27,6 +28,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/arch:AVX %(AdditionalOptions)</AdditionalOptions>
       <DisableSpecificWarnings>4090</DisableSpecificWarnings>
     </ClCompile>
     <Link>
@@ -43,6 +45,7 @@
       <WarningLevel>Level3</WarningLevel>
       <StringPooling>true</StringPooling>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/arch:AVX %(AdditionalOptions)</AdditionalOptions>
       <DisableSpecificWarnings>4090</DisableSpecificWarnings>
     </ClCompile>
     <Link>
@@ -62,6 +65,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/arch:AVX %(AdditionalOptions)</AdditionalOptions>
       <DisableSpecificWarnings>4090</DisableSpecificWarnings>
     </ClCompile>
     <Link>
