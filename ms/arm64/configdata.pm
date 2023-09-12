@@ -113,8 +113,8 @@ our %config = (
   sourcedir => ".",
   target => "VC-WIN64-ARM",
   tdirs => [ "ossl_shim" ],
-  version => "1.1.1v",
-  version_num => "0x1010116fL",
+  version => "1.1.1w",
+  version_num => "0x1010117fL",
 );
 
 our %target = (
@@ -3174,8 +3174,6 @@ our %unified_info = (
                 {
                     "deps" =>
                         [
-                            "ssl\\packet.o",
-                            "ssl\\tls13_enc.o",
                             "ssl\\bio_ssl.o",
                             "ssl\\d1_lib.o",
                             "ssl\\d1_msg.o",
@@ -3205,6 +3203,8 @@ our %unified_info = (
                             "ssl\\t1_trce.o",
                             "ssl\\tls13_enc.o",
                             "ssl\\tls_srp.o",
+                            "ssl\\packet.o",
+                            "ssl\\tls13_enc.o",
                         ],
                     "products" =>
                         {

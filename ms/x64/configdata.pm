@@ -116,8 +116,8 @@ our %config = (
   sourcedir => ".",
   target => "VC-WIN64A-masm",
   tdirs => [ "ossl_shim" ],
-  version => "1.1.1v",
-  version_num => "0x1010116fL",
+  version => "1.1.1w",
+  version_num => "0x1010117fL",
 );
 
 our %target = (
@@ -10115,13 +10115,13 @@ our %unified_info = (
             "ms\\applink.o" =>
                 [
                     "crypto\\ec",
-                    "apps",
                     ".",
                     "include",
+                    "apps",
                     ".\\crypto\\ec",
-                    ".\\apps",
                     ".",
                     ".\\include",
+                    ".\\apps",
                 ],
             "ms\\uplink.o" =>
                 [

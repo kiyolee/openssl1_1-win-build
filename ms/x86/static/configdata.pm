@@ -115,8 +115,8 @@ our %config = (
   sourcedir => ".",
   target => "VC-WIN32",
   tdirs => [ "ossl_shim" ],
-  version => "1.1.1v",
-  version_num => "0x1010116fL",
+  version => "1.1.1w",
+  version_num => "0x1010117fL",
 );
 
 our %target = (
