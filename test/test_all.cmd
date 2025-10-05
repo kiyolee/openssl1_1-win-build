@@ -17,7 +17,7 @@ goto :start
 :start
 for /d %%d in ( %TEST_BUILDS% ) do (
     if exist %%d\ (
-        for %%r in ( Release Debug x64\Release x64\Debug ) do (
+        for %%r in ( x64\Release x64\Debug Release Debug ) do (
             if exist %MY_ROOT%\%%d\%%r\openssl.exe (
                 call test\test_one.cmd %%d\%%r
                 echo.
