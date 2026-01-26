@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\apps">
+      <UniqueIdentifier>{0074cd4f-a650-4f77-be09-533a0c74770b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include">
+      <UniqueIdentifier>{50f2d9eb-c284-4d16-bac6-04d7d82e044f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\openssl">
+      <UniqueIdentifier>{79ee6cd2-fe9e-4668-a3e0-6f93939a8a08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ms">
+      <UniqueIdentifier>{1db9a045-365c-473d-99eb-8e3c80d18f14}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\apps\progs.pl">
+      <Filter>Source Files\apps</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="..\..\include\openssl\objectserr.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\ocsp.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\ocsperr.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\opensslconf.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\opensslv.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\ossl_typ.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\pem.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\pem2.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\pemerr.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\pkcs7.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\pkcs7err.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\pkcs12.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\pkcs12err.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\rand.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\rand_drbg.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\randerr.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\rc2.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\rc4.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\rc5.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\ripemd.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\rsa.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\rsaerr.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\safestack.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\seed.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\sha.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\srp.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\srtp.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\ssl.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\ssl2.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\ssl3.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\sslerr.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\stack.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\store.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\storeerr.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\symhacks.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\tls1.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\ts.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\tserr.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\txt_db.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\ui.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\uierr.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\whrlpool.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\x509.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\x509_vfy.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\x509err.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\x509v3.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\x509v3err.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\aes.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\asn1.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\asn1_mac.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\asn1err.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\asn1t.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\async.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\asyncerr.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\bio.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\bioerr.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\blowfish.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\bn.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\bnerr.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\buffer.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\buffererr.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\camellia.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\cast.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\cmac.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\cms.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\cmserr.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\comp.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\comperr.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\conf.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\conf_api.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\conferr.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\crypto.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\cryptoerr.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\ct.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\cterr.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\des.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\dh.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\dherr.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\dsa.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\dsaerr.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\dtls1.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\e_os2.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\ebcdic.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\ec.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\ecdh.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\ecdsa.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\ecerr.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\engine.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\engineerr.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\err.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\evp.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\evperr.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\hmac.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\idea.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\kdf.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\kdferr.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\lhash.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\md2.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\md4.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\md5.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\mdc2.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\modes.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\obj_mac.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\include\openssl\objects.h">
+      <Filter>Header Files\include\openssl</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\ms\applink.c">
+      <Filter>Source Files\ms</Filter>
+    </CopyFileToFolders>
+  </ItemGroup>
+</Project>
